@@ -1,0 +1,178 @@
+{
+  "summary": {
+    "policy_name": "RPS_PPO",
+    "evaluation_timestamp": 1754816079.2596965,
+    "robustness_score": 0.2877905742444378,
+    "key_strengths": [
+      "Low exploitability",
+      "Stable performance"
+    ],
+    "key_weaknesses": [
+      "High regret compared to optimal"
+    ],
+    "overall_grade": "F"
+  },
+  "detailed_analysis": {
+    "performance_trends": {
+      "trend": "Improving",
+      "details": "Trend calculated over 2 evaluations with a slope of 0.0745."
+    },
+    "challenger_analysis": {
+      "easiest_challenger": "RPS_AlwaysPaper (Win Rate: 0.390)",
+      "hardest_challenger": "RPS_BiasedRock (Win Rate: 0.275)"
+    },
+    "weakness_patterns": [
+      "Could not categorize challengers to identify weakness patterns."
+    ],
+    "improvement_suggestions": [
+      "High Regret: The policy is far from optimal. This could indicate a need for a more complex model architecture, longer training, or hyperparameter tuning."
+    ]
+  },
+  "visualizations": {
+    "challenger_performance": {
+      "plot_path": "RPS_PPO_challenger_performance.png",
+      "data": {
+        "names": [
+          "RPS_AlwaysRock",
+          "RPS_AlwaysPaper",
+          "RPS_AlwaysScissors",
+          "RPS_Uniform",
+          "RPS_BiasedRock",
+          "RPS_CyclicRPS",
+          "RPS_Copycat",
+          "RPS_AdaptiveCounter",
+          "RPS_PopulationBased",
+          "RPS_NeuralAdversary",
+          "RPS_BiasedPaper",
+          "RPS_BiasedScissors",
+          "RPS_NoisyUniform",
+          "RPS_CycleReverse"
+        ],
+        "win_rates": [
+          0.33,
+          0.39,
+          0.34,
+          0.35,
+          0.275,
+          0.325,
+          0.285,
+          0.315,
+          0.325,
+          0.365,
+          0.35,
+          0.325,
+          0.365,
+          0.3
+        ],
+        "avg_rewards": [
+          -0.025,
+          0.065,
+          0.01,
+          0.025,
+          -0.085,
+          0.03,
+          -0.09,
+          -0.015,
+          0.05,
+          0.065,
+          0.06,
+          0.01,
+          0.06,
+          -0.04
+        ]
+      }
+    },
+    "robustness_radar": {
+      "plot_path": "RPS_PPO_robustness_radar.png",
+      "data": {
+        "categories": [
+          "Overall Win Rate",
+          "Min Win Rate",
+          "Low Exploitability",
+          "Low Regret",
+          "Forward Transfer",
+          "Population Diversity",
+          "Low Forgetting"
+        ],
+        "values": [
+          0.33142857142857146,
+          0.275,
+          0.91,
+          0.004285714285714337,
+          0.0,
+          0.07938291346018396,
+          1.0,
+          0.33142857142857146
+        ]
+      }
+    },
+    "performance_heatmap": {
+      "plot_path": "RPS_PPO_performance_heatmap.png",
+      "data": {
+        "matrix": [
+          [
+            0.40375,
+            0.46125,
+            0.40875,
+            0.4225,
+            0.44,
+            0.36625,
+            0.41500000000000004,
+            0.37,
+            0.39,
+            0.42000000000000004,
+            0.44875,
+            0.4475,
+            0.42500000000000004,
+            0.43124999999999997
+          ]
+        ],
+        "envs": [
+          "default"
+        ],
+        "challengers": [
+          "RPS_AdaptiveCounter",
+          "RPS_AlwaysPaper",
+          "RPS_AlwaysRock",
+          "RPS_AlwaysScissors",
+          "RPS_BiasedPaper",
+          "RPS_BiasedRock",
+          "RPS_BiasedScissors",
+          "RPS_Copycat",
+          "RPS_CycleReverse",
+          "RPS_CyclicRPS",
+          "RPS_NeuralAdversary",
+          "RPS_NoisyUniform",
+          "RPS_PopulationBased",
+          "RPS_Uniform"
+        ]
+      }
+    },
+    "metrics_comparison": {
+      "plot_path": "RPS_PPO_metrics_comparison.png",
+      "data": {
+        "names": [
+          "Overall Win Rate",
+          "Min Win Rate",
+          "Avg Reward",
+          "Low Exploitability",
+          "Low Regret",
+          "Forward Transfer",
+          "Population Diversity"
+        ],
+        "values": [
+          0.33142857142857146,
+          0.275,
+          0.5042857142857143,
+          0.91,
+          0.004285714285714337,
+          0.0,
+          0.07938291346018396
+        ]
+      }
+    }
+  },
+  "recommendations": [
+    "Consider regularization to improve worst-case performance"
+  ]
+}

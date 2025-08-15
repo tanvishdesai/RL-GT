@@ -1,0 +1,109 @@
+{
+  "history": [
+    {
+      "policy_name": "TestRPSPolicy",
+      "timestamp": 1754841274.7238212,
+      "robustness_score": 0.39935213270867315
+    },
+    {
+      "policy_name": "RPS_DQN",
+      "timestamp": 1754841917.8586075,
+      "robustness_score": 0.32768009018213035
+    },
+    {
+      "policy_name": "RPS_PPO",
+      "timestamp": 1754841924.852708,
+      "robustness_score": 0.4150554289757683
+    },
+    {
+      "policy_name": "RPS_PSRO",
+      "timestamp": 1754841931.0837944,
+      "robustness_score": 0.41703708775139986
+    },
+    {
+      "policy_name": "RPS_SelfPlay",
+      "timestamp": 1754841938.354276,
+      "robustness_score": 0.2944786588727283
+    },
+    {
+      "policy_name": "RPS_PRPO",
+      "timestamp": 1754841945.0982683,
+      "robustness_score": 0.4184990661054909
+    },
+    {
+      "policy_name": "Kuhn_DQN",
+      "timestamp": 1754842379.7471652,
+      "robustness_score": 0.29
+    },
+    {
+      "policy_name": "Kuhn_PPO",
+      "timestamp": 1754842382.181729,
+      "robustness_score": 0.29
+    },
+    {
+      "policy_name": "Kuhn_PSRO",
+      "timestamp": 1754842384.6311808,
+      "robustness_score": 0.29
+    },
+    {
+      "policy_name": "Kuhn_SelfPlay",
+      "timestamp": 1754842386.9794378,
+      "robustness_score": 0.29
+    },
+    {
+      "policy_name": "Kuhn_PRPO",
+      "timestamp": 1754842389.3320563,
+      "robustness_score": 0.29
+    },
+    {
+      "policy_name": "Pennies_DQN",
+      "timestamp": 1754843002.9466069,
+      "robustness_score": 0.34829141914674006
+    },
+    {
+      "policy_name": "Pennies_PPO",
+      "timestamp": 1754843017.3385592,
+      "robustness_score": 0.4872384874661431
+    },
+    {
+      "policy_name": "Pennies_PSRO",
+      "timestamp": 1754843027.7712326,
+      "robustness_score": 0.48229149106266744
+    },
+    {
+      "policy_name": "Pennies_SelfPlay",
+      "timestamp": 1754843042.5218077,
+      "robustness_score": 0.34511373220599095
+    },
+    {
+      "policy_name": "Pennies_PRPO",
+      "timestamp": 1754843057.058155,
+      "robustness_score": 0.4894362632133817
+    },
+    {
+      "policy_name": "IPD_DQN",
+      "timestamp": 1754851448.5288856,
+      "robustness_score": 0.7032719837829984
+    },
+    {
+      "policy_name": "IPD_PPO",
+      "timestamp": 1754851920.285583,
+      "robustness_score": 0.674536909484146
+    },
+    {
+      "policy_name": "IPD_PSRO",
+      "timestamp": 1754852140.9589367,
+      "robustness_score": 0.6371976911086352
+    },
+    {
+      "policy_name": "IPD_SelfPlay",
+      "timestamp": 1754852599.5338304,
+      "robustness_score": 0.5047049429503339
+    },
+    {
+      "policy_name": "IPD_PRPO",
+      "timestamp": 1754853064.0479693,
+      "robustness_score": 0.7094948844883863
+    }
+  ]
+}

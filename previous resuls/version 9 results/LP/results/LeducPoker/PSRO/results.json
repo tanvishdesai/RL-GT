@@ -1,0 +1,136 @@
+{
+  "summary": {
+    "policy_name": "Leduc_PSRO",
+    "evaluation_timestamp": 1754979399.0120153,
+    "robustness_score": 0.44569245339787916,
+    "key_strengths": [
+      "Low exploitability",
+      "Stable performance"
+    ],
+    "key_weaknesses": [],
+    "overall_grade": "C"
+  },
+  "detailed_analysis": {
+    "performance_trends": {
+      "trend": "Stable",
+      "details": "Trend calculated over 4 evaluations with a slope of 0.0260."
+    },
+    "challenger_analysis": {
+      "easiest_challenger": "Leduc_AlwaysFold (Win Rate: 0.419)",
+      "hardest_challenger": "Leduc_Bluffer (Win Rate: 0.248)"
+    },
+    "weakness_patterns": [
+      "Struggles against 'noise_robustness' opponents (Avg Win Rate: 0.331)"
+    ],
+    "improvement_suggestions": [
+      "Weak against Noise: Improve robustness by injecting noise into observations or actions during the training process."
+    ]
+  },
+  "visualizations": {
+    "challenger_performance": {
+      "plot_path": "Leduc_PSRO_challenger_performance.png",
+      "data": {
+        "names": [
+          "Leduc_Uniform",
+          "Leduc_AlwaysCall",
+          "Leduc_AlwaysFold",
+          "Leduc_Bluffer",
+          "Leduc_Conservative"
+        ],
+        "win_rates": [
+          0.3307,
+          0.4143,
+          0.4187,
+          0.2482,
+          0.3955
+        ],
+        "avg_rewards": [
+          -0.5301,
+          -0.1646,
+          0.0725,
+          -0.7844,
+          -0.1499
+        ]
+      }
+    },
+    "robustness_radar": {
+      "plot_path": "Leduc_PSRO_robustness_radar.png",
+      "data": {
+        "categories": [
+          "Overall Win Rate",
+          "Min Win Rate",
+          "Low Exploitability",
+          "Low Regret",
+          "Forward Transfer",
+          "Population Diversity",
+          "Low Forgetting"
+        ],
+        "values": [
+          0.36147999999999997,
+          0.2482,
+          0.9396615384615384,
+          1.0,
+          0.0,
+          0.7066613756498921,
+          1.0,
+          0.36147999999999997
+        ]
+      }
+    },
+    "performance_heatmap": {
+      "plot_path": "Leduc_PSRO_performance_heatmap.png",
+      "data": {
+        "matrix": [
+          [
+            0.41600000000000004,
+            0.477475,
+            0.178,
+            0.410275,
+            0.282825
+          ]
+        ],
+        "envs": [
+          "LeducPoker"
+        ],
+        "challengers": [
+          "Leduc_AlwaysCall",
+          "Leduc_AlwaysFold",
+          "Leduc_Bluffer",
+          "Leduc_Conservative",
+          "Leduc_Uniform"
+        ]
+      }
+    },
+    "metrics_comparison": {
+      "plot_path": "Leduc_PSRO_metrics_comparison.png",
+      "data": {
+        "names": [
+          "Overall Win Rate",
+          "Min Win Rate",
+          "Avg Reward",
+          "Low Exploitability",
+          "Low Regret",
+          "Forward Transfer",
+          "Population Diversity"
+        ],
+        "values": [
+          0.36147999999999997,
+          0.2482,
+          0.4206925,
+          0.9396615384615384,
+          1.0,
+          0.0,
+          0.7066613756498921
+        ]
+      }
+    }
+  },
+  "recommendations": [
+    "Consider regularization to improve worst-case performance"
+  ],
+  "composites": {
+    "zero_sum_composite": 0.44569245339787916,
+    "general_sum_composite": null,
+    "ipd_exploitability_proxy": 0.0
+  }
+}

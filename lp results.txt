@@ -1,0 +1,164 @@
+========================================
+ E V A L U A T I N G:   Leduc_DQN 
+========================================
+
+====================================================================================================
+🏆 ENHANCED GAUNTLET EVALUATION: Leduc_DQN
+====================================================================================================
+
+🎯 ROBUSTNESS METRICS:
+  Overall Win Rate:     0.372
+  Minimum Win Rate:     0.330
+  Win Rate Std:         0.029
+  Average Reward:       -0.139
+  Worst Case Reward:    -0.291
+  Exploitability:       0.055
+  Regret:              0.000
+  🏅 ROBUSTNESS SCORE:  0.456
+
+📊 DETAILED CHALLENGER RESULTS:
+
+  Environment: LeducPoker
+    Leduc_AlwaysCall    : WR=0.420, AR/step=0.035, STD=4.035
+    Leduc_AlwaysFold    : WR=0.370, AR/step=-0.018, STD=4.532
+    Leduc_Bluffer       : WR=0.330, AR/step=-0.235, STD=4.669
+    Leduc_Conservative  : WR=0.385, AR/step=-0.076, STD=4.650
+    Leduc_NeuralAdversary: WR=0.380, AR/step=-0.246, STD=4.349
+    Leduc_Uniform       : WR=0.345, AR/step=-0.291, STD=5.262
+
+Report saved to results/LeducPoker/DQN/report.json
+Saved report to results/LeducPoker/DQN/report.json
+Using dimensions for Leduc_PPO: input=8, output=3
+Evaluating Leduc_PPO: use_wrapped=True, policy_type=StandardPPO
+Policy Leduc_PPO has 13316 parameters
+
+========================================
+ E V A L U A T I N G:   Leduc_PPO 
+========================================
+
+====================================================================================================
+🏆 ENHANCED GAUNTLET EVALUATION: Leduc_PPO
+====================================================================================================
+
+🎯 ROBUSTNESS METRICS:
+  Overall Win Rate:     0.421
+  Minimum Win Rate:     0.355
+  Win Rate Std:         0.040
+  Average Reward:       0.048
+  Worst Case Reward:    -0.113
+  Exploitability:       0.023
+  Regret:              0.000
+  🏅 ROBUSTNESS SCORE:  0.496
+
+📊 DETAILED CHALLENGER RESULTS:
+
+  Environment: LeducPoker
+    Leduc_AlwaysCall    : WR=0.355, AR/step=-0.043, STD=3.843
+    Leduc_AlwaysFold    : WR=0.420, AR/step=0.088, STD=4.744
+    Leduc_Bluffer       : WR=0.470, AR/step=0.121, STD=6.240
+    Leduc_Conservative  : WR=0.390, AR/step=-0.113, STD=5.446
+    Leduc_NeuralAdversary: WR=0.425, AR/step=-0.026, STD=4.223
+    Leduc_Uniform       : WR=0.465, AR/step=0.259, STD=5.844
+
+Report saved to results/LeducPoker/PPO/report.json
+Saved report to results/LeducPoker/PPO/report.json
+Using dimensions for Leduc_PSRO: input=30, output=3
+Evaluating Leduc_PSRO: use_wrapped=False, policy_type=PSROPolicy
+Policy Leduc_PSRO has 0 parameters
+
+========================================
+ E V A L U A T I N G:   Leduc_PSRO 
+========================================
+
+====================================================================================================
+🏆 ENHANCED GAUNTLET EVALUATION: Leduc_PSRO
+====================================================================================================
+
+🎯 ROBUSTNESS METRICS:
+  Overall Win Rate:     0.352
+  Minimum Win Rate:     0.280
+  Win Rate Std:         0.046
+  Average Reward:       -0.122
+  Worst Case Reward:    -0.476
+  Exploitability:       0.099
+  Regret:              0.000
+  🏅 ROBUSTNESS SCORE:  0.450
+
+📊 DETAILED CHALLENGER RESULTS:
+
+  Environment: LeducPoker
+    Leduc_AlwaysCall    : WR=0.390, AR/step=0.158, STD=4.110
+    Leduc_AlwaysFold    : WR=0.380, AR/step=-0.079, STD=4.532
+    Leduc_Bluffer       : WR=0.280, AR/step=-0.476, STD=4.743
+    Leduc_Conservative  : WR=0.385, AR/step=-0.029, STD=4.711
+    Leduc_NeuralAdversary: WR=0.380, AR/step=0.012, STD=4.177
+    Leduc_Uniform       : WR=0.295, AR/step=-0.318, STD=4.646
+
+Report saved to results/LeducPoker/PSRO/report.json
+Saved report to results/LeducPoker/PSRO/report.json
+Using dimensions for Leduc_SelfPlay: input=30, output=3
+Evaluating Leduc_SelfPlay: use_wrapped=False, policy_type=DQNAgent
+Policy Leduc_SelfPlay has 24838 parameters
+
+========================================
+ E V A L U A T I N G:   Leduc_SelfPlay 
+========================================
+
+====================================================================================================
+🏆 ENHANCED GAUNTLET EVALUATION: Leduc_SelfPlay
+====================================================================================================
+
+🎯 ROBUSTNESS METRICS:
+  Overall Win Rate:     0.437
+  Minimum Win Rate:     0.300
+  Win Rate Std:         0.147
+  Average Reward:       0.393
+  Worst Case Reward:    -0.188
+  Exploitability:       0.057
+  Regret:              0.000
+  🏅 ROBUSTNESS SCORE:  0.487
+
+📊 DETAILED CHALLENGER RESULTS:
+
+  Environment: LeducPoker
+    Leduc_AlwaysCall    : WR=0.400, AR/step=0.417, STD=4.632
+    Leduc_AlwaysFold    : WR=0.300, AR/step=-0.188, STD=5.811
+    Leduc_Bluffer       : WR=0.745, AR/step=1.309, STD=6.125
+    Leduc_Conservative  : WR=0.360, AR/step=0.189, STD=5.998
+    Leduc_NeuralAdversary: WR=0.350, AR/step=0.242, STD=5.259
+    Leduc_Uniform       : WR=0.465, AR/step=0.387, STD=6.814
+
+Report saved to results/LeducPoker/SelfPlay/report.json
+Saved report to results/LeducPoker/SelfPlay/report.json
+Using dimensions for Leduc_PRPO: input=8, output=3
+Evaluating Leduc_PRPO: use_wrapped=True, policy_type=UnifiedPRPOAgent
+Policy Leduc_PRPO has 13316 parameters
+
+========================================
+ E V A L U A T I N G:   Leduc_PRPO 
+========================================
+
+🎯 ROBUSTNESS METRICS:
+  Overall Win Rate:     0.437
+  Minimum Win Rate:     0.395
+  Win Rate Std:         0.028
+  Average Reward:       0.075
+  Worst Case Reward:    -0.045
+  Exploitability:       0.013
+  Regret:              0.000
+  🏅 ROBUSTNESS SCORE:  0.507
+
+📊 DETAILED CHALLENGER RESULTS:
+
+  Environment: LeducPoker
+    Leduc_AlwaysCall    : WR=0.460, AR/step=0.142, STD=3.399
+    Leduc_AlwaysFold    : WR=0.440, AR/step=0.137, STD=4.273
+    Leduc_Bluffer       : WR=0.480, AR/step=0.194, STD=5.883
+    Leduc_Conservative  : WR=0.425, AR/step=-0.035, STD=4.790
+    Leduc_NeuralAdversary: WR=0.395, AR/step=0.055, STD=3.726
+    Leduc_Uniform       : WR=0.420, AR/step=-0.045, STD=5.007
+
+Report saved to results/LeducPoker/PRPO/report.json
+Saved report to results/LeducPoker/PRPO/report.json
+PPO mean=-0.350, 95% CI=[-0.742, 0.042], n=10
+PRPO mean=0.176, 95% CI=[-0.118, 0.470], n=10

@@ -1,0 +1,209 @@
+--- Computing seed-wise scores, 95% CI, and paired t-test (RPS PRPO vs PPO) ---
+PPO mean=-0.001, 95% CI=[-0.038, 0.036], n=10
+PRPO mean=0.019, 95% CI=[-0.015, 0.052], n=10
+Paired t-test (PRPO vs PPO): p-value=0.4072
+Built a master list of 49 challengers (including new additions) for various games.
+Added custom challenger: Student_RuleBased
+Using dimensions for RPS_DQN: input=6, output=3
+Evaluating RPS_DQN: use_wrapped=False, policy_type=DQNAgent
+Policy RPS_DQN has 2566 parameters
+
+========================================
+ E V A L U A T I N G:   RPS_DQN 
+========================================
+
+====================================================================================================
+🏆 ENHANCED GAUNTLET EVALUATION: RPS_DQN
+====================================================================================================
+
+🎯 ROBUSTNESS METRICS:
+  Overall Win Rate:     0.330
+  Minimum Win Rate:     0.285
+  Win Rate Std:         0.031
+  Average Reward:       -0.008
+  Worst Case Reward:    -0.110
+  Exploitability:       0.506
+  Regret:              0.028
+  Nash Convergence:     0.992
+  🏅 ROBUSTNESS SCORE:  0.356
+
+📊 DETAILED CHALLENGER RESULTS:
+
+  Environment: default
+    RPS_AdaptiveCounter : WR=0.325, AR/step=-0.060, STD=0.840
+    RPS_AlwaysPaper     : WR=0.290, AR/step=-0.030, STD=0.780
+    RPS_AlwaysRock      : WR=0.350, AR/step=0.035, STD=0.815
+    RPS_AlwaysScissors  : WR=0.310, AR/step=-0.045, STD=0.814
+    RPS_BiasedPaper     : WR=0.335, AR/step=0.005, STD=0.815
+    RPS_BiasedRock      : WR=0.320, AR/step=-0.005, STD=0.803
+    RPS_BiasedScissors  : WR=0.310, AR/step=-0.065, STD=0.825
+    RPS_Copycat         : WR=0.405, AR/step=0.165, STD=0.786
+    RPS_CycleReverse    : WR=0.355, AR/step=0.070, STD=0.797
+    RPS_CyclicRPS       : WR=0.310, AR/step=-0.090, STD=0.838
+    RPS_NeuralAdversary : WR=0.350, AR/step=-0.035, STD=0.857
+    RPS_NoisyUniform    : WR=0.285, AR/step=-0.110, STD=0.817
+    RPS_PopulationBased : WR=0.310, AR/step=-0.015, STD=0.797
+    RPS_Uniform         : WR=0.360, AR/step=0.070, STD=0.803
+
+Report saved to results/RPS/DQN/report.json
+Saved report to results/RPS/DQN/report.json
+Using dimensions for RPS_PPO: input=3, output=3
+Evaluating RPS_PPO: use_wrapped=True, policy_type=StandardPPO
+Policy RPS_PPO has 12996 parameters
+====================================================================================================
+🏆 ENHANCED GAUNTLET EVALUATION: RPS_PPO
+====================================================================================================
+
+🎯 ROBUSTNESS METRICS:
+  Overall Win Rate:     0.343
+  Minimum Win Rate:     0.260
+  Win Rate Std:         0.037
+  Average Reward:       0.023
+  Worst Case Reward:    -0.070
+  Exploitability:       0.511
+  Regret:              0.007
+  Nash Convergence:     0.985
+  🏅 ROBUSTNESS SCORE:  0.357
+
+📊 DETAILED CHALLENGER RESULTS:
+
+  Environment: default
+    RPS_AdaptiveCounter : WR=0.280, AR/step=-0.050, STD=0.779
+    RPS_AlwaysPaper     : WR=0.340, AR/step=0.000, STD=0.825
+    RPS_AlwaysRock      : WR=0.340, AR/step=-0.005, STD=0.828
+    RPS_AlwaysScissors  : WR=0.260, AR/step=-0.070, STD=0.765
+    RPS_BiasedPaper     : WR=0.390, AR/step=0.065, STD=0.843
+    RPS_BiasedRock      : WR=0.300, AR/step=-0.030, STD=0.793
+    RPS_BiasedScissors  : WR=0.365, AR/step=0.100, STD=0.787
+    RPS_Copycat         : WR=0.350, AR/step=0.010, STD=0.831
+    RPS_CycleReverse    : WR=0.345, AR/step=0.025, STD=0.815
+    RPS_CyclicRPS       : WR=0.340, AR/step=-0.030, STD=0.842
+    RPS_NeuralAdversary : WR=0.395, AR/step=0.075, STD=0.842
+    RPS_NoisyUniform    : WR=0.370, AR/step=0.090, STD=0.801
+    RPS_PopulationBased : WR=0.365, AR/step=0.040, STD=0.830
+    RPS_Uniform         : WR=0.360, AR/step=0.105, STD=0.777
+
+Report saved to results/RPS/PPO/report.json
+Saved report to results/RPS/PPO/report.json
+Using dimensions for RPS_PSRO: input=6, output=3
+Evaluating RPS_PSRO: use_wrapped=False, policy_type=PSROPolicy
+Policy RPS_PSRO has 64150 parameters
+
+========================================
+ E V A L U A T I N G:   RPS_PSRO 
+========================================
+
+====================================================================================================
+🏆 ENHANCED GAUNTLET EVALUATION: RPS_PSRO
+====================================================================================================
+
+🎯 ROBUSTNESS METRICS:
+  Overall Win Rate:     0.318
+  Minimum Win Rate:     0.260
+  Win Rate Std:         0.031
+  Average Reward:       -0.018
+  Worst Case Reward:    -0.125
+  Exploitability:       0.516
+  Regret:              0.047
+  Nash Convergence:     0.975
+  🏅 ROBUSTNESS SCORE:  0.345
+
+📊 DETAILED CHALLENGER RESULTS:
+
+  Environment: default
+    RPS_AdaptiveCounter : WR=0.275, AR/step=-0.095, STD=0.797
+    RPS_AlwaysPaper     : WR=0.260, AR/step=-0.125, STD=0.793
+    RPS_AlwaysRock      : WR=0.345, AR/step=0.005, STD=0.828
+    RPS_AlwaysScissors  : WR=0.290, AR/step=-0.060, STD=0.798
+    RPS_BiasedPaper     : WR=0.320, AR/step=-0.040, STD=0.824
+    RPS_BiasedRock      : WR=0.340, AR/step=0.060, STD=0.785
+    RPS_BiasedScissors  : WR=0.360, AR/step=0.050, STD=0.817
+    RPS_Copycat         : WR=0.360, AR/step=0.050, STD=0.817
+    RPS_CycleReverse    : WR=0.320, AR/step=-0.030, STD=0.818
+    RPS_CyclicRPS       : WR=0.335, AR/step=0.070, STD=0.771
+    RPS_NeuralAdversary : WR=0.345, AR/step=-0.020, STD=0.842
+    RPS_NoisyUniform    : WR=0.325, AR/step=-0.005, STD=0.809
+    RPS_PopulationBased : WR=0.280, AR/step=-0.085, STD=0.799
+    RPS_Uniform         : WR=0.295, AR/step=-0.025, STD=0.784
+
+Report saved to results/RPS/PSRO/report.json
+Saved report to results/RPS/PSRO/report.json
+Using dimensions for RPS_SelfPlay: input=6, output=3
+Evaluating RPS_SelfPlay: use_wrapped=False, policy_type=PPOAgent
+Policy RPS_SelfPlay has 2308 parameters
+
+========================================
+ E V A L U A T I N G:   RPS_SelfPlay 
+========================================
+
+====================================================================================================
+🏆 ENHANCED GAUNTLET EVALUATION: RPS_SelfPlay
+====================================================================================================
+
+🎯 ROBUSTNESS METRICS:
+  Overall Win Rate:     0.328
+  Minimum Win Rate:     0.000
+  Win Rate Std:         0.331
+  Average Reward:       0.069
+  Worst Case Reward:    -1.000
+  Exploitability:       0.999
+  Regret:              0.277
+  Nash Convergence:     0.185
+  🏅 ROBUSTNESS SCORE:  0.263
+
+📊 DETAILED CHALLENGER RESULTS:
+
+  Environment: default
+    RPS_AdaptiveCounter : WR=0.390, AR/step=0.070, STD=0.840
+    RPS_AlwaysPaper     : WR=0.000, AR/step=-1.000, STD=0.000
+    RPS_AlwaysRock      : WR=0.000, AR/step=0.000, STD=0.000
+    RPS_AlwaysScissors  : WR=1.000, AR/step=1.000, STD=0.000
+    RPS_BiasedPaper     : WR=0.215, AR/step=-0.460, STD=0.824
+    RPS_BiasedRock      : WR=0.125, AR/step=-0.090, STD=0.576
+    RPS_BiasedScissors  : WR=0.695, AR/step=0.595, STD=0.664
+    RPS_Copycat         : WR=0.275, AR/step=-0.055, STD=0.776
+    RPS_CycleReverse    : WR=0.005, AR/step=0.005, STD=0.071
+    RPS_CyclicRPS       : WR=0.005, AR/step=0.005, STD=0.071
+    RPS_NeuralAdversary : WR=1.000, AR/step=1.000, STD=0.000
+    RPS_NoisyUniform    : WR=0.275, AR/step=-0.105, STD=0.802
+    RPS_PopulationBased : WR=0.250, AR/step=-0.020, STD=0.721
+    RPS_Uniform         : WR=0.355, AR/step=0.025, STD=0.827
+
+Report saved to results/RPS/SelfPlay/report.json
+Saved report to results/RPS/SelfPlay/report.json
+Using dimensions for RPS_PRPO: input=3, output=3
+Evaluating RPS_PRPO: use_wrapped=True, policy_type=UnifiedPRPOAgent
+Policy RPS_PRPO has 12996 parameters
+
+====================================================================================================
+🏆 ENHANCED GAUNTLET EVALUATION: RPS_PRPO
+====================================================================================================
+
+🎯 ROBUSTNESS METRICS:
+  Overall Win Rate:     0.335
+  Minimum Win Rate:     0.275
+  Win Rate Std:         0.035
+  Average Reward:       0.005
+  Worst Case Reward:    -0.125
+  Exploitability:       0.509
+  Regret:              0.025
+  Nash Convergence:     0.985
+  🏅 ROBUSTNESS SCORE:  0.355
+
+📊 DETAILED CHALLENGER RESULTS:
+
+  Environment: default
+    RPS_AdaptiveCounter : WR=0.385, AR/step=0.065, STD=0.837
+    RPS_AlwaysPaper     : WR=0.365, AR/step=0.055, STD=0.820
+    RPS_AlwaysRock      : WR=0.330, AR/step=-0.030, STD=0.830
+    RPS_AlwaysScissors  : WR=0.410, AR/step=0.110, STD=0.835
+    RPS_BiasedPaper     : WR=0.275, AR/step=-0.125, STD=0.812
+    RPS_BiasedRock      : WR=0.315, AR/step=-0.045, STD=0.820
+    RPS_BiasedScissors  : WR=0.300, AR/step=-0.040, STD=0.799
+    RPS_Copycat         : WR=0.320, AR/step=0.015, STD=0.790
+    RPS_CycleReverse    : WR=0.330, AR/step=0.030, STD=0.793
+    RPS_CyclicRPS       : WR=0.295, AR/step=-0.020, STD=0.781
+    RPS_NeuralAdversary : WR=0.325, AR/step=-0.020, STD=0.818
+    RPS_NoisyUniform    : WR=0.355, AR/step=0.040, STD=0.818
+    RPS_PopulationBased : WR=0.330, AR/step=0.010, STD=0.806
+    RPS_Uniform         : WR=0.350, AR/step=0.030, STD=0.818

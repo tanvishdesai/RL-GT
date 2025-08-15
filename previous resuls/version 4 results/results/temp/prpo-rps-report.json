@@ -1,0 +1,161 @@
+{
+  "summary": {
+    "policy_name": "RPS_PRPO",
+    "evaluation_timestamp": 1754678754.4716532,
+    "robustness_score": 0.30119058872927673,
+    "key_strengths": [
+      "Consistent performance across challengers",
+      "Low exploitability",
+      "Stable performance"
+    ],
+    "key_weaknesses": [
+      "High regret compared to optimal"
+    ],
+    "overall_grade": "F"
+  },
+  "detailed_analysis": {
+    "performance_trends": {
+      "trend": "Stable",
+      "details": "Trend calculated over 5 evaluations with a slope of 0.0143."
+    },
+    "challenger_analysis": {
+      "easiest_challenger": "RPS_Copycat (Win Rate: 0.390)",
+      "hardest_challenger": "RPS_AdaptiveCounter (Win Rate: 0.305)"
+    },
+    "weakness_patterns": [
+      "Could not categorize challengers to identify weakness patterns."
+    ],
+    "improvement_suggestions": [
+      "High Regret: The policy is far from optimal. This could indicate a need for a more complex model architecture, longer training, or hyperparameter tuning."
+    ]
+  },
+  "visualizations": {
+    "challenger_performance": {
+      "plot_path": "RPS_PRPO_challenger_performance.png",
+      "data": {
+        "names": [
+          "RPS_AlwaysRock",
+          "RPS_AlwaysPaper",
+          "RPS_AlwaysScissors",
+          "RPS_Uniform",
+          "RPS_BiasedRock",
+          "RPS_CyclicRPS",
+          "RPS_Copycat",
+          "RPS_AdaptiveCounter",
+          "RPS_PopulationBased",
+          "RPS_NeuralAdversary"
+        ],
+        "win_rates": [
+          0.325,
+          0.385,
+          0.34,
+          0.34,
+          0.33,
+          0.325,
+          0.39,
+          0.305,
+          0.325,
+          0.375
+        ],
+        "avg_rewards": [
+          -0.005,
+          0.035,
+          -0.01,
+          0.01,
+          0.03,
+          -0.01,
+          0.075,
+          -0.035,
+          -0.04,
+          0.085
+        ]
+      }
+    },
+    "robustness_radar": {
+      "plot_path": "RPS_PRPO_robustness_radar.png",
+      "data": {
+        "categories": [
+          "Overall Win Rate",
+          "Min Win Rate",
+          "Low Exploitability",
+          "Low Regret",
+          "Nash Convergence",
+          "Forward Transfer",
+          "Population Diversity",
+          "Low Forgetting"
+        ],
+        "values": [
+          0.34400000000000003,
+          0.305,
+          0.96,
+          0.006750000000000034,
+          0.9869360547051563,
+          0.0,
+          0.06861177458553466,
+          1.0,
+          0.34400000000000003
+        ]
+      }
+    },
+    "performance_heatmap": {
+      "plot_path": "RPS_PRPO_performance_heatmap.png",
+      "data": {
+        "matrix": [
+          [
+            0.39375,
+            0.45125,
+            0.41125,
+            0.4175,
+            0.4225,
+            0.46375,
+            0.41000000000000003,
+            0.45875,
+            0.40249999999999997,
+            0.4225
+          ]
+        ],
+        "envs": [
+          "default"
+        ],
+        "challengers": [
+          "RPS_AdaptiveCounter",
+          "RPS_AlwaysPaper",
+          "RPS_AlwaysRock",
+          "RPS_AlwaysScissors",
+          "RPS_BiasedRock",
+          "RPS_Copycat",
+          "RPS_CyclicRPS",
+          "RPS_NeuralAdversary",
+          "RPS_PopulationBased",
+          "RPS_Uniform"
+        ]
+      }
+    },
+    "metrics_comparison": {
+      "plot_path": "RPS_PRPO_metrics_comparison.png",
+      "data": {
+        "names": [
+          "Overall Win Rate",
+          "Min Win Rate",
+          "Avg Reward",
+          "Low Exploitability",
+          "Low Regret",
+          "Nash Convergence",
+          "Forward Transfer",
+          "Population Diversity"
+        ],
+        "values": [
+          0.34400000000000003,
+          0.305,
+          0.50675,
+          0.96,
+          0.006750000000000034,
+          0.9869360547051563,
+          0.0,
+          0.06861177458553466
+        ]
+      }
+    }
+  },
+  "recommendations": []
+}

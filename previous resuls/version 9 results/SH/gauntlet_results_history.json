@@ -1,0 +1,34 @@
+{
+  "history": [
+    {
+      "policy_name": "TestRPSPolicy",
+      "timestamp": 1754977370.9102254,
+      "robustness_score": 0.33007345641109
+    },
+    {
+      "policy_name": "StagHunt_DQN",
+      "timestamp": 1754999009.7309127,
+      "robustness_score": 0.8127852117556184
+    },
+    {
+      "policy_name": "StagHunt_PPO",
+      "timestamp": 1755000603.4426353,
+      "robustness_score": 0.6443835506396032
+    },
+    {
+      "policy_name": "StagHunt_PSRO",
+      "timestamp": 1755001137.0475695,
+      "robustness_score": 0.7913390106315438
+    },
+    {
+      "policy_name": "StagHunt_SelfPlay",
+      "timestamp": 1755001472.961018,
+      "robustness_score": 0.45960235851397235
+    },
+    {
+      "policy_name": "StagHunt_PRPO",
+      "timestamp": 1755003069.1706393,
+      "robustness_score": 0.5849210149213101
+    }
+  ]
+}

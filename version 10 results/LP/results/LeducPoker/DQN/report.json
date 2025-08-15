@@ -1,0 +1,142 @@
+{
+  "summary": {
+    "policy_name": "Leduc_DQN",
+    "evaluation_timestamp": 1755071168.1464558,
+    "robustness_score": 0.45604053487765706,
+    "key_strengths": [
+      "Consistent performance across challengers",
+      "Low exploitability",
+      "Stable performance"
+    ],
+    "key_weaknesses": [],
+    "overall_grade": "C"
+  },
+  "detailed_analysis": {
+    "performance_trends": {
+      "trend": "N/A",
+      "details": "Insufficient data (2 runs). Need at least 3 runs to estimate a trend."
+    },
+    "challenger_analysis": {
+      "easiest_challenger": "Leduc_AlwaysCall (Win Rate: 0.420)",
+      "hardest_challenger": "Leduc_Bluffer (Win Rate: 0.330)"
+    },
+    "weakness_patterns": [
+      "Struggles against 'noise_robustness' opponents (Avg Win Rate: 0.345)",
+      "Struggles against 'adaptive_learning' opponents (Avg Win Rate: 0.380)"
+    ],
+    "improvement_suggestions": [
+      "Weak against Noise: Improve robustness by injecting noise into observations or actions during the training process.",
+      "Weak against Adaptive Agents: The policy is being out-learned. Enhance its adaptability by incorporating memory (e.g., LSTMs) into the policy network or using meta-learning techniques."
+    ]
+  },
+  "visualizations": {
+    "challenger_performance": {
+      "plot_path": "Leduc_DQN_challenger_performance.png",
+      "data": {
+        "names": [
+          "Leduc_Uniform",
+          "Leduc_AlwaysCall",
+          "Leduc_AlwaysFold",
+          "Leduc_Bluffer",
+          "Leduc_Conservative",
+          "Leduc_NeuralAdversary"
+        ],
+        "win_rates": [
+          0.345,
+          0.42,
+          0.37,
+          0.33,
+          0.385,
+          0.38
+        ],
+        "avg_rewards": [
+          -0.71,
+          0.07,
+          -0.155,
+          -0.44,
+          -0.27,
+          -0.43
+        ]
+      }
+    },
+    "robustness_radar": {
+      "plot_path": "Leduc_DQN_robustness_radar.png",
+      "data": {
+        "categories": [
+          "Overall Win Rate",
+          "Min Win Rate",
+          "Low Exploitability",
+          "Low Regret",
+          "Forward Transfer",
+          "Population Diversity",
+          "Low Forgetting"
+        ],
+        "values": [
+          0.37166666666666665,
+          0.33,
+          0.9453846153846154,
+          1.0,
+          0.0,
+          0.6035542872967314,
+          1.0,
+          0.37166666666666665
+        ]
+      }
+    },
+    "performance_heatmap": {
+      "plot_path": "Leduc_DQN_performance_heatmap.png",
+      "data": {
+        "matrix": [
+          [
+            0.47750000000000004,
+            0.39625,
+            0.30500000000000005,
+            0.375,
+            0.3325,
+            0.245
+          ]
+        ],
+        "envs": [
+          "LeducPoker"
+        ],
+        "challengers": [
+          "Leduc_AlwaysCall",
+          "Leduc_AlwaysFold",
+          "Leduc_Bluffer",
+          "Leduc_Conservative",
+          "Leduc_NeuralAdversary",
+          "Leduc_Uniform"
+        ]
+      }
+    },
+    "metrics_comparison": {
+      "plot_path": "Leduc_DQN_metrics_comparison.png",
+      "data": {
+        "names": [
+          "Overall Win Rate",
+          "Min Win Rate",
+          "Avg Reward",
+          "Low Exploitability",
+          "Low Regret",
+          "Forward Transfer",
+          "Population Diversity"
+        ],
+        "values": [
+          0.37166666666666665,
+          0.33,
+          0.43065972222222226,
+          0.9453846153846154,
+          1.0,
+          0.0,
+          0.6035542872967314
+        ]
+      }
+    }
+  },
+  "recommendations": [],
+  "composites": {
+    "zero_sum_composite": 0.45604053487765706,
+    "general_sum_composite": null,
+    "ipd_exploitability_proxy": 0.0
+  }
+}

@@ -1,0 +1,149 @@
+{
+  "summary": {
+    "policy_name": "IPD_DQN",
+    "evaluation_timestamp": 1754682332.1971498,
+    "robustness_score": 1.3702931935044032,
+    "key_strengths": [
+      "High overall win rate",
+      "Low exploitability"
+    ],
+    "key_weaknesses": [
+      "Vulnerable to specific challengers",
+      "High regret compared to optimal",
+      "Inconsistent performance"
+    ],
+    "overall_grade": "A+"
+  },
+  "detailed_analysis": {
+    "performance_trends": {
+      "trend": "N/A",
+      "details": "Insufficient data (only 1 evaluation run). Run more evaluations to see a trend."
+    },
+    "challenger_analysis": {
+      "easiest_challenger": "IPD_AlwaysCooperate (Win Rate: 1.000)",
+      "hardest_challenger": "IPD_AlwaysDefect (Win Rate: 0.000)"
+    },
+    "weakness_patterns": [
+      "Could not categorize challengers to identify weakness patterns."
+    ],
+    "improvement_suggestions": [
+      "High Regret: The policy is far from optimal. This could indicate a need for a more complex model architecture, longer training, or hyperparameter tuning.",
+      "Low Nash Convergence: The policy's strategy is not close to a game-theoretic equilibrium. Improve this by training against a wider variety of strong opponents or using self-play schemes like Fictitious Play.",
+      "Inconsistent Performance: To stabilize performance, try using regularization techniques (e.g., entropy regularization) or policy ensemble methods."
+    ]
+  },
+  "visualizations": {
+    "challenger_performance": {
+      "plot_path": "IPD_DQN_challenger_performance.png",
+      "data": {
+        "names": [
+          "IPD_AlwaysCooperate",
+          "IPD_AlwaysDefect",
+          "IPD_Uniform",
+          "IPD_TitForTat",
+          "IPD_Copycat",
+          "IPD_Grudger",
+          "IPD_FictitiousPlay"
+        ],
+        "win_rates": [
+          1.0,
+          0.0,
+          1.0,
+          1.0,
+          0.4904,
+          1.0,
+          0.4914
+        ],
+        "avg_rewards": [
+          250.0,
+          50.0,
+          149.7824,
+          54.0,
+          51.9616,
+          54.0,
+          51.9656
+        ]
+      }
+    },
+    "robustness_radar": {
+      "plot_path": "IPD_DQN_robustness_radar.png",
+      "data": {
+        "categories": [
+          "Overall Win Rate",
+          "Min Win Rate",
+          "Low Exploitability",
+          "Low Regret",
+          "Nash Convergence",
+          "Forward Transfer",
+          "Population Diversity",
+          "Low Forgetting"
+        ],
+        "values": [
+          0.7116857142857143,
+          0.0,
+          1.0,
+          0.37811977142857134,
+          0.0,
+          0.0,
+          1.0,
+          1.0,
+          0.7116857142857143
+        ]
+      }
+    },
+    "performance_heatmap": {
+      "plot_path": "IPD_DQN_performance_heatmap.png",
+      "data": {
+        "matrix": [
+          [
+            1.0,
+            0.5,
+            0.7452,
+            0.7457,
+            1.0,
+            1.0,
+            1.0
+          ]
+        ],
+        "envs": [
+          "IPD"
+        ],
+        "challengers": [
+          "IPD_AlwaysCooperate",
+          "IPD_AlwaysDefect",
+          "IPD_Copycat",
+          "IPD_FictitiousPlay",
+          "IPD_Grudger",
+          "IPD_TitForTat",
+          "IPD_Uniform"
+        ]
+      }
+    },
+    "metrics_comparison": {
+      "plot_path": "IPD_DQN_metrics_comparison.png",
+      "data": {
+        "names": [
+          "Avg Reward",
+          "Social Welfare",
+          "Cooperation Rate",
+          "Low Exploitability",
+          "Low Regret",
+          "Population Diversity"
+        ],
+        "values": [
+          1.4452994285714285,
+          1.1669872857142858,
+          0.0,
+          1.0,
+          0.37811977142857134,
+          1.0
+        ]
+      }
+    }
+  },
+  "recommendations": [
+    "Consider regularization to improve worst-case performance",
+    "Add ensemble methods to improve consistency",
+    "Fine-tune strategy to better approximate Nash equilibrium"
+  ]
+}

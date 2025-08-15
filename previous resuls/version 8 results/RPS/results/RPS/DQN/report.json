@@ -1,0 +1,200 @@
+{
+  "summary": {
+    "policy_name": "RPS_DQN",
+    "evaluation_timestamp": 1754938353.6408813,
+    "robustness_score": 0.23500502962275316,
+    "key_strengths": [],
+    "key_weaknesses": [
+      "Vulnerable to specific challengers",
+      "Highly exploitable",
+      "High regret compared to optimal",
+      "Inconsistent performance"
+    ],
+    "overall_grade": "F"
+  },
+  "detailed_analysis": {
+    "performance_trends": {
+      "trend": "N/A",
+      "details": "Insufficient data (2 runs). Need at least 3 runs to estimate a trend."
+    },
+    "challenger_analysis": {
+      "easiest_challenger": "RPS_AlwaysScissors (Win Rate: 0.955)",
+      "hardest_challenger": "RPS_CycleReverse (Win Rate: 0.000)"
+    },
+    "weakness_patterns": [
+      "Struggles against 'fixed_strategy' opponents (Avg Win Rate: 0.327)",
+      "Struggles against 'noise_robustness' opponents (Avg Win Rate: 0.378)",
+      "Struggles against 'biased_strategy' opponents (Avg Win Rate: 0.328)",
+      "Struggles against 'pattern_based' opponents (Avg Win Rate: 0.132)",
+      "Struggles against 'adaptive_learning' opponents (Avg Win Rate: 0.240)",
+      "Shows high performance variance (Std Dev: 0.263), indicating inconsistency."
+    ],
+    "improvement_suggestions": [
+      "High Exploitability: Consider adversarial training or add more diverse, adaptive agents (like NeuralAdversary) to the training opponents.",
+      "Low Nash Convergence: The policy's strategy is not close to a game-theoretic equilibrium. Improve this by training against a wider variety of strong opponents or using self-play schemes like Fictitious Play.",
+      "Inconsistent Performance: To stabilize performance, try using regularization techniques (e.g., entropy regularization) or policy ensemble methods.",
+      "Weak against Noise: Improve robustness by injecting noise into observations or actions during the training process.",
+      "Weak against Pattern-Based Agents: The policy is predictable. Introduce mechanisms to detect and break patterns, such as adding memory (LSTMs) or increasing stochasticity in its actions.",
+      "Weak against Adaptive Agents: The policy is being out-learned. Enhance its adaptability by incorporating memory (e.g., LSTMs) into the policy network or using meta-learning techniques."
+    ]
+  },
+  "visualizations": {
+    "challenger_performance": {
+      "plot_path": "RPS_DQN_challenger_performance.png",
+      "data": {
+        "names": [
+          "RPS_AlwaysRock",
+          "RPS_AlwaysPaper",
+          "RPS_AlwaysScissors",
+          "RPS_Uniform",
+          "RPS_BiasedRock",
+          "RPS_CyclicRPS",
+          "RPS_Copycat",
+          "RPS_AdaptiveCounter",
+          "RPS_PopulationBased",
+          "RPS_NeuralAdversary",
+          "RPS_BiasedPaper",
+          "RPS_BiasedScissors",
+          "RPS_NoisyUniform",
+          "RPS_CycleReverse"
+        ],
+        "win_rates": [
+          0.01,
+          0.015,
+          0.955,
+          0.34,
+          0.14,
+          0.025,
+          0.37,
+          0.335,
+          0.275,
+          0.11,
+          0.19,
+          0.655,
+          0.415,
+          0.0
+        ],
+        "avg_rewards": [
+          -0.005,
+          -0.96,
+          0.925,
+          -0.015,
+          -0.055,
+          0.015,
+          0.075,
+          -0.015,
+          0.035,
+          -0.65,
+          -0.455,
+          0.545,
+          0.1,
+          0.0
+        ]
+      }
+    },
+    "robustness_radar": {
+      "plot_path": "RPS_DQN_robustness_radar.png",
+      "data": {
+        "categories": [
+          "Overall Win Rate",
+          "Min Win Rate",
+          "Low Exploitability",
+          "Low Regret",
+          "Nash Convergence",
+          "Forward Transfer",
+          "Population Diversity",
+          "Low Forgetting"
+        ],
+        "values": [
+          0.2739285714285714,
+          0.0,
+          0.020357142857142962,
+          0.637653565544834,
+          0.2176198446515959,
+          0.0,
+          0.7512320351474621,
+          1.0,
+          0.2739285714285714
+        ]
+      }
+    },
+    "performance_heatmap": {
+      "plot_path": "RPS_DQN_performance_heatmap.png",
+      "data": {
+        "matrix": [
+          [
+            0.41375,
+            0.01750000000000001,
+            0.25375,
+            0.95875,
+            0.23124999999999998,
+            0.30625,
+            0.71375,
+            0.45375,
+            0.25,
+            0.26625,
+            0.1425,
+            0.48250000000000004,
+            0.39625,
+            0.41625
+          ]
+        ],
+        "envs": [
+          "default"
+        ],
+        "challengers": [
+          "RPS_AdaptiveCounter",
+          "RPS_AlwaysPaper",
+          "RPS_AlwaysRock",
+          "RPS_AlwaysScissors",
+          "RPS_BiasedPaper",
+          "RPS_BiasedRock",
+          "RPS_BiasedScissors",
+          "RPS_Copycat",
+          "RPS_CycleReverse",
+          "RPS_CyclicRPS",
+          "RPS_NeuralAdversary",
+          "RPS_NoisyUniform",
+          "RPS_PopulationBased",
+          "RPS_Uniform"
+        ]
+      }
+    },
+    "metrics_comparison": {
+      "plot_path": "RPS_DQN_metrics_comparison.png",
+      "data": {
+        "names": [
+          "Overall Win Rate",
+          "Min Win Rate",
+          "Avg Reward",
+          "Low Exploitability",
+          "Low Regret",
+          "Forward Transfer",
+          "Population Diversity",
+          "Nash Convergence"
+        ],
+        "values": [
+          0.2739285714285714,
+          0.0,
+          0.4835714285714286,
+          0.020357142857142962,
+          0.637653565544834,
+          0.0,
+          0.7512320351474621,
+          0.2176198446515959
+        ]
+      }
+    }
+  },
+  "recommendations": [
+    "Consider regularization to improve worst-case performance",
+    "Implement adversarial training to reduce exploitability",
+    "Add ensemble methods to improve consistency",
+    "Fine-tune strategy to better approximate Nash equilibrium"
+  ],
+  "composites": {
+    "zero_sum_composite": 0.23500502962275316,
+    "general_sum_composite": null,
+    "ipd_exploitability_proxy": 0.0
+  }
+}

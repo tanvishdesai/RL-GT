@@ -1,0 +1,135 @@
+{
+  "summary": {
+    "policy_name": "Kuhn_DQN",
+    "evaluation_timestamp": 1754642373.2558165,
+    "robustness_score": 0.5382445,
+    "key_strengths": [
+      "High overall win rate",
+      "Consistent performance across challengers",
+      "Low exploitability"
+    ],
+    "key_weaknesses": [
+      "High regret compared to optimal"
+    ],
+    "overall_grade": "C+"
+  },
+  "detailed_analysis": {
+    "performance_trends": {
+      "trend": "N/A",
+      "details": "Insufficient data (only 1 evaluation run). Run more evaluations to see a trend."
+    },
+    "challenger_analysis": {
+      "easiest_challenger": "Kuhn_AlwaysPass (Win Rate: 1.000)",
+      "hardest_challenger": "Kuhn_AlwaysBet (Win Rate: 0.513)"
+    },
+    "weakness_patterns": [
+      "Could not categorize challengers to identify weakness patterns."
+    ],
+    "improvement_suggestions": [
+      "High Regret: The policy is far from optimal. This could indicate a need for a more complex model architecture, longer training, or hyperparameter tuning.",
+      "Low Nash Convergence: The policy's strategy is not close to a game-theoretic equilibrium. Improve this by training against a wider variety of strong opponents or using self-play schemes like Fictitious Play."
+    ]
+  },
+  "visualizations": {
+    "challenger_performance": {
+      "plot_path": "Kuhn_DQN_challenger_performance.png",
+      "data": {
+        "names": [
+          "Kuhn_AlwaysPass",
+          "Kuhn_AlwaysBet",
+          "Kuhn_Uniform",
+          "Kuhn_Threshold"
+        ],
+        "win_rates": [
+          1.0,
+          0.513,
+          0.7408,
+          0.9496
+        ],
+        "avg_rewards": [
+          1.0,
+          0.052,
+          0.4628,
+          1.224
+        ]
+      }
+    },
+    "robustness_radar": {
+      "plot_path": "Kuhn_DQN_robustness_radar.png",
+      "data": {
+        "categories": [
+          "Overall Win Rate",
+          "Min Win Rate",
+          "Low Exploitability",
+          "Low Regret",
+          "Nash Convergence",
+          "Forward Transfer",
+          "Population Diversity",
+          "Low Forgetting"
+        ],
+        "values": [
+          0.8008500000000001,
+          0.513,
+          1.0,
+          0.34235000000000004,
+          0.0,
+          0.0,
+          1.0,
+          1.0,
+          0.8008500000000001
+        ]
+      }
+    },
+    "performance_heatmap": {
+      "plot_path": "Kuhn_DQN_performance_heatmap.png",
+      "data": {
+        "matrix": [
+          [
+            0.5195000000000001,
+            1.0,
+            0.9748,
+            0.7361
+          ]
+        ],
+        "envs": [
+          "KuhnPoker"
+        ],
+        "challengers": [
+          "Kuhn_AlwaysBet",
+          "Kuhn_AlwaysPass",
+          "Kuhn_Threshold",
+          "Kuhn_Uniform"
+        ]
+      }
+    },
+    "metrics_comparison": {
+      "plot_path": "Kuhn_DQN_metrics_comparison.png",
+      "data": {
+        "names": [
+          "Overall Win Rate",
+          "Min Win Rate",
+          "Avg Reward",
+          "Low Exploitability",
+          "Low Regret",
+          "Nash Convergence",
+          "Forward Transfer",
+          "Population Diversity"
+        ],
+        "values": [
+          0.8008500000000001,
+          0.513,
+          0.84235,
+          1.0,
+          0.34235000000000004,
+          0.0,
+          0.0,
+          1.0
+        ]
+      }
+    }
+  },
+  "recommendations": [
+    "Add ensemble methods to improve consistency",
+    "Fine-tune strategy to better approximate Nash equilibrium"
+  ]
+}

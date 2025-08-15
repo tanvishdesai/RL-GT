@@ -1,0 +1,148 @@
+{
+  "summary": {
+    "policy_name": "IPD_PSRO",
+    "evaluation_timestamp": 1754676683.4976292,
+    "robustness_score": 2.0254605947851743,
+    "key_strengths": [
+      "Stable performance"
+    ],
+    "key_weaknesses": [
+      "Vulnerable to specific challengers",
+      "Highly exploitable",
+      "High regret compared to optimal"
+    ],
+    "overall_grade": "A+"
+  },
+  "detailed_analysis": {
+    "performance_trends": {
+      "trend": "Improving",
+      "details": "Trend calculated over 3 evaluations with a slope of 0.3271."
+    },
+    "challenger_analysis": {
+      "easiest_challenger": "IPD_AlwaysCooperate (Win Rate: 0.004)",
+      "hardest_challenger": "IPD_AlwaysDefect (Win Rate: 0.000)"
+    },
+    "weakness_patterns": [
+      "Could not categorize challengers to identify weakness patterns."
+    ],
+    "improvement_suggestions": [
+      "High Exploitability: Consider adversarial training or add more diverse, adaptive agents (like NeuralAdversary) to the training opponents.",
+      "High Regret: The policy is far from optimal. This could indicate a need for a more complex model architecture, longer training, or hyperparameter tuning.",
+      "Low Nash Convergence: The policy's strategy is not close to a game-theoretic equilibrium. Improve this by training against a wider variety of strong opponents or using self-play schemes like Fictitious Play."
+    ]
+  },
+  "visualizations": {
+    "challenger_performance": {
+      "plot_path": "IPD_PSRO_challenger_performance.png",
+      "data": {
+        "names": [
+          "IPD_AlwaysCooperate",
+          "IPD_AlwaysDefect",
+          "IPD_Uniform",
+          "IPD_TitForTat",
+          "IPD_Copycat",
+          "IPD_Grudger",
+          "IPD_FictitiousPlay"
+        ],
+        "win_rates": [
+          0.0044,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0004,
+          0.0
+        ],
+        "avg_rewards": [
+          150.0088,
+          0.0048,
+          75.2058,
+          149.9956,
+          148.4708,
+          149.677,
+          1.5158
+        ]
+      }
+    },
+    "robustness_radar": {
+      "plot_path": "IPD_PSRO_robustness_radar.png",
+      "data": {
+        "categories": [
+          "Overall Win Rate",
+          "Min Win Rate",
+          "Low Exploitability",
+          "Low Regret",
+          "Nash Convergence",
+          "Forward Transfer",
+          "Population Diversity",
+          "Low Forgetting"
+        ],
+        "values": [
+          0.0006857142857142858,
+          0.0,
+          9.599999999998499e-05,
+          0.38564491428571424,
+          0.49965667297548655,
+          0.0,
+          1.0,
+          1.0,
+          0.0006857142857142858
+        ]
+      }
+    },
+    "performance_heatmap": {
+      "plot_path": "IPD_PSRO_performance_heatmap.png",
+      "data": {
+        "matrix": [
+          [
+            0.5022,
+            0.2512,
+            0.5,
+            0.5,
+            0.5002,
+            0.5,
+            0.5
+          ]
+        ],
+        "envs": [
+          "IPD"
+        ],
+        "challengers": [
+          "IPD_AlwaysCooperate",
+          "IPD_AlwaysDefect",
+          "IPD_Copycat",
+          "IPD_FictitiousPlay",
+          "IPD_Grudger",
+          "IPD_TitForTat",
+          "IPD_Uniform"
+        ]
+      }
+    },
+    "metrics_comparison": {
+      "plot_path": "IPD_PSRO_metrics_comparison.png",
+      "data": {
+        "names": [
+          "Avg Reward",
+          "Social Welfare",
+          "Cooperation Rate",
+          "Low Exploitability",
+          "Low Regret",
+          "Population Diversity"
+        ],
+        "values": [
+          1.4641122857142856,
+          1.9106337142857142,
+          0.9999091428571428,
+          9.599999999998499e-05,
+          0.38564491428571424,
+          1.0
+        ]
+      }
+    }
+  },
+  "recommendations": [
+    "Consider regularization to improve worst-case performance",
+    "Implement adversarial training to reduce exploitability",
+    "Fine-tune strategy to better approximate Nash equilibrium"
+  ]
+}

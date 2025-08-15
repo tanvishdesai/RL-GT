@@ -1,0 +1,149 @@
+{
+  "summary": {
+    "policy_name": "IPD_SelfPlay",
+    "evaluation_timestamp": 1754684497.889699,
+    "robustness_score": 1.3709533150546953,
+    "key_strengths": [
+      "High overall win rate",
+      "Low exploitability"
+    ],
+    "key_weaknesses": [
+      "Vulnerable to specific challengers",
+      "High regret compared to optimal",
+      "Inconsistent performance"
+    ],
+    "overall_grade": "A+"
+  },
+  "detailed_analysis": {
+    "performance_trends": {
+      "trend": "Stable",
+      "details": "Trend calculated over 4 evaluations with a slope of 0.0002."
+    },
+    "challenger_analysis": {
+      "easiest_challenger": "IPD_AlwaysCooperate (Win Rate: 1.000)",
+      "hardest_challenger": "IPD_AlwaysDefect (Win Rate: 0.000)"
+    },
+    "weakness_patterns": [
+      "Could not categorize challengers to identify weakness patterns."
+    ],
+    "improvement_suggestions": [
+      "High Regret: The policy is far from optimal. This could indicate a need for a more complex model architecture, longer training, or hyperparameter tuning.",
+      "Low Nash Convergence: The policy's strategy is not close to a game-theoretic equilibrium. Improve this by training against a wider variety of strong opponents or using self-play schemes like Fictitious Play.",
+      "Inconsistent Performance: To stabilize performance, try using regularization techniques (e.g., entropy regularization) or policy ensemble methods."
+    ]
+  },
+  "visualizations": {
+    "challenger_performance": {
+      "plot_path": "IPD_SelfPlay_challenger_performance.png",
+      "data": {
+        "names": [
+          "IPD_AlwaysCooperate",
+          "IPD_AlwaysDefect",
+          "IPD_Uniform",
+          "IPD_TitForTat",
+          "IPD_Copycat",
+          "IPD_Grudger",
+          "IPD_FictitiousPlay"
+        ],
+        "win_rates": [
+          1.0,
+          0.0,
+          1.0,
+          1.0,
+          0.5066,
+          1.0,
+          0.504
+        ],
+        "avg_rewards": [
+          250.0,
+          50.0,
+          150.0678,
+          54.0,
+          52.0264,
+          54.0,
+          52.016
+        ]
+      }
+    },
+    "robustness_radar": {
+      "plot_path": "IPD_SelfPlay_robustness_radar.png",
+      "data": {
+        "categories": [
+          "Overall Win Rate",
+          "Min Win Rate",
+          "Low Exploitability",
+          "Low Regret",
+          "Nash Convergence",
+          "Forward Transfer",
+          "Population Diversity",
+          "Low Forgetting"
+        ],
+        "values": [
+          0.7158,
+          0.0,
+          1.0,
+          0.3783486857142857,
+          0.0,
+          0.0,
+          1.0,
+          1.0,
+          0.7158
+        ]
+      }
+    },
+    "performance_heatmap": {
+      "plot_path": "IPD_SelfPlay_performance_heatmap.png",
+      "data": {
+        "matrix": [
+          [
+            1.0,
+            0.5,
+            0.7533000000000001,
+            0.752,
+            1.0,
+            1.0,
+            1.0
+          ]
+        ],
+        "envs": [
+          "IPD"
+        ],
+        "challengers": [
+          "IPD_AlwaysCooperate",
+          "IPD_AlwaysDefect",
+          "IPD_Copycat",
+          "IPD_FictitiousPlay",
+          "IPD_Grudger",
+          "IPD_TitForTat",
+          "IPD_Uniform"
+        ]
+      }
+    },
+    "metrics_comparison": {
+      "plot_path": "IPD_SelfPlay_metrics_comparison.png",
+      "data": {
+        "names": [
+          "Avg Reward",
+          "Social Welfare",
+          "Cooperation Rate",
+          "Low Exploitability",
+          "Low Regret",
+          "Population Diversity"
+        ],
+        "values": [
+          1.4458717142857143,
+          1.1672024285714286,
+          5.714285714285714e-07,
+          1.0,
+          0.3783486857142857,
+          1.0
+        ]
+      }
+    }
+  },
+  "recommendations": [
+    "Consider regularization to improve worst-case performance",
+    "Add ensemble methods to improve consistency",
+    "Fine-tune strategy to better approximate Nash equilibrium"
+  ]
+}

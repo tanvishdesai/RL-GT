@@ -1,0 +1,161 @@
+{
+  "summary": {
+    "policy_name": "IPD_PRPO",
+    "evaluation_timestamp": 1754853064.0479693,
+    "robustness_score": 0.7094948844883863,
+    "key_strengths": [
+      "Low exploitability"
+    ],
+    "key_weaknesses": [
+      "Vulnerable to specific challengers",
+      "Inconsistent performance"
+    ],
+    "overall_grade": "B+"
+  },
+  "detailed_analysis": {
+    "performance_trends": {
+      "trend": "Stable",
+      "details": "Trend calculated over 21 evaluations with a slope of 0.0160."
+    },
+    "challenger_analysis": {
+      "easiest_challenger": "IPD_AlwaysCooperate (Win Rate: 1.000)",
+      "hardest_challenger": "IPD_AlwaysDefect (Win Rate: 0.000)"
+    },
+    "weakness_patterns": [
+      "Struggles against 'noise_robustness' opponents (Avg Win Rate: 0.000)",
+      "Struggles against 'pattern_based' opponents (Avg Win Rate: 0.156)",
+      "Shows high performance variance (Std Dev: 0.309), indicating inconsistency."
+    ],
+    "improvement_suggestions": [
+      "Inconsistent Performance: To stabilize performance, try using regularization techniques (e.g., entropy regularization) or policy ensemble methods.",
+      "Weak against Noise: Improve robustness by injecting noise into observations or actions during the training process.",
+      "Weak against Pattern-Based Agents: The policy is predictable. Introduce mechanisms to detect and break patterns, such as adding memory (LSTMs) or increasing stochasticity in its actions."
+    ]
+  },
+  "visualizations": {
+    "challenger_performance": {
+      "plot_path": "IPD_PRPO_challenger_performance.png",
+      "data": {
+        "names": [
+          "IPD_AlwaysCooperate",
+          "IPD_AlwaysDefect",
+          "IPD_Uniform",
+          "IPD_TitForTat",
+          "IPD_Copycat",
+          "IPD_Grudger",
+          "IPD_AlwaysAlternate",
+          "IPD_Pavlov",
+          "IPD_FictitiousPlay"
+        ],
+        "win_rates": [
+          1.0,
+          0.0,
+          0.0,
+          0.1975,
+          0.114,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "avg_rewards": [
+          170.452,
+          10.012,
+          90.48,
+          138.966,
+          137.1105,
+          24.967,
+          90.013,
+          93.446,
+          11.6035
+        ]
+      }
+    },
+    "robustness_radar": {
+      "plot_path": "IPD_PRPO_robustness_radar.png",
+      "data": {
+        "categories": [
+          "Overall Win Rate",
+          "Min Win Rate",
+          "Low Exploitability",
+          "Low Regret",
+          "Forward Transfer",
+          "Population Diversity",
+          "Low Forgetting"
+        ],
+        "values": [
+          0.14572222222222223,
+          0.0,
+          1.0,
+          1.0,
+          0.0,
+          1.0,
+          1.0,
+          0.14572222222222223
+        ]
+      }
+    },
+    "performance_heatmap": {
+      "plot_path": "IPD_PRPO_performance_heatmap.png",
+      "data": {
+        "matrix": [
+          [
+            0.5,
+            1.0,
+            0.5,
+            0.557,
+            0.5,
+            0.5,
+            0.5,
+            0.59875,
+            0.5
+          ]
+        ],
+        "envs": [
+          "IPD"
+        ],
+        "challengers": [
+          "IPD_AlwaysAlternate",
+          "IPD_AlwaysCooperate",
+          "IPD_AlwaysDefect",
+          "IPD_Copycat",
+          "IPD_FictitiousPlay",
+          "IPD_Grudger",
+          "IPD_Pavlov",
+          "IPD_TitForTat",
+          "IPD_Uniform"
+        ]
+      }
+    },
+    "metrics_comparison": {
+      "plot_path": "IPD_PRPO_metrics_comparison.png",
+      "data": {
+        "names": [
+          "Avg Reward",
+          "Social Welfare",
+          "Cooperation Rate",
+          "Low Exploitability",
+          "Low Regret",
+          "Population Diversity"
+        ],
+        "values": [
+          1.0,
+          1.0,
+          0.7985444444444444,
+          1.0,
+          1.0,
+          1.0
+        ]
+      }
+    }
+  },
+  "recommendations": [
+    "Consider regularization to improve worst-case performance",
+    "Add ensemble methods to improve consistency"
+  ],
+  "composites": {
+    "zero_sum_composite": null,
+    "general_sum_composite": 0.7094948844883863,
+    "ipd_exploitability_proxy": 0.8388355555555556
+  }
+}

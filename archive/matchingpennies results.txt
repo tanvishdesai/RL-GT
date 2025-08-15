@@ -1,0 +1,173 @@
+========================================
+EVALUATING: Pennies_DQN
+========================================
+Starting comprehensive evaluation of Pennies_DQN
+
+====================================================================================================
+🏆 ENHANCED GAUNTLET EVALUATION: Pennies_DQN
+====================================================================================================
+
+🎯 ROBUSTNESS METRICS:
+  Overall Win Rate:     0.501
+  Minimum Win Rate:     0.029
+  Win Rate Std:         0.273
+  Average Reward:       0.002
+  Worst Case Reward:    -0.942
+  Exploitability:       0.952
+  Regret:              0.000
+  Nash Convergence:     0.327
+  🏅 ROBUSTNESS SCORE:  0.348
+
+📊 DETAILED CHALLENGER RESULTS:
+
+  Environment: MatchingPennies
+    Pennies_AlwaysHeads : WR=0.972, AR/step=0.944, STD=0.330
+    Pennies_AlwaysTails : WR=0.029, AR/step=-0.942, STD=0.336
+    Pennies_BiasedHeads : WR=0.707, AR/step=0.414, STD=0.910
+    Pennies_BiasedTails : WR=0.319, AR/step=-0.362, STD=0.932
+    Pennies_Copycat     : WR=0.496, AR/step=-0.008, STD=1.000
+    Pennies_FrequencyCounter: WR=0.493, AR/step=-0.013, STD=1.000
+    Pennies_Uniform     : WR=0.490, AR/step=-0.020, STD=1.000
+
+Report saved to results/MatchingPennies/DQN/report.json
+Saved report to results/MatchingPennies/DQN/report.json
+
+========================================
+EVALUATING: Pennies_PPO
+========================================
+Starting comprehensive evaluation of Pennies_PPO
+
+====================================================================================================
+🏆 ENHANCED GAUNTLET EVALUATION: Pennies_PPO
+====================================================================================================
+
+🎯 ROBUSTNESS METRICS:
+  Overall Win Rate:     0.498
+  Minimum Win Rate:     0.485
+  Win Rate Std:         0.010
+  Average Reward:       -0.004
+  Worst Case Reward:    -0.030
+  Exploitability:       0.008
+  Regret:              0.004
+  Nash Convergence:     0.995
+  🏅 ROBUSTNESS SCORE:  0.487
+
+📊 DETAILED CHALLENGER RESULTS:
+
+  Environment: MatchingPennies
+    Pennies_AlwaysHeads : WR=0.488, AR/step=-0.023, STD=1.000
+    Pennies_AlwaysTails : WR=0.519, AR/step=0.039, STD=0.999
+    Pennies_BiasedHeads : WR=0.495, AR/step=-0.010, STD=1.000
+    Pennies_BiasedTails : WR=0.494, AR/step=-0.011, STD=1.000
+    Pennies_Copycat     : WR=0.485, AR/step=-0.030, STD=1.000
+    Pennies_FrequencyCounter: WR=0.499, AR/step=-0.001, STD=1.000
+    Pennies_Uniform     : WR=0.503, AR/step=0.006, STD=1.000
+
+Report saved to results/MatchingPennies/PPO/report.json
+Saved report to results/MatchingPennies/PPO/report.json
+
+========================================
+EVALUATING: Pennies_PSRO
+========================================
+Starting comprehensive evaluation of Pennies_PSRO
+
+====================================================================================================
+🏆 ENHANCED GAUNTLET EVALUATION: Pennies_PSRO
+====================================================================================================
+
+🎯 ROBUSTNESS METRICS:
+  Overall Win Rate:     0.492
+  Minimum Win Rate:     0.478
+  Win Rate Std:         0.009
+  Average Reward:       -0.017
+  Worst Case Reward:    -0.044
+  Exploitability:       0.012
+  Regret:              0.017
+  Nash Convergence:     0.991
+  🏅 ROBUSTNESS SCORE:  0.482
+
+📊 DETAILED CHALLENGER RESULTS:
+
+  Environment: MatchingPennies
+    Pennies_AlwaysHeads : WR=0.491, AR/step=-0.017, STD=1.000
+    Pennies_AlwaysTails : WR=0.512, AR/step=0.024, STD=1.000
+    Pennies_BiasedHeads : WR=0.478, AR/step=-0.044, STD=0.999
+    Pennies_BiasedTails : WR=0.489, AR/step=-0.022, STD=1.000
+    Pennies_Copycat     : WR=0.489, AR/step=-0.021, STD=1.000
+    Pennies_FrequencyCounter: WR=0.491, AR/step=-0.017, STD=1.000
+    Pennies_Uniform     : WR=0.490, AR/step=-0.020, STD=1.000
+
+Report saved to results/MatchingPennies/PSRO/report.json
+Saved report to results/MatchingPennies/PSRO/report.json
+
+========================================
+EVALUATING: Pennies_SelfPlay
+========================================
+Starting comprehensive evaluation of Pennies_SelfPlay
+
+====================================================================================================
+🏆 ENHANCED GAUNTLET EVALUATION: Pennies_SelfPlay
+====================================================================================================
+
+🎯 ROBUSTNESS METRICS:
+  Overall Win Rate:     0.504
+  Minimum Win Rate:     0.013
+  Win Rate Std:         0.279
+  Average Reward:       0.008
+  Worst Case Reward:    -0.973
+  Exploitability:       0.983
+  Regret:              0.000
+  Nash Convergence:     0.305
+  🏅 ROBUSTNESS SCORE:  0.345
+
+📊 DETAILED CHALLENGER RESULTS:
+
+  Environment: MatchingPennies
+    Pennies_AlwaysHeads : WR=0.013, AR/step=-0.973, STD=0.231
+    Pennies_AlwaysTails : WR=0.989, AR/step=0.977, STD=0.213
+    Pennies_BiasedHeads : WR=0.327, AR/step=-0.347, STD=0.938
+    Pennies_BiasedTails : WR=0.699, AR/step=0.398, STD=0.917
+    Pennies_Copycat     : WR=0.508, AR/step=0.016, STD=1.000
+    Pennies_FrequencyCounter: WR=0.497, AR/step=-0.005, STD=1.000
+    Pennies_Uniform     : WR=0.495, AR/step=-0.009, STD=1.000
+
+Report saved to results/MatchingPennies/SelfPlay/report.json
+Saved report to results/MatchingPennies/SelfPlay/report.json
+
+========================================
+EVALUATING: Pennies_PRPO
+========================================
+Starting comprehensive evaluation of Pennies_PRPO
+
+====================================================================================================
+🏆 ENHANCED GAUNTLET EVALUATION: Pennies_PRPO
+====================================================================================================
+
+🎯 ROBUSTNESS METRICS:
+  Overall Win Rate:     0.501
+  Minimum Win Rate:     0.484
+  Win Rate Std:         0.010
+  Average Reward:       0.002
+  Worst Case Reward:    -0.031
+  Exploitability:       0.000
+  Regret:              0.000
+  Nash Convergence:     1.000
+  🏅 ROBUSTNESS SCORE:  0.489
+
+📊 DETAILED CHALLENGER RESULTS:
+
+  Environment: MatchingPennies
+    Pennies_AlwaysHeads : WR=0.505, AR/step=0.010, STD=1.000
+    Pennies_AlwaysTails : WR=0.505, AR/step=0.010, STD=1.000
+    Pennies_BiasedHeads : WR=0.507, AR/step=0.014, STD=1.000
+    Pennies_BiasedTails : WR=0.492, AR/step=-0.016, STD=1.000
+    Pennies_Copycat     : WR=0.497, AR/step=-0.006, STD=1.000
+    Pennies_FrequencyCounter: WR=0.484, AR/step=-0.031, STD=1.000
+    Pennies_Uniform     : WR=0.518, AR/step=0.036, STD=0.999
+Report saved to results/MatchingPennies/PRPO/report.json
+Saved report to results/MatchingPennies/PRPO/report.json
+
+--- Computing seed-wise scores, 95% CI, and paired t-test (Pennies PRPO vs PPO) ---
+PPO mean=-0.038, 95% CI=[-0.084, 0.008], n=10
+PRPO mean=-0.011, 95% CI=[-0.048, 0.026], n=10
+Paired t-test (PRPO vs PPO): p-value=0.4129

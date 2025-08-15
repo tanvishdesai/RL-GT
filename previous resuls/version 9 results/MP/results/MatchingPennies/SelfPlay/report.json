@@ -1,0 +1,156 @@
+{
+  "summary": {
+    "policy_name": "Pennies_SelfPlay",
+    "evaluation_timestamp": 1754979524.9800568,
+    "robustness_score": 0.34405237785102266,
+    "key_strengths": [],
+    "key_weaknesses": [
+      "Vulnerable to specific challengers",
+      "Highly exploitable",
+      "Inconsistent performance"
+    ],
+    "overall_grade": "F"
+  },
+  "detailed_analysis": {
+    "performance_trends": {
+      "trend": "Stable",
+      "details": "Trend calculated over 5 evaluations with a slope of 0.0099."
+    },
+    "challenger_analysis": {
+      "easiest_challenger": "Pennies_AlwaysTails (Win Rate: 0.999)",
+      "hardest_challenger": "Pennies_AlwaysHeads (Win Rate: 0.001)"
+    },
+    "weakness_patterns": [
+      "Shows high performance variance (Std Dev: 0.288), indicating inconsistency."
+    ],
+    "improvement_suggestions": [
+      "High Exploitability: Consider adversarial training or add more diverse, adaptive agents (like NeuralAdversary) to the training opponents.",
+      "Low Nash Convergence: The policy's strategy is not close to a game-theoretic equilibrium. Improve this by training against a wider variety of strong opponents or using self-play schemes like Fictitious Play.",
+      "Inconsistent Performance: To stabilize performance, try using regularization techniques (e.g., entropy regularization) or policy ensemble methods."
+    ]
+  },
+  "visualizations": {
+    "challenger_performance": {
+      "plot_path": "Pennies_SelfPlay_challenger_performance.png",
+      "data": {
+        "names": [
+          "Pennies_AlwaysHeads",
+          "Pennies_AlwaysTails",
+          "Pennies_Uniform",
+          "Pennies_Copycat",
+          "Pennies_BiasedHeads",
+          "Pennies_BiasedTails",
+          "Pennies_FrequencyCounter"
+        ],
+        "win_rates": [
+          0.0012,
+          0.999,
+          0.498,
+          0.5007,
+          0.3002,
+          0.7059,
+          0.5021
+        ],
+        "avg_rewards": [
+          -0.9976,
+          0.998,
+          -0.004,
+          0.0014,
+          -0.3996,
+          0.4118,
+          0.0042
+        ]
+      }
+    },
+    "robustness_radar": {
+      "plot_path": "Pennies_SelfPlay_robustness_radar.png",
+      "data": {
+        "categories": [
+          "Overall Win Rate",
+          "Min Win Rate",
+          "Low Exploitability",
+          "Low Regret",
+          "Nash Convergence",
+          "Forward Transfer",
+          "Population Diversity",
+          "Low Forgetting"
+        ],
+        "values": [
+          0.5010142857142857,
+          0.0012,
+          0.0009142857142857563,
+          1.0,
+          0.2941862140704793,
+          0.0,
+          0.9701818427347384,
+          1.0,
+          0.5010142857142857
+        ]
+      }
+    },
+    "performance_heatmap": {
+      "plot_path": "Pennies_SelfPlay_performance_heatmap.png",
+      "data": {
+        "matrix": [
+          [
+            0.0011999999999999893,
+            0.999,
+            0.3002,
+            0.7059,
+            0.5007,
+            0.5021,
+            0.498
+          ]
+        ],
+        "envs": [
+          "MatchingPennies"
+        ],
+        "challengers": [
+          "Pennies_AlwaysHeads",
+          "Pennies_AlwaysTails",
+          "Pennies_BiasedHeads",
+          "Pennies_BiasedTails",
+          "Pennies_Copycat",
+          "Pennies_FrequencyCounter",
+          "Pennies_Uniform"
+        ]
+      }
+    },
+    "metrics_comparison": {
+      "plot_path": "Pennies_SelfPlay_metrics_comparison.png",
+      "data": {
+        "names": [
+          "Overall Win Rate",
+          "Min Win Rate",
+          "Avg Reward",
+          "Low Exploitability",
+          "Low Regret",
+          "Forward Transfer",
+          "Population Diversity",
+          "Nash Convergence"
+        ],
+        "values": [
+          0.5010142857142857,
+          0.0012,
+          0.5010142857142857,
+          0.0009142857142857563,
+          1.0,
+          0.0,
+          0.9701818427347384,
+          0.2941862140704793
+        ]
+      }
+    }
+  },
+  "recommendations": [
+    "Consider regularization to improve worst-case performance",
+    "Implement adversarial training to reduce exploitability",
+    "Add ensemble methods to improve consistency",
+    "Fine-tune strategy to better approximate Nash equilibrium"
+  ],
+  "composites": {
+    "zero_sum_composite": 0.34405237785102266,
+    "general_sum_composite": null,
+    "ipd_exploitability_proxy": 0.0
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "history": [
+    {
+      "policy_name": "TestRPSPolicy",
+      "timestamp": 1755026576.9243622,
+      "robustness_score": 0.31069004008364115
+    },
+    {
+      "policy_name": "Kuhn_DQN",
+      "timestamp": 1755041731.4781811,
+      "robustness_score": 0.45069897292094235
+    },
+    {
+      "policy_name": "Kuhn_PPO",
+      "timestamp": 1755041736.6230786,
+      "robustness_score": 0.5934166666666667
+    },
+    {
+      "policy_name": "Kuhn_PSRO",
+      "timestamp": 1755041741.1839,
+      "robustness_score": 0.45105159266797096
+    },
+    {
+      "policy_name": "Kuhn_SelfPlay",
+      "timestamp": 1755041746.2077003,
+      "robustness_score": 0.5764277777777779
+    },
+    {
+      "policy_name": "Kuhn_PRPO",
+      "timestamp": 1755041751.531309,
+      "robustness_score": 0.5877111111111111
+    }
+  ]
+}

@@ -1,0 +1,166 @@
+{
+  "summary": {
+    "policy_name": "RPS_PSRO",
+    "evaluation_timestamp": 1754642137.1644583,
+    "robustness_score": 0.25768669597319094,
+    "key_strengths": [],
+    "key_weaknesses": [
+      "Vulnerable to specific challengers",
+      "Highly exploitable",
+      "High regret compared to optimal",
+      "Inconsistent performance"
+    ],
+    "overall_grade": "F"
+  },
+  "detailed_analysis": {
+    "performance_trends": {
+      "trend": "Stable",
+      "details": "Trend calculated over 3 evaluations with a slope of 0.0486."
+    },
+    "challenger_analysis": {
+      "easiest_challenger": "RPS_AlwaysRock (Win Rate: 0.870)",
+      "hardest_challenger": "RPS_AlwaysPaper (Win Rate: 0.000)"
+    },
+    "weakness_patterns": [
+      "Could not categorize challengers to identify weakness patterns."
+    ],
+    "improvement_suggestions": [
+      "High Exploitability: Consider adversarial training or add more diverse, adaptive agents (like NeuralAdversary) to the training opponents.",
+      "High Regret: The policy is far from optimal. This could indicate a need for a more complex model architecture, longer training, or hyperparameter tuning.",
+      "Inconsistent Performance: To stabilize performance, try using regularization techniques (e.g., entropy regularization) or policy ensemble methods."
+    ]
+  },
+  "visualizations": {
+    "challenger_performance": {
+      "plot_path": "RPS_PSRO_challenger_performance.png",
+      "data": {
+        "names": [
+          "RPS_AlwaysRock",
+          "RPS_AlwaysPaper",
+          "RPS_AlwaysScissors",
+          "RPS_Uniform",
+          "RPS_BiasedRock",
+          "RPS_CyclicRPS",
+          "RPS_Copycat",
+          "RPS_AdaptiveCounter",
+          "RPS_PopulationBased",
+          "RPS_NeuralAdversary"
+        ],
+        "win_rates": [
+          0.87,
+          0.0,
+          0.145,
+          0.3,
+          0.535,
+          0.86,
+          0.365,
+          0.37,
+          0.515,
+          0.825
+        ],
+        "avg_rewards": [
+          0.87,
+          -0.18,
+          -0.71,
+          -0.07,
+          0.41,
+          0.86,
+          0.05,
+          0.065,
+          0.29,
+          0.825
+        ]
+      }
+    },
+    "robustness_radar": {
+      "plot_path": "RPS_PSRO_robustness_radar.png",
+      "data": {
+        "categories": [
+          "Overall Win Rate",
+          "Min Win Rate",
+          "Low Exploitability",
+          "Low Regret",
+          "Nash Convergence",
+          "Forward Transfer",
+          "Population Diversity",
+          "Low Forgetting"
+        ],
+        "values": [
+          0.47850000000000004,
+          0.0,
+          0.29000000000000004,
+          0.12050000000000005,
+          0.8222078695029876,
+          0.0,
+          0.7760339194638183,
+          1.0,
+          0.47850000000000004
+        ]
+      }
+    },
+    "performance_heatmap": {
+      "plot_path": "RPS_PSRO_performance_heatmap.png",
+      "data": {
+        "matrix": [
+          [
+            0.45125,
+            0.20500000000000002,
+            0.9025000000000001,
+            0.14500000000000002,
+            0.62,
+            0.445,
+            0.895,
+            0.8687499999999999,
+            0.5800000000000001,
+            0.38249999999999995
+          ]
+        ],
+        "envs": [
+          "default"
+        ],
+        "challengers": [
+          "RPS_AdaptiveCounter",
+          "RPS_AlwaysPaper",
+          "RPS_AlwaysRock",
+          "RPS_AlwaysScissors",
+          "RPS_BiasedRock",
+          "RPS_Copycat",
+          "RPS_CyclicRPS",
+          "RPS_NeuralAdversary",
+          "RPS_PopulationBased",
+          "RPS_Uniform"
+        ]
+      }
+    },
+    "metrics_comparison": {
+      "plot_path": "RPS_PSRO_metrics_comparison.png",
+      "data": {
+        "names": [
+          "Overall Win Rate",
+          "Min Win Rate",
+          "Avg Reward",
+          "Low Exploitability",
+          "Low Regret",
+          "Nash Convergence",
+          "Forward Transfer",
+          "Population Diversity"
+        ],
+        "values": [
+          0.47850000000000004,
+          0.0,
+          0.6205,
+          0.29000000000000004,
+          0.12050000000000005,
+          0.8222078695029876,
+          0.0,
+          0.7760339194638183
+        ]
+      }
+    }
+  },
+  "recommendations": [
+    "Consider regularization to improve worst-case performance",
+    "Implement adversarial training to reduce exploitability",
+    "Add ensemble methods to improve consistency"
+  ]
+}

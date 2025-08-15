@@ -1,0 +1,144 @@
+{
+  "summary": {
+    "policy_name": "StagHunt_DQN",
+    "evaluation_timestamp": 1755079601.4135864,
+    "robustness_score": 0.6012253722876175,
+    "key_strengths": [
+      "Low exploitability"
+    ],
+    "key_weaknesses": [
+      "Vulnerable to specific challengers",
+      "Inconsistent performance"
+    ],
+    "overall_grade": "B"
+  },
+  "detailed_analysis": {
+    "performance_trends": {
+      "trend": "N/A",
+      "details": "Insufficient data (2 runs). Need at least 3 runs to estimate a trend."
+    },
+    "challenger_analysis": {
+      "easiest_challenger": "StagHunt_AlwaysStag (Win Rate: 1.000)",
+      "hardest_challenger": "StagHunt_AlwaysHare (Win Rate: 0.000)"
+    },
+    "weakness_patterns": [
+      "Struggles against 'pattern_based' opponents (Avg Win Rate: 0.195)",
+      "Shows high performance variance (Std Dev: 0.420), indicating inconsistency."
+    ],
+    "improvement_suggestions": [
+      "Inconsistent Performance: To stabilize performance, try using regularization techniques (e.g., entropy regularization) or policy ensemble methods.",
+      "Weak against Pattern-Based Agents: The policy is predictable. Introduce mechanisms to detect and break patterns, such as adding memory (LSTMs) or increasing stochasticity in its actions."
+    ]
+  },
+  "visualizations": {
+    "challenger_performance": {
+      "plot_path": "StagHunt_DQN_challenger_performance.png",
+      "data": {
+        "names": [
+          "StagHunt_AlwaysStag",
+          "StagHunt_AlwaysHare",
+          "StagHunt_TitForTat",
+          "StagHunt_BiasedStag",
+          "StagHunt_Uniform",
+          "StagHunt_ForgivingTFT"
+        ],
+        "win_rates": [
+          1.0,
+          0.0,
+          0.195,
+          0.985,
+          0.52,
+          0.005
+        ],
+        "avg_rewards": [
+          124.84,
+          25.38,
+          74.75,
+          94.815,
+          75.475,
+          51.845
+        ]
+      }
+    },
+    "robustness_radar": {
+      "plot_path": "StagHunt_DQN_robustness_radar.png",
+      "data": {
+        "categories": [
+          "Overall Win Rate",
+          "Min Win Rate",
+          "Low Exploitability",
+          "Low Regret",
+          "Forward Transfer",
+          "Population Diversity",
+          "Low Forgetting"
+        ],
+        "values": [
+          0.45083333333333336,
+          0.0,
+          0.998434172962963,
+          0.998434172962963,
+          0.0,
+          1.0,
+          1.0,
+          0.45083333333333336
+        ]
+      }
+    },
+    "performance_heatmap": {
+      "plot_path": "StagHunt_DQN_performance_heatmap.png",
+      "data": {
+        "matrix": [
+          [
+            0.5,
+            1.0,
+            0.9924999999999999,
+            0.5025,
+            0.5975,
+            0.76
+          ]
+        ],
+        "envs": [
+          "StagHunt"
+        ],
+        "challengers": [
+          "StagHunt_AlwaysHare",
+          "StagHunt_AlwaysStag",
+          "StagHunt_BiasedStag",
+          "StagHunt_ForgivingTFT",
+          "StagHunt_TitForTat",
+          "StagHunt_Uniform"
+        ]
+      }
+    },
+    "metrics_comparison": {
+      "plot_path": "StagHunt_DQN_metrics_comparison.png",
+      "data": {
+        "names": [
+          "Avg Reward",
+          "Social Welfare",
+          "Cooperation Rate",
+          "Low Exploitability",
+          "Low Regret",
+          "Population Diversity"
+        ],
+        "values": [
+          1.0,
+          1.0,
+          0.4958833333333333,
+          0.998434172962963,
+          0.998434172962963,
+          1.0
+        ]
+      }
+    }
+  },
+  "recommendations": [
+    "Consider regularization to improve worst-case performance",
+    "Add ensemble methods to improve consistency"
+  ],
+  "composites": {
+    "zero_sum_composite": null,
+    "general_sum_composite": 0.6012253722876175,
+    "ipd_exploitability_proxy": 0.49862777777777784
+  }
+}

@@ -1,0 +1,49 @@
+Initializing Enhanced Gauntlet Benchmark...
+Built a master list of 23 challengers for various games.
+
+🚀 Enhanced Gauntlet Benchmark initialized successfully!
+📊 Loaded 0 challenger agents.
+🌍 Registered 0 environments (default RPS only).
+
+🔬 Running comprehensive evaluation on 'RPS' (default environment)...
+Starting comprehensive evaluation of TestRPSPolicy
+Initializing NeuralAdversary for input_dim=6 on device='cpu'...
+
+====================================================================================================
+🏆 ENHANCED GAUNTLET EVALUATION: TestRPSPolicy
+====================================================================================================
+
+🎯 ROBUSTNESS METRICS:
+  Overall Win Rate:     0.260
+  Minimum Win Rate:     0.100
+  Win Rate Std:         0.092
+  Average Reward:       -0.090
+  Worst Case Reward:    -0.300
+  Exploitability:       0.000
+  Regret:              1.090
+  Nash Convergence:     0.910
+  🏅 ROBUSTNESS SCORE:  0.255
+
+📊 DETAILED CHALLENGER RESULTS:
+
+  Environment: default
+    RPS_AdaptiveCounter : WR=0.200, AR=0.200, STD=0.400
+    RPS_AlwaysPaper     : WR=0.400, AR=-0.100, STD=0.943
+    RPS_AlwaysRock      : WR=0.200, AR=-0.200, STD=0.748
+    RPS_AlwaysScissors  : WR=0.200, AR=-0.200, STD=0.748
+    RPS_BiasedRock      : WR=0.300, AR=0.100, STD=0.700
+    RPS_Copycat         : WR=0.100, AR=-0.300, STD=0.640
+    RPS_CyclicRPS       : WR=0.300, AR=-0.200, STD=0.872
+    RPS_NeuralAdversary : WR=0.200, AR=-0.300, STD=0.781
+    RPS_PopulationBased : WR=0.300, AR=0.000, STD=0.775
+    RPS_Uniform         : WR=0.400, AR=0.100, STD=0.831
+
+📊 Evaluation Complete. Metrics:
+   Robustness Score: 0.255
+   Overall Win Rate: 0.260
+
+Report saved to enhanced_gauntlet_report.json
+
+📄 Report generated: enhanced_gauntlet_report.json
+
+✅ Enhanced Gauntlet Benchmark process finished!

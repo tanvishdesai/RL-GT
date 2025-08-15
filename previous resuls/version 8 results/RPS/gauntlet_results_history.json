@@ -1,0 +1,34 @@
+{
+  "history": [
+    {
+      "policy_name": "TestRPSPolicy",
+      "timestamp": 1754935254.11842,
+      "robustness_score": 0.31182144629943864
+    },
+    {
+      "policy_name": "RPS_DQN",
+      "timestamp": 1754938353.6408813,
+      "robustness_score": 0.23500502962275316
+    },
+    {
+      "policy_name": "RPS_PPO",
+      "timestamp": 1754938360.4691565,
+      "robustness_score": 0.35301665499278495
+    },
+    {
+      "policy_name": "RPS_PSRO",
+      "timestamp": 1754938366.4512546,
+      "robustness_score": 0.3632748188971422
+    },
+    {
+      "policy_name": "RPS_SelfPlay",
+      "timestamp": 1754938373.44964,
+      "robustness_score": 0.22965201392017007
+    },
+    {
+      "policy_name": "RPS_PRPO",
+      "timestamp": 1754938381.13643,
+      "robustness_score": 0.35473073203896754
+    }
+  ]
+}

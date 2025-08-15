@@ -1,0 +1,144 @@
+{
+  "summary": {
+    "policy_name": "StagHunt_PSRO",
+    "evaluation_timestamp": 1755079654.9656363,
+    "robustness_score": 0.5914948618375399,
+    "key_strengths": [
+      "Low exploitability"
+    ],
+    "key_weaknesses": [
+      "Vulnerable to specific challengers",
+      "Inconsistent performance"
+    ],
+    "overall_grade": "C+"
+  },
+  "detailed_analysis": {
+    "performance_trends": {
+      "trend": "Improving",
+      "details": "Trend calculated over 4 evaluations with a slope of 0.0658."
+    },
+    "challenger_analysis": {
+      "easiest_challenger": "StagHunt_AlwaysStag (Win Rate: 1.000)",
+      "hardest_challenger": "StagHunt_AlwaysHare (Win Rate: 0.000)"
+    },
+    "weakness_patterns": [
+      "Struggles against 'pattern_based' opponents (Avg Win Rate: 0.285)",
+      "Shows high performance variance (Std Dev: 0.418), indicating inconsistency."
+    ],
+    "improvement_suggestions": [
+      "Inconsistent Performance: To stabilize performance, try using regularization techniques (e.g., entropy regularization) or policy ensemble methods.",
+      "Weak against Pattern-Based Agents: The policy is predictable. Introduce mechanisms to detect and break patterns, such as adding memory (LSTMs) or increasing stochasticity in its actions."
+    ]
+  },
+  "visualizations": {
+    "challenger_performance": {
+      "plot_path": "StagHunt_PSRO_challenger_performance.png",
+      "data": {
+        "names": [
+          "StagHunt_AlwaysStag",
+          "StagHunt_AlwaysHare",
+          "StagHunt_TitForTat",
+          "StagHunt_BiasedStag",
+          "StagHunt_Uniform",
+          "StagHunt_ForgivingTFT"
+        ],
+        "win_rates": [
+          1.0,
+          0.0,
+          0.285,
+          0.99,
+          0.615,
+          0.0
+        ],
+        "avg_rewards": [
+          123.905,
+          26.345,
+          72.175,
+          94.55,
+          75.675,
+          47.68
+        ]
+      }
+    },
+    "robustness_radar": {
+      "plot_path": "StagHunt_PSRO_robustness_radar.png",
+      "data": {
+        "categories": [
+          "Overall Win Rate",
+          "Min Win Rate",
+          "Low Exploitability",
+          "Low Regret",
+          "Forward Transfer",
+          "Population Diversity",
+          "Low Forgetting"
+        ],
+        "values": [
+          0.48166666666666663,
+          0.0,
+          0.9933565733333333,
+          0.9933565733333333,
+          0.0,
+          1.0,
+          1.0,
+          0.48166666666666663
+        ]
+      }
+    },
+    "performance_heatmap": {
+      "plot_path": "StagHunt_PSRO_performance_heatmap.png",
+      "data": {
+        "matrix": [
+          [
+            0.5,
+            1.0,
+            0.995,
+            0.5,
+            0.6425,
+            0.8075
+          ]
+        ],
+        "envs": [
+          "StagHunt"
+        ],
+        "challengers": [
+          "StagHunt_AlwaysHare",
+          "StagHunt_AlwaysStag",
+          "StagHunt_BiasedStag",
+          "StagHunt_ForgivingTFT",
+          "StagHunt_TitForTat",
+          "StagHunt_Uniform"
+        ]
+      }
+    },
+    "metrics_comparison": {
+      "plot_path": "StagHunt_PSRO_metrics_comparison.png",
+      "data": {
+        "names": [
+          "Avg Reward",
+          "Social Welfare",
+          "Cooperation Rate",
+          "Low Exploitability",
+          "Low Regret",
+          "Population Diversity"
+        ],
+        "values": [
+          1.0,
+          1.0,
+          0.47469999999999996,
+          0.9933565733333333,
+          0.9933565733333333,
+          1.0
+        ]
+      }
+    }
+  },
+  "recommendations": [
+    "Consider regularization to improve worst-case performance",
+    "Add ensemble methods to improve consistency"
+  ],
+  "composites": {
+    "zero_sum_composite": null,
+    "general_sum_composite": 0.5914948618375399,
+    "ipd_exploitability_proxy": 0.49156666666666665
+  }
+}

@@ -1,0 +1,152 @@
+{
+  "summary": {
+    "policy_name": "IPD_DQN",
+    "evaluation_timestamp": 1754643416.331944,
+    "robustness_score": 0.146278144,
+    "key_strengths": [
+      "Stable performance"
+    ],
+    "key_weaknesses": [
+      "Vulnerable to specific challengers",
+      "Highly exploitable",
+      "High regret compared to optimal"
+    ],
+    "overall_grade": "F"
+  },
+  "detailed_analysis": {
+    "performance_trends": {
+      "trend": "N/A",
+      "details": "Insufficient data (only 1 evaluation run). Run more evaluations to see a trend."
+    },
+    "challenger_analysis": {
+      "easiest_challenger": "IPD_AlwaysCooperate (Win Rate: 0.000)",
+      "hardest_challenger": "IPD_AlwaysCooperate (Win Rate: 0.000)"
+    },
+    "weakness_patterns": [
+      "Could not categorize challengers to identify weakness patterns."
+    ],
+    "improvement_suggestions": [
+      "High Exploitability: Consider adversarial training or add more diverse, adaptive agents (like NeuralAdversary) to the training opponents.",
+      "High Regret: The policy is far from optimal. This could indicate a need for a more complex model architecture, longer training, or hyperparameter tuning.",
+      "Low Nash Convergence: The policy's strategy is not close to a game-theoretic equilibrium. Improve this by training against a wider variety of strong opponents or using self-play schemes like Fictitious Play."
+    ]
+  },
+  "visualizations": {
+    "challenger_performance": {
+      "plot_path": "IPD_DQN_challenger_performance.png",
+      "data": {
+        "names": [
+          "IPD_AlwaysCooperate",
+          "IPD_AlwaysDefect",
+          "IPD_Uniform",
+          "IPD_TitForTat",
+          "IPD_Copycat",
+          "IPD_Grudger",
+          "IPD_FictitiousPlay"
+        ],
+        "win_rates": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "avg_rewards": [
+          150.0,
+          0.0,
+          74.9658,
+          150.0,
+          148.4802,
+          150.0,
+          1.4436
+        ]
+      }
+    },
+    "robustness_radar": {
+      "plot_path": "IPD_DQN_robustness_radar.png",
+      "data": {
+        "categories": [
+          "Overall Win Rate",
+          "Min Win Rate",
+          "Low Exploitability",
+          "Low Regret",
+          "Nash Convergence",
+          "Forward Transfer",
+          "Population Diversity",
+          "Low Forgetting"
+        ],
+        "values": [
+          0.0,
+          0.0,
+          0.0,
+          0.3856512000000001,
+          0.5,
+          0.0,
+          1.0,
+          1.0,
+          0.0
+        ]
+      }
+    },
+    "performance_heatmap": {
+      "plot_path": "IPD_DQN_performance_heatmap.png",
+      "data": {
+        "matrix": [
+          [
+            0.5,
+            0.25,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5
+          ]
+        ],
+        "envs": [
+          "IPD"
+        ],
+        "challengers": [
+          "IPD_AlwaysCooperate",
+          "IPD_AlwaysDefect",
+          "IPD_Copycat",
+          "IPD_FictitiousPlay",
+          "IPD_Grudger",
+          "IPD_TitForTat",
+          "IPD_Uniform"
+        ]
+      }
+    },
+    "metrics_comparison": {
+      "plot_path": "IPD_DQN_metrics_comparison.png",
+      "data": {
+        "names": [
+          "Overall Win Rate",
+          "Min Win Rate",
+          "Avg Reward",
+          "Low Exploitability",
+          "Low Regret",
+          "Nash Convergence",
+          "Forward Transfer",
+          "Population Diversity"
+        ],
+        "values": [
+          0.0,
+          0.0,
+          1.464128,
+          0.0,
+          0.3856512000000001,
+          0.5,
+          0.0,
+          1.0
+        ]
+      }
+    }
+  },
+  "recommendations": [
+    "Consider regularization to improve worst-case performance",
+    "Implement adversarial training to reduce exploitability",
+    "Fine-tune strategy to better approximate Nash equilibrium"
+  ]
+}

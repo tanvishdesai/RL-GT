@@ -1,0 +1,51 @@
+📊 FINAL RESULTS SUMMARY
+  ================================================================================
+  🔬 Standard PPO:
+    - Nash Distance:  0.5972 ± 0.4271
+    - Exploitability: 0.4412 ± 0.3536
+  🔬 Self-Play:
+    - Nash Distance:  0.5722 ± 0.5482
+    - Exploitability: 0.4389 ± 0.4094
+  🔬 PSRO:
+    - Nash Distance:  0.4850 ± 0.5856
+    - Exploitability: 0.3628 ± 0.4349
+  🔬 PRPO:
+    - Nash Distance:  0.0067 ± 0.0002
+    - Exploitability: 0.0024 ± 0.0021
+
+📊 2. ABLATION STUDY
+  ===============================
+  📊 ABLATION STUDY RESULTS
+  ================================================================================
+  🔬 PRPO:
+    - Nash Distance:  0.0067 ± 0.0002
+    - Exploitability: 0.0024 ± 0.0021
+  🔬 PRPO (Nash Only):
+    - Nash Distance:  0.0067 ± 0.0002
+    - Exploitability: 0.0024 ± 0.0021
+  🔬 PRPO (Exploitability Only):
+    - Nash Distance:  0.0489 ± 0.0164
+    - Exploitability: 0.0198 ± 0.0037
+  🔬 PRPO (Tournament + Nash Only):
+    - Nash Distance:  0.0079 ± 0.0031
+    - Exploitability: 0.0032 ± 0.0021
+
+📊 3. HYPERPARAMETER SENSITIVITY
+  ===============================
+  📊 HYPERPARAMETER SENSITIVITY RESULTS
+  ================================================================================
+
+  🔧 Lambda Nash Sensitivity:
+    λ_nash=0.1: Nash Dist: 0.0407±0.0234, Exploit: 0.0159±0.0077
+    λ_nash=0.5: Nash Dist: 0.0049±0.0001, Exploit: 0.0040±0.0008
+    λ_nash=1.0: Nash Dist: 0.0058±0.0017, Exploit: 0.0026±0.0007
+    λ_nash=1.5: Nash Dist: 0.0066±0.0002, Exploit: 0.0028±0.0025
+    λ_nash=2.0: Nash Dist: 0.0079±0.0001, Exploit: 0.0033±0.0020
+    λ_nash=5.0: Nash Dist: 0.0038±0.0005, Exploit: 0.0029±0.0003
+
+  🔧 Lambda Exploit Sensitivity:
+    λ_exploit=0.1: Nash Dist: 0.0066±0.0002, Exploit: 0.0028±0.0025
+    λ_exploit=0.5: Nash Dist: 0.0066±0.0002, Exploit: 0.0028±0.0025
+    λ_exploit=1.0: Nash Dist: 0.0066±0.0002, Exploit: 0.0028±0.0025
+    λ_exploit=1.5: Nash Dist: 0.0066±0.0002, Exploit: 0.0028±0.0025
+    λ_exploit=2.0: Nash Dist: 0.0066±0.0002, Exploit: 0.0028±0.0025

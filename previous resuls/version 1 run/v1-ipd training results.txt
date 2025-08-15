@@ -1,0 +1,82 @@
+--- Setting up Gauntlet Benchmark for IPD Evaluation ---
+Built a master list of 23 challengers for various games.
+
+--- Starting IPD Training Phase ---
+Training DQNAgent against TrainingOpponent_TFT in IPD...
+Training finished.
+Training PPOAgent against TrainingOpponent_TFT in IPD...
+Training finished.
+Added custom challenger: IPD_FictitiousPlay
+
+--- Starting IPD Benchmark Evaluation Phase ---
+
+========================================
+EVALUATING: IPD_DQN
+========================================
+Starting comprehensive evaluation of IPD_DQN
+
+====================================================================================================
+🏆 ENHANCED GAUNTLET EVALUATION: IPD_DQN
+====================================================================================================
+
+🎯 ROBUSTNESS METRICS:
+  Overall Win Rate:     1.000
+  Minimum Win Rate:     1.000
+  Win Rate Std:         0.000
+  Average Reward:       3.538
+  Worst Case Reward:    1.000
+  Exploitability:       0.000
+  Regret:              0.000
+  Nash Convergence:     0.000
+  🏅 ROBUSTNESS SCORE:  0.740
+
+📊 DETAILED CHALLENGER RESULTS:
+
+  Environment: IPD
+    IPD_AlwaysCooperate : WR=1.000, AR=5.000, STD=0.000
+    IPD_AlwaysDefect    : WR=1.000, AR=1.000, STD=0.000
+    IPD_Copycat         : WR=1.000, AR=2.808, STD=1.991
+    IPD_FictitiousPlay  : WR=1.000, AR=2.968, STD=2.000
+    IPD_Grudger         : WR=1.000, AR=5.000, STD=0.000
+    IPD_TitForTat       : WR=1.000, AR=5.000, STD=0.000
+    IPD_Uniform         : WR=1.000, AR=2.992, STD=2.000
+
+========================================
+EVALUATING: IPD_PPO
+========================================
+Starting comprehensive evaluation of IPD_PPO
+
+====================================================================================================
+🏆 ENHANCED GAUNTLET EVALUATION: IPD_PPO
+====================================================================================================
+
+🎯 ROBUSTNESS METRICS:
+  Overall Win Rate:     0.999
+  Minimum Win Rate:     0.996
+  Win Rate Std:         0.001
+  Average Reward:       3.569
+  Worst Case Reward:    0.998
+  Exploitability:       0.000
+  Regret:              0.000
+  Nash Convergence:     0.000
+  🏅 ROBUSTNESS SCORE:  0.739
+
+📊 DETAILED CHALLENGER RESULTS:
+
+  Environment: IPD
+    IPD_AlwaysCooperate : WR=1.000, AR=5.000, STD=0.000
+    IPD_AlwaysDefect    : WR=0.998, AR=0.998, STD=0.045
+    IPD_Copycat         : WR=1.000, AR=2.940, STD=1.997
+    IPD_FictitiousPlay  : WR=0.998, AR=3.126, STD=1.999
+    IPD_Grudger         : WR=1.000, AR=4.992, STD=0.126
+    IPD_TitForTat       : WR=1.000, AR=4.992, STD=0.126
+    IPD_Uniform         : WR=0.996, AR=2.936, STD=2.002
+
+
+🎉 IPD evaluation run has finished. 🎉
+
+/tmp/ipykernel_36/1468345835.py:2538: UserWarning: Tight layout not applied. The bottom and top margins cannot be made large enough to accommodate all axes decorations.
+  plt.tight_layout()
+Report saved to ipd_evaluation_report.json
+
+Final IPD summary report saved to 'ipd_evaluation_report.json'

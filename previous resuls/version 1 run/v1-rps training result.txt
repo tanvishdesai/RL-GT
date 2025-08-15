@@ -1,0 +1,94 @@
+--- Setting up Gauntlet Benchmark for Evaluation ---
+Built a master list of 23 challengers for various games.
+Initializing environment from the benchmark...
+
+--- Starting Training Phase ---
+Starting training for DQNAgent against TrainingOpponent...
+Training finished for DQNAgent.
+Starting training for PPOAgent against TrainingOpponent...
+Training finished for PPOAgent.
+Added custom challenger: Student_RuleBased
+
+--- Starting Benchmark Evaluation Phase ---
+
+========================================
+ E V A L U A T I N G:   DQN 
+========================================
+Starting comprehensive evaluation of DQN
+Initializing NeuralAdversary for input_dim=6 on device='cpu'...
+
+====================================================================================================
+🏆 ENHANCED GAUNTLET EVALUATION: DQN
+====================================================================================================
+
+🎯 ROBUSTNESS METRICS:
+  Overall Win Rate:     0.252
+  Minimum Win Rate:     0.000
+  Win Rate Std:         0.272
+  Average Reward:       -0.070
+  Worst Case Reward:    -1.000
+  Exploitability:       0.000
+  Regret:              1.070
+  Nash Convergence:     0.901
+  🏅 ROBUSTNESS SCORE:  0.265
+
+📊 DETAILED CHALLENGER RESULTS:
+
+  Environment: default
+    RPS_AdaptiveCounter : WR=0.280, AR=-0.140, STD=0.825
+    RPS_AlwaysPaper     : WR=0.000, AR=-1.000, STD=0.000
+    RPS_AlwaysRock      : WR=0.000, AR=0.000, STD=0.000
+    RPS_AlwaysScissors  : WR=1.000, AR=1.000, STD=0.000
+    RPS_BiasedRock      : WR=0.140, AR=-0.050, STD=0.572
+    RPS_Copycat         : WR=0.340, AR=0.015, STD=0.815
+    RPS_CyclicRPS       : WR=0.000, AR=0.000, STD=0.000
+    RPS_NeuralAdversary : WR=0.110, AR=-0.630, STD=0.673
+    RPS_PopulationBased : WR=0.200, AR=-0.065, STD=0.679
+    RPS_Uniform         : WR=0.340, AR=0.040, STD=0.799
+    Student_RuleBased   : WR=0.365, AR=0.065, STD=0.813
+
+✅ Evaluation for DQN completed.
+
+========================================
+ E V A L U A T I N G:   PPO 
+========================================
+Starting comprehensive evaluation of PPO
+
+====================================================================================================
+🏆 ENHANCED GAUNTLET EVALUATION: PPO
+====================================================================================================
+
+🎯 ROBUSTNESS METRICS:
+  Overall Win Rate:     0.327
+  Minimum Win Rate:     0.090
+  Win Rate Std:         0.108
+  Average Reward:       0.018
+  Worst Case Reward:    -0.380
+  Exploitability:       0.000
+  Regret:              0.982
+  Nash Convergence:     0.993
+  🏅 ROBUSTNESS SCORE:  0.281
+
+📊 DETAILED CHALLENGER RESULTS:
+
+  Environment: default
+    RPS_AdaptiveCounter : WR=0.350, AR=0.030, STD=0.818
+    RPS_AlwaysPaper     : WR=0.145, AR=-0.310, STD=0.710
+    RPS_AlwaysRock      : WR=0.390, AR=0.235, STD=0.700
+    RPS_AlwaysScissors  : WR=0.485, AR=0.080, STD=0.940
+    RPS_BiasedRock      : WR=0.360, AR=0.160, STD=0.731
+    RPS_Copycat         : WR=0.320, AR=-0.010, STD=0.806
+    RPS_CyclicRPS       : WR=0.395, AR=0.225, STD=0.717
+    RPS_NeuralAdversary : WR=0.090, AR=-0.380, STD=0.645
+    RPS_PopulationBased : WR=0.390, AR=0.120, STD=0.803
+    RPS_Uniform         : WR=0.330, AR=0.010, STD=0.806
+    Student_RuleBased   : WR=0.345, AR=0.035, STD=0.809
+
+✅ Evaluation for PPO completed.
+
+
+🎉 Benchmark evaluation run has finished for all policies. 🎉
+
+Report saved to final_evaluation_report.json
+
+Final summary report saved to 'final_evaluation_report.json'

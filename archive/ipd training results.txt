@@ -1,0 +1,180 @@
+========================================
+EVALUATING: IPD_DQN
+========================================
+Starting comprehensive evaluation of IPD_DQN
+
+====================================================================================================
+🏆 ENHANCED GAUNTLET EVALUATION: IPD_DQN
+====================================================================================================
+
+🎯 ROBUSTNESS METRICS:
+  Overall Win Rate:     0.126
+  Minimum Win Rate:     0.000
+  Win Rate Std:         0.227
+  Average Reward:       1.979
+  Worst Case Reward:    0.496
+  Exploitability:       0.000
+  Regret:              0.000
+  🏅 ROBUSTNESS SCORE:  0.703
+
+📊 DETAILED CHALLENGER RESULTS:
+
+  Environment: IPD
+    IPD_AlwaysAlternate : WR=0.001, AR/step=2.427, STD=1.713
+    IPD_AlwaysCooperate : WR=0.716, AR/step=3.050, STD=2.229
+    IPD_AlwaysDefect    : WR=0.000, AR/step=0.496, STD=0.617
+    IPD_Copycat         : WR=0.124, AR/step=2.686, STD=10.172
+    IPD_FictitiousPlay  : WR=0.000, AR/step=0.521, STD=1.399
+    IPD_Grudger         : WR=0.007, AR/step=1.965, STD=43.841
+    IPD_Pavlov          : WR=0.000, AR/step=1.842, STD=1.879
+    IPD_TitForTat       : WR=0.283, AR/step=2.824, STD=8.345
+    IPD_Uniform         : WR=0.001, AR/step=2.003, STD=10.252
+Report saved to results/IPD/DQN/report.json
+Saved report to results/IPD/DQN/report.json
+
+========================================
+EVALUATING: IPD_PPO
+========================================
+Starting comprehensive evaluation of IPD_PPO
+
+====================================================================================================
+🏆 ENHANCED GAUNTLET EVALUATION: IPD_PPO
+====================================================================================================
+
+🎯 ROBUSTNESS METRICS:
+  Overall Win Rate:     0.186
+  Minimum Win Rate:     0.000
+  Win Rate Std:         0.311
+  Average Reward:       1.791
+  Worst Case Reward:    0.259
+  Exploitability:       0.000
+  Regret:              0.000
+  🏅 ROBUSTNESS SCORE:  0.675
+
+📊 DETAILED CHALLENGER RESULTS:
+
+  Environment: IPD
+    IPD_AlwaysAlternate : WR=0.006, AR/step=1.995, STD=4.091
+    IPD_AlwaysCooperate : WR=1.000, AR/step=3.950, STD=5.492
+    IPD_AlwaysDefect    : WR=0.000, AR/step=0.259, STD=2.635
+    IPD_Copycat         : WR=0.190, AR/step=2.490, STD=4.461
+    IPD_FictitiousPlay  : WR=0.000, AR/step=0.298, STD=3.316
+    IPD_Grudger         : WR=0.000, AR/step=0.393, STD=3.977
+    IPD_Pavlov          : WR=0.020, AR/step=2.146, STD=4.456
+    IPD_TitForTat       : WR=0.368, AR/step=2.519, STD=4.116
+    IPD_Uniform         : WR=0.093, AR/step=2.068, STD=13.690
+Report saved to results/IPD/PPO/report.json
+Saved report to results/IPD/PPO/report.json
+
+========================================
+EVALUATING: IPD_PSRO
+========================================
+Starting comprehensive evaluation of IPD_PSRO
+
+====================================================================================================
+🏆 ENHANCED GAUNTLET EVALUATION: IPD_PSRO
+====================================================================================================
+
+🎯 ROBUSTNESS METRICS:
+  Overall Win Rate:     0.356
+  Minimum Win Rate:     0.000
+  Win Rate Std:         0.314
+  Average Reward:       1.891
+  Worst Case Reward:    0.502
+  Exploitability:       0.000
+  Regret:              0.000
+  🏅 ROBUSTNESS SCORE:  0.637
+
+📊 DETAILED CHALLENGER RESULTS:
+
+  Environment: IPD
+    IPD_AlwaysAlternate : WR=0.438, AR/step=2.248, STD=5.632
+    IPD_AlwaysCooperate : WR=1.000, AR/step=4.002, STD=6.986
+    IPD_AlwaysDefect    : WR=0.000, AR/step=0.502, STD=3.575
+    IPD_Copycat         : WR=0.240, AR/step=2.244, STD=7.519
+    IPD_FictitiousPlay  : WR=0.000, AR/step=0.538, STD=4.034
+    IPD_Grudger         : WR=0.000, AR/step=0.639, STD=4.897
+    IPD_Pavlov          : WR=0.561, AR/step=2.318, STD=5.472
+    IPD_TitForTat       : WR=0.499, AR/step=2.282, STD=7.356
+    IPD_Uniform         : WR=0.463, AR/step=2.244, STD=13.478
+
+Report saved to results/IPD/PSRO/report.json
+Saved report to results/IPD/PSRO/report.json
+
+========================================
+EVALUATING: IPD_SelfPlay
+========================================
+Starting comprehensive evaluation of IPD_SelfPlay
+
+====================================================================================================
+🏆 ENHANCED GAUNTLET EVALUATION: IPD_SelfPlay
+====================================================================================================
+
+🎯 ROBUSTNESS METRICS:
+  Overall Win Rate:     0.779
+  Minimum Win Rate:     0.000
+  Win Rate Std:         0.341
+  Average Reward:       2.146
+  Worst Case Reward:    1.000
+  Exploitability:       0.000
+  Regret:              0.000
+  🏅 ROBUSTNESS SCORE:  0.505
+
+📊 DETAILED CHALLENGER RESULTS:
+
+  Environment: IPD
+    IPD_AlwaysAlternate : WR=1.000, AR/step=3.000, STD=0.077
+    IPD_AlwaysCooperate : WR=1.000, AR/step=5.000, STD=0.100
+    IPD_AlwaysDefect    : WR=0.000, AR/step=1.000, STD=0.063
+    IPD_Copycat         : WR=0.512, AR/step=1.041, STD=2.003
+    IPD_FictitiousPlay  : WR=0.500, AR/step=1.040, STD=1.999
+    IPD_Grudger         : WR=1.000, AR/step=1.080, STD=0.118
+    IPD_Pavlov          : WR=1.000, AR/step=3.080, STD=0.134
+    IPD_TitForTat       : WR=1.000, AR/step=1.080, STD=0.109
+    IPD_Uniform         : WR=1.000, AR/step=2.994, STD=14.064
+
+Report saved to results/IPD/SelfPlay/report.json
+Saved report to results/IPD/SelfPlay/report.json
+
+========================================
+EVALUATING: IPD_PRPO
+========================================
+Starting comprehensive evaluation of IPD_PRPO
+
+====================================================================================================
+🏆 ENHANCED GAUNTLET EVALUATION: IPD_PRPO
+====================================================================================================
+
+🎯 ROBUSTNESS METRICS:
+  Overall Win Rate:     0.146
+  Minimum Win Rate:     0.000
+  Win Rate Std:         0.309
+  Average Reward:       1.705
+  Worst Case Reward:    0.200
+  Exploitability:       0.000
+  Regret:              0.000
+  🏅 ROBUSTNESS SCORE:  0.709
+
+📊 DETAILED CHALLENGER RESULTS:
+
+  Environment: IPD
+    IPD_AlwaysAlternate : WR=0.000, AR/step=1.800, STD=4.342
+    IPD_AlwaysCooperate : WR=1.000, AR/step=3.409, STD=5.387
+    IPD_AlwaysDefect    : WR=0.000, AR/step=0.200, STD=2.724
+    IPD_Copycat         : WR=0.114, AR/step=2.742, STD=4.344
+    IPD_FictitiousPlay  : WR=0.000, AR/step=0.232, STD=3.171
+    IPD_Grudger         : WR=0.000, AR/step=0.499, STD=11.725
+    IPD_Pavlov          : WR=0.000, AR/step=1.869, STD=4.501
+    IPD_TitForTat       : WR=0.198, AR/step=2.779, STD=3.766
+    IPD_Uniform         : WR=0.000, AR/step=1.810, STD=11.813
+
+Report saved to results/IPD/PRPO/report.json
+Saved report to results/IPD/PRPO/report.json
+
+--- Computing seed-wise scores, 95% CI, and paired t-test (IPD PRPO vs PPO) ---
+PPO mean=137.730, 95% CI=[133.365, 142.095], n=10
+PRPO mean=138.580, 95% CI=[137.284, 139.876], n=10
+Paired t-test (PRPO vs PPO): p-value=0.6946
+
+
+🎉 IPD training and evaluation complete. Outputs under 'results/IPD/'. 🎉

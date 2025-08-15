@@ -1,0 +1,105 @@
+{
+  "summary": {
+    "policy_name": "Kuhn_DQN",
+    "evaluation_timestamp": 1754842379.7471652,
+    "robustness_score": 0.29,
+    "key_strengths": [
+      "Low exploitability",
+      "Stable performance"
+    ],
+    "key_weaknesses": [
+      "Vulnerable to specific challengers"
+    ],
+    "overall_grade": "F"
+  },
+  "detailed_analysis": {
+    "performance_trends": {
+      "trend": "Stable",
+      "details": "Trend calculated over 7 evaluations with a slope of -0.0095."
+    },
+    "challenger_analysis": {
+      "easiest_challenger": "N/A",
+      "hardest_challenger": "N/A",
+      "details": "No challenger results available in the latest evaluation."
+    },
+    "weakness_patterns": [
+      "Could not categorize challengers to identify weakness patterns."
+    ],
+    "improvement_suggestions": [
+      "The policy appears robust. Continue monitoring for any emerging weaknesses."
+    ]
+  },
+  "visualizations": {
+    "challenger_performance": {
+      "plot_path": "Kuhn_DQN_challenger_performance.png",
+      "data": {
+        "names": [],
+        "win_rates": [],
+        "avg_rewards": []
+      }
+    },
+    "robustness_radar": {
+      "plot_path": "Kuhn_DQN_robustness_radar.png",
+      "data": {
+        "categories": [
+          "Overall Win Rate",
+          "Min Win Rate",
+          "Low Exploitability",
+          "Low Regret",
+          "Forward Transfer",
+          "Population Diversity",
+          "Low Forgetting"
+        ],
+        "values": [
+          0.0,
+          0.0,
+          1.0,
+          1.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ]
+      }
+    },
+    "performance_heatmap": {
+      "plot_path": "Kuhn_DQN_performance_heatmap.png",
+      "data": {
+        "matrix": [],
+        "envs": [],
+        "challengers": []
+      }
+    },
+    "metrics_comparison": {
+      "plot_path": "Kuhn_DQN_metrics_comparison.png",
+      "data": {
+        "names": [
+          "Overall Win Rate",
+          "Min Win Rate",
+          "Avg Reward",
+          "Low Exploitability",
+          "Low Regret",
+          "Forward Transfer",
+          "Population Diversity"
+        ],
+        "values": [
+          0.0,
+          0.0,
+          0.5,
+          1.0,
+          1.0,
+          0.0,
+          0.0
+        ]
+      }
+    }
+  },
+  "recommendations": [
+    "Consider regularization to improve worst-case performance"
+  ],
+  "composites": {
+    "zero_sum_composite": 0.29,
+    "general_sum_composite": null,
+    "ipd_exploitability_proxy": 0.0
+  }
+}

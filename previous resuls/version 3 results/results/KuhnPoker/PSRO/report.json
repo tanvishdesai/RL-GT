@@ -1,0 +1,134 @@
+{
+  "summary": {
+    "policy_name": "Kuhn_PSRO",
+    "evaluation_timestamp": 1754674370.1719909,
+    "robustness_score": 0.36131499999999994,
+    "key_strengths": [],
+    "key_weaknesses": [
+      "High regret compared to optimal",
+      "Inconsistent performance"
+    ],
+    "overall_grade": "F"
+  },
+  "detailed_analysis": {
+    "performance_trends": {
+      "trend": "Declining",
+      "details": "Trend calculated over 3 evaluations with a slope of -0.0870."
+    },
+    "challenger_analysis": {
+      "easiest_challenger": "Kuhn_AlwaysPass (Win Rate: 0.911)",
+      "hardest_challenger": "Kuhn_AlwaysBet (Win Rate: 0.221)"
+    },
+    "weakness_patterns": [
+      "Could not categorize challengers to identify weakness patterns."
+    ],
+    "improvement_suggestions": [
+      "High Regret: The policy is far from optimal. This could indicate a need for a more complex model architecture, longer training, or hyperparameter tuning.",
+      "Low Nash Convergence: The policy's strategy is not close to a game-theoretic equilibrium. Improve this by training against a wider variety of strong opponents or using self-play schemes like Fictitious Play.",
+      "Inconsistent Performance: To stabilize performance, try using regularization techniques (e.g., entropy regularization) or policy ensemble methods."
+    ]
+  },
+  "visualizations": {
+    "challenger_performance": {
+      "plot_path": "Kuhn_PSRO_challenger_performance.png",
+      "data": {
+        "names": [
+          "Kuhn_AlwaysPass",
+          "Kuhn_AlwaysBet",
+          "Kuhn_Uniform",
+          "Kuhn_Threshold"
+        ],
+        "win_rates": [
+          0.9108,
+          0.2214,
+          0.5656,
+          0.6386
+        ],
+        "avg_rewards": [
+          0.8216,
+          -0.753,
+          0.0374,
+          0.378
+        ]
+      }
+    },
+    "robustness_radar": {
+      "plot_path": "Kuhn_PSRO_robustness_radar.png",
+      "data": {
+        "categories": [
+          "Overall Win Rate",
+          "Min Win Rate",
+          "Low Exploitability",
+          "Low Regret",
+          "Nash Convergence",
+          "Forward Transfer",
+          "Population Diversity",
+          "Low Forgetting"
+        ],
+        "values": [
+          0.5841,
+          0.2214,
+          0.6234999999999999,
+          0.0605,
+          0.015867888695831778,
+          0.0,
+          1.0,
+          1.0,
+          0.5841
+        ]
+      }
+    },
+    "performance_heatmap": {
+      "plot_path": "Kuhn_PSRO_performance_heatmap.png",
+      "data": {
+        "matrix": [
+          [
+            0.17245,
+            0.9108,
+            0.6638,
+            0.54215
+          ]
+        ],
+        "envs": [
+          "KuhnPoker"
+        ],
+        "challengers": [
+          "Kuhn_AlwaysBet",
+          "Kuhn_AlwaysPass",
+          "Kuhn_Threshold",
+          "Kuhn_Uniform"
+        ]
+      }
+    },
+    "metrics_comparison": {
+      "plot_path": "Kuhn_PSRO_metrics_comparison.png",
+      "data": {
+        "names": [
+          "Overall Win Rate",
+          "Min Win Rate",
+          "Avg Reward",
+          "Low Exploitability",
+          "Low Regret",
+          "Nash Convergence",
+          "Forward Transfer",
+          "Population Diversity"
+        ],
+        "values": [
+          0.5841,
+          0.2214,
+          0.5605,
+          0.6234999999999999,
+          0.0605,
+          0.015867888695831778,
+          0.0,
+          1.0
+        ]
+      }
+    }
+  },
+  "recommendations": [
+    "Consider regularization to improve worst-case performance",
+    "Add ensemble methods to improve consistency",
+    "Fine-tune strategy to better approximate Nash equilibrium"
+  ]
+}

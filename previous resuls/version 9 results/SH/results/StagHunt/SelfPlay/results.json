@@ -1,0 +1,204 @@
+{
+  "policy_name": "StagHunt_SelfPlay",
+  "metrics": {
+    "overall_win_rate": 0.6313833333333333,
+    "min_win_rate": 0.0,
+    "max_win_rate": 1.0,
+    "win_rate_std": 0.3945229372996652,
+    "avg_reward": 1.3700146666666668,
+    "worst_case_reward": 0.9746299999999999,
+    "exploitability": 0.060583384641111106,
+    "regret": 0.060583384641111106,
+    "adaptation_rate": 0.0,
+    "forgetting_rate": 0.0,
+    "plasticity_score": 0.0,
+    "population_diversity": 1.0,
+    "nash_conv": null,
+    "forward_transfer": 0.0,
+    "backward_transfer": 1.0,
+    "population_entropy": 0.896240625180289,
+    "jensen_shannon_divergence": 0.0,
+    "nash_equilibrium_distance": 0.03546517631267168,
+    "regret_bound_achieved": true,
+    "general_sum": true,
+    "cooperation_rate": 0.025077666666666665,
+    "social_welfare": 2.0378746666666667,
+    "cc_rate_tft": 0.009468666666666667,
+    "ipd_exploitability_proxy": 0.3416925555555556,
+    "cc_rate_grudger": 0.009468666666666667,
+    "reward_min": 0.0,
+    "reward_max": 3.0,
+    "social_welfare_min": 2.0,
+    "social_welfare_max": 6.0
+  },
+  "robustness_score": 0.45960235851397235,
+  "detailed_results": {
+    "StagHunt": {
+      "StagHunt_AlwaysStag": {
+        "avg_reward": 101.2729,
+        "avg_reward_per_step": 2.025458,
+        "opp_avg_reward_per_step": 0.076374,
+        "avg_step_count": 50.0,
+        "win_rate": 1.0,
+        "loss_rate": 0.0,
+        "draw_rate": 0.0,
+        "avg_payoff_diff": 97.4542,
+        "payoff_diff_std": 2.215604287773428,
+        "reward_std": 1.107802143886714,
+        "min_reward": 100.0,
+        "max_reward": 107.0,
+        "policy_action0_rate": 0.025458,
+        "joint_action00_rate": 0.025458,
+        "_policy_action_dist": [
+          0.025458,
+          0.974542
+        ],
+        "_opponent_action_dist": [
+          1.0,
+          0.0
+        ],
+        "exploitability": 0.0
+      },
+      "StagHunt_AlwaysHare": {
+        "avg_reward": 48.7315,
+        "avg_reward_per_step": 0.9746299999999999,
+        "opp_avg_reward_per_step": 1.0253700000000001,
+        "avg_step_count": 50.0,
+        "win_rate": 0.0,
+        "loss_rate": 0.723,
+        "draw_rate": 0.277,
+        "avg_payoff_diff": -2.537,
+        "payoff_diff_std": 2.2348223643054945,
+        "reward_std": 1.1174111821527473,
+        "min_reward": 43.0,
+        "max_reward": 50.0,
+        "policy_action0_rate": 0.02537,
+        "joint_action00_rate": 0.0,
+        "_policy_action_dist": [
+          0.02537,
+          0.97463
+        ],
+        "_opponent_action_dist": [
+          0.0,
+          1.0
+        ],
+        "exploitability": 0.18121428571428572
+      },
+      "StagHunt_TitForTat": {
+        "avg_reward": 50.5522,
+        "avg_reward_per_step": 1.0110439999999998,
+        "opp_avg_reward_per_step": 0.9922200000000001,
+        "avg_step_count": 50.0,
+        "win_rate": 0.4809,
+        "loss_rate": 0.0103,
+        "draw_rate": 0.5088,
+        "avg_payoff_diff": 0.9412,
+        "payoff_diff_std": 1.038721598889712,
+        "reward_std": 0.6719190129770105,
+        "min_reward": 49.0,
+        "max_reward": 57.0,
+        "policy_action0_rate": 0.024638,
+        "joint_action00_rate": 0.000816,
+        "_policy_action_dist": [
+          0.024638,
+          0.975362
+        ],
+        "_opponent_action_dist": [
+          0.03405,
+          0.96595
+        ],
+        "exploitability": 0.0
+      },
+      "StagHunt_BiasedStag": {
+        "avg_reward": 85.5615,
+        "avg_reward_per_step": 1.71123,
+        "opp_avg_reward_per_step": 0.35885,
+        "avg_step_count": 50.0,
+        "win_rate": 1.0,
+        "loss_rate": 0.0,
+        "draw_rate": 0.0,
+        "avg_payoff_diff": 67.619,
+        "payoff_diff_std": 6.945159393419275,
+        "reward_std": 3.6218804163031115,
+        "min_reward": 71.0,
+        "max_reward": 99.0,
+        "policy_action0_rate": 0.025132,
+        "joint_action00_rate": 0.01752,
+        "_policy_action_dist": [
+          0.025132,
+          0.974868
+        ],
+        "_opponent_action_dist": [
+          0.701322,
+          0.298678
+        ],
+        "exploitability": 0.0
+      },
+      "StagHunt_Uniform": {
+        "avg_reward": 74.9935,
+        "avg_reward_per_step": 1.4998699999999998,
+        "opp_avg_reward_per_step": 0.5498019999999999,
+        "avg_step_count": 50.0,
+        "win_rate": 1.0,
+        "loss_rate": 0.0,
+        "draw_rate": 0.0,
+        "avg_payoff_diff": 47.5034,
+        "payoff_diff_std": 7.332788585524609,
+        "reward_std": 3.831952211340847,
+        "min_reward": 61.0,
+        "max_reward": 89.0,
+        "policy_action0_rate": 0.02493,
+        "joint_action00_rate": 0.012418,
+        "_policy_action_dist": [
+          0.02493,
+          0.97507
+        ],
+        "_opponent_action_dist": [
+          0.499964,
+          0.500036
+        ],
+        "exploitability": 0.0
+      },
+      "StagHunt_ForgivingTFT": {
+        "avg_reward": 49.8928,
+        "avg_reward_per_step": 0.997856,
+        "opp_avg_reward_per_step": 1.0045439999999999,
+        "avg_step_count": 50.0,
+        "win_rate": 0.3074,
+        "loss_rate": 0.3273,
+        "draw_rate": 0.3653,
+        "avg_payoff_diff": -0.3344,
+        "payoff_diff_std": 2.128703041760405,
+        "reward_std": 1.1216542069639823,
+        "min_reward": 45.0,
+        "max_reward": 56.0,
+        "policy_action0_rate": 0.024938,
+        "joint_action00_rate": 0.0006,
+        "_policy_action_dist": [
+          0.024938,
+          0.975062
+        ],
+        "_opponent_action_dist": [
+          0.021594,
+          0.978406
+        ],
+        "exploitability": 0.03344
+      },
+      "_payoff_matrix": null,
+      "_payoff_matrices": [
+        "[[3 0]\n [2 1]]",
+        "[[3 2]\n [0 1]]"
+      ],
+      "_zero_sum": false,
+      "_policy_action_dist": [
+        0.025077666666666665,
+        0.9749223333333333
+      ],
+      "_opponent_action_dist": [
+        0.37615499999999996,
+        0.6238450000000001
+      ],
+      "_policy_coop_rate": 0.025077666666666665
+    }
+  }
+}

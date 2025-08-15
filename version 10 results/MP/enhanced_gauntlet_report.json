@@ -1,0 +1,192 @@
+{
+  "summary": {
+    "policy_name": "TestRPSPolicy",
+    "evaluation_timestamp": 1755229883.8471835,
+    "robustness_score": 0.2791032826043782,
+    "key_strengths": [],
+    "key_weaknesses": [
+      "Vulnerable to specific challengers",
+      "Highly exploitable"
+    ],
+    "overall_grade": "F"
+  },
+  "detailed_analysis": {
+    "performance_trends": {
+      "trend": "N/A",
+      "details": "Insufficient data (1 runs). Need at least 3 runs to estimate a trend."
+    },
+    "challenger_analysis": {
+      "easiest_challenger": "RPS_PopulationBased (Win Rate: 0.600)",
+      "hardest_challenger": "RPS_Copycat (Win Rate: 0.000)"
+    },
+    "weakness_patterns": [
+      "Struggles against 'fixed_strategy' opponents (Avg Win Rate: 0.200)",
+      "Struggles against 'noise_robustness' opponents (Avg Win Rate: 0.300)",
+      "Struggles against 'biased_strategy' opponents (Avg Win Rate: 0.367)",
+      "Struggles against 'pattern_based' opponents (Avg Win Rate: 0.167)"
+    ],
+    "improvement_suggestions": [
+      "High Exploitability: Consider adversarial training or add more diverse, adaptive agents (like NeuralAdversary) to the training opponents.",
+      "Weak against Noise: Improve robustness by injecting noise into observations or actions during the training process.",
+      "Weak against Pattern-Based Agents: The policy is predictable. Introduce mechanisms to detect and break patterns, such as adding memory (LSTMs) or increasing stochasticity in its actions."
+    ]
+  },
+  "visualizations": {
+    "challenger_performance": {
+      "plot_path": "TestRPSPolicy_challenger_performance.png",
+      "data": {
+        "names": [
+          "RPS_AlwaysRock",
+          "RPS_AlwaysPaper",
+          "RPS_AlwaysScissors",
+          "RPS_Uniform",
+          "RPS_BiasedRock",
+          "RPS_CyclicRPS",
+          "RPS_Copycat",
+          "RPS_AdaptiveCounter",
+          "RPS_PopulationBased",
+          "RPS_NeuralAdversary",
+          "RPS_BiasedPaper",
+          "RPS_BiasedScissors",
+          "RPS_NoisyUniform",
+          "RPS_CycleReverse"
+        ],
+        "win_rates": [
+          0.1,
+          0.2,
+          0.3,
+          0.3,
+          0.5,
+          0.3,
+          0.0,
+          0.4,
+          0.6,
+          0.3,
+          0.1,
+          0.5,
+          0.3,
+          0.2
+        ],
+        "avg_rewards": [
+          -0.3,
+          -0.3,
+          0.1,
+          0.0,
+          0.1,
+          0.0,
+          -0.5,
+          0.2,
+          0.5,
+          -0.3,
+          -0.4,
+          0.3,
+          0.0,
+          -0.2
+        ]
+      }
+    },
+    "robustness_radar": {
+      "plot_path": "TestRPSPolicy_robustness_radar.png",
+      "data": {
+        "categories": [
+          "Overall Win Rate",
+          "Min Win Rate",
+          "Low Exploitability",
+          "Low Regret",
+          "Nash Convergence",
+          "Forward Transfer",
+          "Population Diversity",
+          "Low Forgetting"
+        ],
+        "values": [
+          0.2928571428571428,
+          0.0,
+          0.4107142857142857,
+          0.7095238095238094,
+          0.8480288247882577,
+          0.0,
+          0.42920850923042164,
+          1.0,
+          0.2928571428571428
+        ]
+      }
+    },
+    "performance_heatmap": {
+      "plot_path": "TestRPSPolicy_performance_heatmap.png",
+      "data": {
+        "matrix": [
+          [
+            0.5,
+            0.275,
+            0.22499999999999998,
+            0.42500000000000004,
+            0.2,
+            0.525,
+            0.575,
+            0.125,
+            0.30000000000000004,
+            0.4,
+            0.32499999999999996,
+            0.4,
+            0.675,
+            0.4
+          ]
+        ],
+        "envs": [
+          "default"
+        ],
+        "challengers": [
+          "RPS_AdaptiveCounter",
+          "RPS_AlwaysPaper",
+          "RPS_AlwaysRock",
+          "RPS_AlwaysScissors",
+          "RPS_BiasedPaper",
+          "RPS_BiasedRock",
+          "RPS_BiasedScissors",
+          "RPS_Copycat",
+          "RPS_CycleReverse",
+          "RPS_CyclicRPS",
+          "RPS_NeuralAdversary",
+          "RPS_NoisyUniform",
+          "RPS_PopulationBased",
+          "RPS_Uniform"
+        ]
+      }
+    },
+    "metrics_comparison": {
+      "plot_path": "TestRPSPolicy_metrics_comparison.png",
+      "data": {
+        "names": [
+          "Overall Win Rate",
+          "Min Win Rate",
+          "Avg Reward",
+          "Low Exploitability",
+          "Low Regret",
+          "Forward Transfer",
+          "Population Diversity",
+          "Nash Convergence"
+        ],
+        "values": [
+          0.2928571428571428,
+          0.0,
+          0.4714285714285714,
+          0.4107142857142857,
+          0.7095238095238094,
+          0.0,
+          0.42920850923042164,
+          0.8480288247882577
+        ]
+      }
+    }
+  },
+  "recommendations": [
+    "Consider regularization to improve worst-case performance",
+    "Implement adversarial training to reduce exploitability",
+    "Add ensemble methods to improve consistency"
+  ],
+  "composites": {
+    "zero_sum_composite": 0.2791032826043782,
+    "general_sum_composite": null,
+    "ipd_exploitability_proxy": 0.0
+  }
+}

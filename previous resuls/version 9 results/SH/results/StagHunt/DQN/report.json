@@ -1,0 +1,148 @@
+{
+  "summary": {
+    "policy_name": "StagHunt_DQN",
+    "evaluation_timestamp": 1754999009.7309127,
+    "robustness_score": 0.8127852117556184,
+    "key_strengths": [
+      "Low exploitability"
+    ],
+    "key_weaknesses": [
+      "Vulnerable to specific challengers",
+      "Inconsistent performance"
+    ],
+    "overall_grade": "A"
+  },
+  "detailed_analysis": {
+    "performance_trends": {
+      "trend": "N/A",
+      "details": "Insufficient data (2 runs). Need at least 3 runs to estimate a trend."
+    },
+    "challenger_analysis": {
+      "easiest_challenger": "StagHunt_AlwaysStag (Win Rate: 0.712)",
+      "hardest_challenger": "StagHunt_AlwaysHare (Win Rate: 0.000)"
+    },
+    "weakness_patterns": [
+      "Struggles against 'fixed_strategy' opponents (Avg Win Rate: 0.356)",
+      "Struggles against 'pattern_based' opponents (Avg Win Rate: 0.013)",
+      "Struggles against 'biased_strategy' opponents (Avg Win Rate: 0.000)",
+      "Struggles against 'noise_robustness' opponents (Avg Win Rate: 0.000)",
+      "Shows high performance variance (Std Dev: 0.263), indicating inconsistency."
+    ],
+    "improvement_suggestions": [
+      "Inconsistent Performance: To stabilize performance, try using regularization techniques (e.g., entropy regularization) or policy ensemble methods.",
+      "Weak against Pattern-Based Agents: The policy is predictable. Introduce mechanisms to detect and break patterns, such as adding memory (LSTMs) or increasing stochasticity in its actions.",
+      "Weak against Noise: Improve robustness by injecting noise into observations or actions during the training process."
+    ]
+  },
+  "visualizations": {
+    "challenger_performance": {
+      "plot_path": "StagHunt_DQN_challenger_performance.png",
+      "data": {
+        "names": [
+          "StagHunt_AlwaysStag",
+          "StagHunt_AlwaysHare",
+          "StagHunt_TitForTat",
+          "StagHunt_BiasedStag",
+          "StagHunt_Uniform",
+          "StagHunt_ForgivingTFT"
+        ],
+        "win_rates": [
+          0.7124,
+          0.0,
+          0.0128,
+          0.0,
+          0.0,
+          0.0246
+        ],
+        "avg_rewards": [
+          148.7506,
+          1.2287,
+          143.6709,
+          104.463,
+          75.0186,
+          145.2694
+        ]
+      }
+    },
+    "robustness_radar": {
+      "plot_path": "StagHunt_DQN_robustness_radar.png",
+      "data": {
+        "categories": [
+          "Overall Win Rate",
+          "Min Win Rate",
+          "Low Exploitability",
+          "Low Regret",
+          "Forward Transfer",
+          "Population Diversity",
+          "Low Forgetting"
+        ],
+        "values": [
+          0.12496666666666667,
+          0.0,
+          0.9493588385226667,
+          0.9493588385226667,
+          0.0,
+          1.0,
+          1.0,
+          0.12496666666666667
+        ]
+      }
+    },
+    "performance_heatmap": {
+      "plot_path": "StagHunt_DQN_performance_heatmap.png",
+      "data": {
+        "matrix": [
+          [
+            0.5,
+            0.8562000000000001,
+            0.5,
+            0.5123,
+            0.5064,
+            0.5
+          ]
+        ],
+        "envs": [
+          "StagHunt"
+        ],
+        "challengers": [
+          "StagHunt_AlwaysHare",
+          "StagHunt_AlwaysStag",
+          "StagHunt_BiasedStag",
+          "StagHunt_ForgivingTFT",
+          "StagHunt_TitForTat",
+          "StagHunt_Uniform"
+        ]
+      }
+    },
+    "metrics_comparison": {
+      "plot_path": "StagHunt_DQN_metrics_comparison.png",
+      "data": {
+        "names": [
+          "Avg Reward",
+          "Social Welfare",
+          "Cooperation Rate",
+          "Low Exploitability",
+          "Low Regret",
+          "Population Diversity"
+        ],
+        "values": [
+          1.0,
+          1.0,
+          0.9753086666666667,
+          0.9493588385226667,
+          0.9493588385226667,
+          1.0
+        ]
+      }
+    }
+  },
+  "recommendations": [
+    "Consider regularization to improve worst-case performance",
+    "Add ensemble methods to improve consistency"
+  ],
+  "composites": {
+    "zero_sum_composite": null,
+    "general_sum_composite": 0.8127852117556184,
+    "ipd_exploitability_proxy": 0.9753086666666667
+  }
+}

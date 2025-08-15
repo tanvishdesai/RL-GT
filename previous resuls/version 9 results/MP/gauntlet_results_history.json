@@ -1,0 +1,34 @@
+{
+  "history": [
+    {
+      "policy_name": "TestRPSPolicy",
+      "timestamp": 1754977569.440331,
+      "robustness_score": 0.3368249206033888
+    },
+    {
+      "policy_name": "Pennies_DQN",
+      "timestamp": 1754979360.9334936,
+      "robustness_score": 0.34508062802733086
+    },
+    {
+      "policy_name": "Pennies_PPO",
+      "timestamp": 1754979423.2154388,
+      "robustness_score": 0.4297054250522505
+    },
+    {
+      "policy_name": "Pennies_PSRO",
+      "timestamp": 1754979463.107207,
+      "robustness_score": 0.42993930206879405
+    },
+    {
+      "policy_name": "Pennies_SelfPlay",
+      "timestamp": 1754979524.9800568,
+      "robustness_score": 0.34405237785102266
+    },
+    {
+      "policy_name": "Pennies_PRPO",
+      "timestamp": 1754979583.117451,
+      "robustness_score": 0.4287767226988942
+    }
+  ]
+}

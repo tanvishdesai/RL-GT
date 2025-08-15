@@ -1,0 +1,76 @@
+--- Setting up Gauntlet Benchmark for Matching Pennies Evaluation ---
+Built a master list of 23 challengers for various games.
+
+--- Starting Matching Pennies Training Phase ---
+Training DQNAgent against TrainingOpponent_Uniform in Matching Pennies...
+Training finished.
+Training PPOAgent against TrainingOpponent_Uniform in Matching Pennies...
+Training finished.
+Added custom challenger: Pennies_FrequencyCounter
+
+--- Starting Matching Pennies Benchmark Evaluation Phase ---
+
+========================================
+EVALUATING: PENNIES_DQN
+========================================
+Starting comprehensive evaluation of Pennies_DQN
+
+====================================================================================================
+🏆 ENHANCED GAUNTLET EVALUATION: Pennies_DQN
+====================================================================================================
+
+🎯 ROBUSTNESS METRICS:
+  Overall Win Rate:     0.498
+  Minimum Win Rate:     0.000
+  Win Rate Std:         0.316
+  Average Reward:       -0.004
+  Worst Case Reward:    -1.000
+  Exploitability:       0.000
+  Regret:              1.004
+  Nash Convergence:     0.751
+  🏅 ROBUSTNESS SCORE:  0.344
+
+📊 DETAILED CHALLENGER RESULTS:
+
+  Environment: MatchingPennies
+    Pennies_AlwaysHeads : WR=1.000, AR=1.000, STD=0.000
+    Pennies_AlwaysTails : WR=0.000, AR=-1.000, STD=0.000
+    Pennies_Copycat     : WR=0.493, AR=-0.014, STD=1.000
+    Pennies_FrequencyCounter: WR=0.487, AR=-0.026, STD=1.000
+    Pennies_Uniform     : WR=0.511, AR=0.022, STD=1.000
+
+========================================
+EVALUATING: PENNIES_PPO
+========================================
+Starting comprehensive evaluation of Pennies_PPO
+
+====================================================================================================
+🏆 ENHANCED GAUNTLET EVALUATION: Pennies_PPO
+====================================================================================================
+
+🎯 ROBUSTNESS METRICS:
+  Overall Win Rate:     0.489
+  Minimum Win Rate:     0.357
+  Win Rate Std:         0.086
+  Average Reward:       -0.022
+  Worst Case Reward:    -0.286
+  Exploitability:       0.000
+  Regret:              1.022
+  Nash Convergence:     0.755
+  🏅 ROBUSTNESS SCORE:  0.356
+
+📊 DETAILED CHALLENGER RESULTS:
+
+  Environment: MatchingPennies
+    Pennies_AlwaysHeads : WR=0.626, AR=0.252, STD=0.968
+    Pennies_AlwaysTails : WR=0.357, AR=-0.286, STD=0.958
+    Pennies_Copycat     : WR=0.498, AR=-0.004, STD=1.000
+    Pennies_FrequencyCounter: WR=0.499, AR=-0.002, STD=1.000
+    Pennies_Uniform     : WR=0.466, AR=-0.068, STD=0.998
+
+
+🎉 Matching Pennies evaluation run has finished. 🎉
+
+Report saved to matching_pennies_report.json
+
+Final Matching Pennies summary report saved to 'matching_pennies_report.json'

@@ -1,0 +1,155 @@
+{
+  "summary": {
+    "policy_name": "IPD_DQN",
+    "evaluation_timestamp": 1754825022.2363245,
+    "robustness_score": 0.5859426599100805,
+    "key_strengths": [],
+    "key_weaknesses": [
+      "Vulnerable to specific challengers",
+      "Highly exploitable",
+      "High regret compared to optimal",
+      "Inconsistent performance"
+    ],
+    "overall_grade": "C+"
+  },
+  "detailed_analysis": {
+    "performance_trends": {
+      "trend": "N/A",
+      "details": "Insufficient data (only 1 evaluation run). Run more evaluations to see a trend."
+    },
+    "challenger_analysis": {
+      "easiest_challenger": "IPD_AlwaysCooperate (Win Rate: 0.716)",
+      "hardest_challenger": "IPD_AlwaysDefect (Win Rate: 0.000)"
+    },
+    "weakness_patterns": [
+      "Could not categorize challengers to identify weakness patterns."
+    ],
+    "improvement_suggestions": [
+      "High Exploitability: Consider adversarial training or add more diverse, adaptive agents (like NeuralAdversary) to the training opponents.",
+      "High Regret: The policy is far from optimal. This could indicate a need for a more complex model architecture, longer training, or hyperparameter tuning.",
+      "Inconsistent Performance: To stabilize performance, try using regularization techniques (e.g., entropy regularization) or policy ensemble methods."
+    ]
+  },
+  "visualizations": {
+    "challenger_performance": {
+      "plot_path": "IPD_DQN_challenger_performance.png",
+      "data": {
+        "names": [
+          "IPD_AlwaysCooperate",
+          "IPD_AlwaysDefect",
+          "IPD_Uniform",
+          "IPD_TitForTat",
+          "IPD_Copycat",
+          "IPD_Grudger",
+          "IPD_AlwaysAlternate",
+          "IPD_Pavlov",
+          "IPD_FictitiousPlay"
+        ],
+        "win_rates": [
+          0.7155,
+          0.0,
+          0.0,
+          0.0345,
+          0.0155,
+          0.016,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "avg_rewards": [
+          152.52,
+          16.947,
+          78.551,
+          147.9745,
+          145.718,
+          93.624,
+          77.9705,
+          81.1235,
+          17.4255
+        ]
+      }
+    },
+    "robustness_radar": {
+      "plot_path": "IPD_DQN_robustness_radar.png",
+      "data": {
+        "categories": [
+          "Overall Win Rate",
+          "Min Win Rate",
+          "Low Exploitability",
+          "Low Regret",
+          "Forward Transfer",
+          "Population Diversity",
+          "Low Forgetting"
+        ],
+        "values": [
+          0.08683333333333333,
+          0.0,
+          0.222402,
+          0.36082400000000003,
+          0.0,
+          1.0,
+          1.0,
+          0.08683333333333333
+        ]
+      }
+    },
+    "performance_heatmap": {
+      "plot_path": "IPD_DQN_performance_heatmap.png",
+      "data": {
+        "matrix": [
+          [
+            0.5,
+            0.85775,
+            0.5,
+            0.50775,
+            0.5,
+            0.508,
+            0.5,
+            0.51725,
+            0.5
+          ]
+        ],
+        "envs": [
+          "IPD"
+        ],
+        "challengers": [
+          "IPD_AlwaysAlternate",
+          "IPD_AlwaysCooperate",
+          "IPD_AlwaysDefect",
+          "IPD_Copycat",
+          "IPD_FictitiousPlay",
+          "IPD_Grudger",
+          "IPD_Pavlov",
+          "IPD_TitForTat",
+          "IPD_Uniform"
+        ]
+      }
+    },
+    "metrics_comparison": {
+      "plot_path": "IPD_DQN_metrics_comparison.png",
+      "data": {
+        "names": [
+          "Avg Reward",
+          "Social Welfare",
+          "Cooperation Rate",
+          "Low Exploitability",
+          "Low Regret",
+          "Population Diversity"
+        ],
+        "values": [
+          1.0,
+          1.0,
+          0.8879900000000001,
+          0.222402,
+          0.36082400000000003,
+          1.0
+        ]
+      }
+    }
+  },
+  "recommendations": [
+    "Consider regularization to improve worst-case performance",
+    "Implement adversarial training to reduce exploitability",
+    "Add ensemble methods to improve consistency"
+  ]
+}

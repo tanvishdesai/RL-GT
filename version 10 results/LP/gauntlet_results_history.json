@@ -1,0 +1,34 @@
+{
+  "history": [
+    {
+      "policy_name": "TestRPSPolicy",
+      "timestamp": 1755055853.1582851,
+      "robustness_score": 0.34913642321937105
+    },
+    {
+      "policy_name": "Leduc_DQN",
+      "timestamp": 1755071168.1464558,
+      "robustness_score": 0.45604053487765706
+    },
+    {
+      "policy_name": "Leduc_PPO",
+      "timestamp": 1755071175.4369898,
+      "robustness_score": 0.49568910256410254
+    },
+    {
+      "policy_name": "Leduc_PSRO",
+      "timestamp": 1755071180.5386446,
+      "robustness_score": 0.4497810077956903
+    },
+    {
+      "policy_name": "Leduc_SelfPlay",
+      "timestamp": 1755071186.2887695,
+      "robustness_score": 0.4872939393939394
+    },
+    {
+      "policy_name": "Leduc_PRPO",
+      "timestamp": 1755071193.393859,
+      "robustness_score": 0.506801282051282
+    }
+  ]
+}

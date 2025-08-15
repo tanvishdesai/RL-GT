@@ -1,0 +1,143 @@
+{
+  "summary": {
+    "policy_name": "StagHunt_SelfPlay",
+    "evaluation_timestamp": 1755001472.961018,
+    "robustness_score": 0.45960235851397235,
+    "key_strengths": [
+      "High overall win rate",
+      "Low exploitability"
+    ],
+    "key_weaknesses": [
+      "Vulnerable to specific challengers",
+      "Inconsistent performance"
+    ],
+    "overall_grade": "C"
+  },
+  "detailed_analysis": {
+    "performance_trends": {
+      "trend": "Stable",
+      "details": "Trend calculated over 5 evaluations with a slope of 0.0238."
+    },
+    "challenger_analysis": {
+      "easiest_challenger": "StagHunt_AlwaysStag (Win Rate: 1.000)",
+      "hardest_challenger": "StagHunt_AlwaysHare (Win Rate: 0.000)"
+    },
+    "weakness_patterns": [
+      "Shows high performance variance (Std Dev: 0.395), indicating inconsistency."
+    ],
+    "improvement_suggestions": [
+      "Inconsistent Performance: To stabilize performance, try using regularization techniques (e.g., entropy regularization) or policy ensemble methods."
+    ]
+  },
+  "visualizations": {
+    "challenger_performance": {
+      "plot_path": "StagHunt_SelfPlay_challenger_performance.png",
+      "data": {
+        "names": [
+          "StagHunt_AlwaysStag",
+          "StagHunt_AlwaysHare",
+          "StagHunt_TitForTat",
+          "StagHunt_BiasedStag",
+          "StagHunt_Uniform",
+          "StagHunt_ForgivingTFT"
+        ],
+        "win_rates": [
+          1.0,
+          0.0,
+          0.4809,
+          1.0,
+          1.0,
+          0.3074
+        ],
+        "avg_rewards": [
+          101.2729,
+          48.7315,
+          50.5522,
+          85.5615,
+          74.9935,
+          49.8928
+        ]
+      }
+    },
+    "robustness_radar": {
+      "plot_path": "StagHunt_SelfPlay_robustness_radar.png",
+      "data": {
+        "categories": [
+          "Overall Win Rate",
+          "Min Win Rate",
+          "Low Exploitability",
+          "Low Regret",
+          "Forward Transfer",
+          "Population Diversity",
+          "Low Forgetting"
+        ],
+        "values": [
+          0.6313833333333333,
+          0.0,
+          0.9394166153588889,
+          0.9394166153588889,
+          0.0,
+          1.0,
+          1.0,
+          0.6313833333333333
+        ]
+      }
+    },
+    "performance_heatmap": {
+      "plot_path": "StagHunt_SelfPlay_performance_heatmap.png",
+      "data": {
+        "matrix": [
+          [
+            0.5,
+            1.0,
+            1.0,
+            0.6537,
+            0.74045,
+            1.0
+          ]
+        ],
+        "envs": [
+          "StagHunt"
+        ],
+        "challengers": [
+          "StagHunt_AlwaysHare",
+          "StagHunt_AlwaysStag",
+          "StagHunt_BiasedStag",
+          "StagHunt_ForgivingTFT",
+          "StagHunt_TitForTat",
+          "StagHunt_Uniform"
+        ]
+      }
+    },
+    "metrics_comparison": {
+      "plot_path": "StagHunt_SelfPlay_metrics_comparison.png",
+      "data": {
+        "names": [
+          "Avg Reward",
+          "Social Welfare",
+          "Cooperation Rate",
+          "Low Exploitability",
+          "Low Regret",
+          "Population Diversity"
+        ],
+        "values": [
+          1.0,
+          1.0,
+          0.025077666666666665,
+          0.9394166153588889,
+          0.9394166153588889,
+          1.0
+        ]
+      }
+    }
+  },
+  "recommendations": [
+    "Consider regularization to improve worst-case performance",
+    "Add ensemble methods to improve consistency"
+  ],
+  "composites": {
+    "zero_sum_composite": null,
+    "general_sum_composite": 0.45960235851397235,
+    "ipd_exploitability_proxy": 0.3416925555555556
+  }
+}

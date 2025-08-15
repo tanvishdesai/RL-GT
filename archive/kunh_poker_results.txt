@@ -1,0 +1,129 @@
+========================================
+EVALUATING: Kuhn_DQN
+========================================
+Starting comprehensive evaluation of Kuhn_DQN
+
+====================================================================================================
+🏆 ENHANCED GAUNTLET EVALUATION: Kuhn_DQN
+====================================================================================================
+
+🎯 ROBUSTNESS METRICS:
+  Overall Win Rate:     0.000
+  Minimum Win Rate:     0.000
+  Win Rate Std:         0.000
+  Average Reward:       0.000
+  Worst Case Reward:    0.000
+  Exploitability:       0.000
+  Regret:              0.000
+  🏅 ROBUSTNESS SCORE:  0.290
+
+📊 DETAILED CHALLENGER RESULTS:
+
+  Environment: KuhnPoker
+Report saved to results/KuhnPoker/DQN/report.json
+Saved report to results/KuhnPoker/DQN/report.json
+
+========================================
+EVALUATING: Kuhn_PPO
+========================================
+Starting comprehensive evaluation of Kuhn_PPO
+
+====================================================================================================
+🏆 ENHANCED GAUNTLET EVALUATION: Kuhn_PPO
+====================================================================================================
+
+🎯 ROBUSTNESS METRICS:
+  Overall Win Rate:     0.000
+  Minimum Win Rate:     0.000
+  Win Rate Std:         0.000
+  Average Reward:       0.000
+  Worst Case Reward:    0.000
+  Exploitability:       0.000
+  Regret:              0.000
+  🏅 ROBUSTNESS SCORE:  0.290
+
+📊 DETAILED CHALLENGER RESULTS:
+
+  Environment: KuhnPoker
+Report saved to results/KuhnPoker/PPO/report.json
+Saved report to results/KuhnPoker/PPO/report.json
+
+========================================
+EVALUATING: Kuhn_PSRO
+========================================
+Starting comprehensive evaluation of Kuhn_PSRO
+
+====================================================================================================
+🏆 ENHANCED GAUNTLET EVALUATION: Kuhn_PSRO
+====================================================================================================
+
+🎯 ROBUSTNESS METRICS:
+  Overall Win Rate:     0.000
+  Minimum Win Rate:     0.000
+  Win Rate Std:         0.000
+  Average Reward:       0.000
+  Worst Case Reward:    0.000
+  Exploitability:       0.000
+  Regret:              0.000
+  🏅 ROBUSTNESS SCORE:  0.290
+
+📊 DETAILED CHALLENGER RESULTS:
+
+  Environment: KuhnPoker
+Report saved to results/KuhnPoker/PSRO/report.json
+Saved report to results/KuhnPoker/PSRO/report.json
+
+========================================
+EVALUATING: Kuhn_SelfPlay
+========================================
+Starting comprehensive evaluation of Kuhn_SelfPlay
+
+====================================================================================================
+🏆 ENHANCED GAUNTLET EVALUATION: Kuhn_SelfPlay
+====================================================================================================
+
+🎯 ROBUSTNESS METRICS:
+  Overall Win Rate:     0.000
+  Minimum Win Rate:     0.000
+  Win Rate Std:         0.000
+  Average Reward:       0.000
+  Worst Case Reward:    0.000
+  Exploitability:       0.000
+  Regret:              0.000
+  🏅 ROBUSTNESS SCORE:  0.290
+
+📊 DETAILED CHALLENGER RESULTS:
+
+  Environment: KuhnPoker
+Report saved to results/KuhnPoker/SelfPlay/report.json
+Saved report to results/KuhnPoker/SelfPlay/report.json
+
+========================================
+EVALUATING: Kuhn_PRPO
+========================================
+Starting comprehensive evaluation of Kuhn_PRPO
+
+====================================================================================================
+🏆 ENHANCED GAUNTLET EVALUATION: Kuhn_PRPO
+====================================================================================================
+
+🎯 ROBUSTNESS METRICS:
+  Overall Win Rate:     0.000
+  Minimum Win Rate:     0.000
+  Win Rate Std:         0.000
+  Average Reward:       0.000
+  Worst Case Reward:    0.000
+  Exploitability:       0.000
+  Regret:              0.000
+  🏅 ROBUSTNESS SCORE:  0.290
+
+📊 DETAILED CHALLENGER RESULTS:
+
+  Environment: KuhnPoker
+Report saved to results/KuhnPoker/PRPO/report.json
+Saved report to results/KuhnPoker/PRPO/report.json
+
+--- Computing seed-wise scores, 95% CI, and paired t-test (Kuhn PRPO vs PPO) ---
+PPO mean=1.182, 95% CI=[1.131, 1.234], n=10
+PRPO mean=1.086, 95% CI=[0.959, 1.213], n=10
+Paired t-test (PRPO vs PPO): p-value=0.1803

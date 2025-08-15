@@ -1,0 +1,146 @@
+{
+  "summary": {
+    "policy_name": "StagHunt_PPO",
+    "evaluation_timestamp": 1755000603.4426353,
+    "robustness_score": 0.6443835506396032,
+    "key_strengths": [
+      "Low exploitability"
+    ],
+    "key_weaknesses": [
+      "Vulnerable to specific challengers",
+      "Inconsistent performance"
+    ],
+    "overall_grade": "B"
+  },
+  "detailed_analysis": {
+    "performance_trends": {
+      "trend": "Improving",
+      "details": "Trend calculated over 3 evaluations with a slope of 0.1572."
+    },
+    "challenger_analysis": {
+      "easiest_challenger": "StagHunt_AlwaysStag (Win Rate: 1.000)",
+      "hardest_challenger": "StagHunt_AlwaysHare (Win Rate: 0.000)"
+    },
+    "weakness_patterns": [
+      "Struggles against 'pattern_based' opponents (Avg Win Rate: 0.198)",
+      "Struggles against 'noise_robustness' opponents (Avg Win Rate: 0.141)",
+      "Shows high performance variance (Std Dev: 0.395), indicating inconsistency."
+    ],
+    "improvement_suggestions": [
+      "Inconsistent Performance: To stabilize performance, try using regularization techniques (e.g., entropy regularization) or policy ensemble methods.",
+      "Weak against Pattern-Based Agents: The policy is predictable. Introduce mechanisms to detect and break patterns, such as adding memory (LSTMs) or increasing stochasticity in its actions.",
+      "Weak against Noise: Improve robustness by injecting noise into observations or actions during the training process."
+    ]
+  },
+  "visualizations": {
+    "challenger_performance": {
+      "plot_path": "StagHunt_PPO_challenger_performance.png",
+      "data": {
+        "names": [
+          "StagHunt_AlwaysStag",
+          "StagHunt_AlwaysHare",
+          "StagHunt_TitForTat",
+          "StagHunt_BiasedStag",
+          "StagHunt_Uniform",
+          "StagHunt_ForgivingTFT"
+        ],
+        "win_rates": [
+          1.0,
+          0.0,
+          0.1977,
+          0.8157,
+          0.141,
+          0.0207
+        ],
+        "avg_rewards": [
+          129.5467,
+          18.8502,
+          88.6335,
+          97.0982,
+          74.9335,
+          74.5314
+        ]
+      }
+    },
+    "robustness_radar": {
+      "plot_path": "StagHunt_PPO_robustness_radar.png",
+      "data": {
+        "categories": [
+          "Overall Win Rate",
+          "Min Win Rate",
+          "Low Exploitability",
+          "Low Regret",
+          "Forward Transfer",
+          "Population Diversity",
+          "Low Forgetting"
+        ],
+        "values": [
+          0.36251666666666665,
+          0.0,
+          0.9778966007973334,
+          0.9778966007973334,
+          0.0,
+          1.0,
+          1.0,
+          0.36251666666666665
+        ]
+      }
+    },
+    "performance_heatmap": {
+      "plot_path": "StagHunt_PPO_performance_heatmap.png",
+      "data": {
+        "matrix": [
+          [
+            0.5,
+            1.0,
+            0.90785,
+            0.51035,
+            0.59885,
+            0.5705
+          ]
+        ],
+        "envs": [
+          "StagHunt"
+        ],
+        "challengers": [
+          "StagHunt_AlwaysHare",
+          "StagHunt_AlwaysStag",
+          "StagHunt_BiasedStag",
+          "StagHunt_ForgivingTFT",
+          "StagHunt_TitForTat",
+          "StagHunt_Uniform"
+        ]
+      }
+    },
+    "metrics_comparison": {
+      "plot_path": "StagHunt_PPO_metrics_comparison.png",
+      "data": {
+        "names": [
+          "Avg Reward",
+          "Social Welfare",
+          "Cooperation Rate",
+          "Low Exploitability",
+          "Low Regret",
+          "Population Diversity"
+        ],
+        "values": [
+          1.0,
+          1.0,
+          0.605292,
+          0.9778966007973334,
+          0.9778966007973334,
+          1.0
+        ]
+      }
+    }
+  },
+  "recommendations": [
+    "Consider regularization to improve worst-case performance",
+    "Add ensemble methods to improve consistency"
+  ],
+  "composites": {
+    "zero_sum_composite": null,
+    "general_sum_composite": 0.6443835506396032,
+    "ipd_exploitability_proxy": 0.605292
+  }
+}

@@ -1,0 +1,12 @@
+================================================================================
+📊 MAIN RESULTS SUMMARY (Exploitability)
+================================================================================
+🔬 Standard PPO: Exploitability: 10344.98 ± 0.00 mbb/h
+🔬 Self-Play: Exploitability: 1798.61 ± 0.00 mbb/h
+🔬 PSRO: Exploitability: 5651.53 ± 0.00 mbb/h
+🔬 PRPO: Exploitability: 4059.49 ± 0.00 mbb/h
+
+📊 ABLATION STUDY RESULTS (Exploitability)
+================================================================================
+🔬 PRPO: Exploitability: 4093.78 ± 0.00 mbb/h
+🔬 PRPO (Implicit Only): Exploitability: 4081.10 ± 0.00 mbb/h

@@ -1,0 +1,95 @@
+🚀 MATCHING PENNIES: COMPREHENSIVE PRPO & GAUNTLET EVALUATION
+================================================================================
+
+📊 1. BASELINE COMPARISON
+================================================================================
+MATCHING PENNIES: BASELINE COMPARISON
+================================================================================
+
+--- Running Standard PPO (Seed: 0) on Matching Pennies ---
+/tmp/ipykernel_13/3701717787.py:127: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  states=torch.FloatTensor([e.state for e in self.memory]).to(self.device)
+--- Running Self-Play (Seed: 0) on Matching Pennies ---
+
+--- Running PSRO (Seed: 0) on Matching Pennies ---
+
+--- Running PRPO (Seed: 0) on Matching Pennies ---
+
+--- Running Standard PPO (Seed: 1) on Matching Pennies ---
+
+--- Running Self-Play (Seed: 1) on Matching Pennies ---
+
+--- Running PSRO (Seed: 1) on Matching Pennies ---
+
+--- Running PRPO (Seed: 1) on Matching Pennies ---
+
+================================================================================
+📊 FINAL RESULTS SUMMARY
+================================================================================
+🔬 Standard PPO:
+  - Nash Distance:  0.0148 ± 0.0085
+  - Exploitability: 0.0142 ± 0.0091
+🔬 Self-Play:
+  - Nash Distance:  0.9998 ± 0.0002
+  - Exploitability: 0.9999 ± 0.0000
+🔬 PSRO:
+  - Nash Distance:  0.9796 ± 0.0044
+  - Exploitability: 0.9796 ± 0.0056
+🔬 PRPO:
+  - Nash Distance:  0.0014 ± 0.0012
+  - Exploitability: 0.0015 ± 0.0008
+
+📊 2. ABLATION STUDY
+================================================================================
+MATCHING PENNIES: PRPO ABLATION STUDY
+================================================================================
+
+--- Running PRPO (Seed: 0) on Matching Pennies ---
+
+--- Running PRPO (Nash Only) (Seed: 0) on Matching Pennies ---
+
+--- Running PRPO (Exploitability Only) (Seed: 0) on Matching Pennies ---
+
+--- Running PRPO (Tournament + Nash Only) (Seed: 0) on Matching Pennies ---
+
+--- Running PRPO (Seed: 1) on Matching Pennies ---
+
+--- Running PRPO (Nash Only) (Seed: 1) on Matching Pennies ---
+
+--- Running PRPO (Exploitability Only) (Seed: 1) on Matching Pennies ---
+
+--- Running PRPO (Tournament + Nash Only) (Seed: 1) on Matching Pennies ---
+
+================================================================================
+📊 ABLATION STUDY RESULTS
+================================================================================
+🔬 PRPO:
+  - Nash Distance:  0.0014 ± 0.0012
+  - Exploitability: 0.0015 ± 0.0008
+🔬 PRPO (Nash Only):
+  - Nash Distance:  0.0014 ± 0.0012
+  - Exploitability: 0.0015 ± 0.0008
+🔬 PRPO (Exploitability Only):
+  - Nash Distance:  0.0044 ± 0.0011
+  - Exploitability: 0.0046 ± 0.0009
+🔬 PRPO (Tournament + Nash Only):
+  - Nash Distance:  0.0064 ± 0.0036
+  - Exploitability: 0.0038 ± 0.0010
+
+📊 3. HYPERPARAMETER SENSITIVITY
+================================================================================
+MATCHING PENNIES: PRPO HYPERPARAMETER SENSITIVITY
+================================================================================
+
+🔧 Testing lambda_nash sensitivity...
+  λ_nash=0.1: Nash Dist: 0.0314±0.0040, Exploit: 0.0020±0.0008
+  λ_nash=0.5: Nash Dist: 0.0103±0.0077, Exploit: 0.0074±0.0015
+  λ_nash=1.0: Nash Dist: 0.0015±0.0009, Exploit: 0.0019±0.0005
+  λ_nash=2.0: Nash Dist: 0.0024±0.0014, Exploit: 0.0047±0.0042
+  λ_nash=5.0: Nash Dist: 0.0013±0.0012, Exploit: 0.0021±0.0004
+
+🔧 Testing lambda_exploit sensitivity...
+  λ_exploit=0.1: Nash Dist: 0.0075±0.0020, Exploit: 0.0054±0.0040
+  λ_exploit=0.5: Nash Dist: 0.0067±0.0026, Exploit: 0.0075±0.0035
+  λ_exploit=1.0: Nash Dist: 0.0030±0.0002, Exploit: 0.0030±0.0002
+  λ_exploit=2.0: Nash Dist: 0.0035±0.0007, Exploit: 0.0035±0.0007

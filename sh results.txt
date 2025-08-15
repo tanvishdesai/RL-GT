@@ -1,0 +1,141 @@
+--- Gauntlet Evaluation Phase ---
+Evaluating StagHunt_DQN...
+
+====================================================================================================
+🏆 ENHANCED GAUNTLET EVALUATION: StagHunt_DQN
+====================================================================================================
+
+🎯 ROBUSTNESS METRICS:
+  Overall Win Rate:     0.451
+  Minimum Win Rate:     0.000
+  Win Rate Std:         0.420
+  Average Reward:       1.490
+  Worst Case Reward:    0.508
+  Exploitability:       0.002
+  Regret:              0.002
+  🏅 ROBUSTNESS SCORE:  0.601
+
+📊 DETAILED CHALLENGER RESULTS:
+
+  Environment: StagHunt
+    StagHunt_AlwaysHare : WR=0.000, AR/step=0.508, STD=3.511
+    StagHunt_AlwaysStag : WR=1.000, AR/step=2.497, STD=3.631
+    StagHunt_BiasedStag : WR=0.985, AR/step=1.896, STD=7.847
+    StagHunt_ForgivingTFT: WR=0.005, AR/step=1.037, STD=14.009
+    StagHunt_TitForTat  : WR=0.195, AR/step=1.495, STD=7.570
+    StagHunt_Uniform    : WR=0.520, AR/step=1.510, STD=7.986
+Report saved to results/StagHunt/DQN/report.json
+✅ StagHunt_DQN evaluation completed.
+Evaluating StagHunt_PPO...
+
+====================================================================================================
+🏆 ENHANCED GAUNTLET EVALUATION: StagHunt_PPO
+====================================================================================================
+
+🎯 ROBUSTNESS METRICS:
+  Overall Win Rate:     0.703
+  Minimum Win Rate:     0.000
+  Win Rate Std:         0.376
+  Average Reward:       1.373
+  Worst Case Reward:    0.995
+  Exploitability:       0.061
+  Regret:              0.061
+  🏅 ROBUSTNESS SCORE:  0.457
+
+📊 DETAILED CHALLENGER RESULTS:
+
+  Environment: StagHunt
+    StagHunt_AlwaysHare : WR=0.000, AR/step=0.995, STD=0.479
+    StagHunt_AlwaysStag : WR=1.000, AR/step=2.013, STD=0.801
+    StagHunt_BiasedStag : WR=1.000, AR/step=1.702, STD=3.366
+    StagHunt_ForgivingTFT: WR=0.795, AR/step=1.018, STD=0.637
+    StagHunt_TitForTat  : WR=0.420, AR/step=1.009, STD=0.535
+    StagHunt_Uniform    : WR=1.000, AR/step=1.503, STD=3.519
+Report saved to results/StagHunt/PPO/report.json
+✅ StagHunt_PPO evaluation completed.
+Evaluating StagHunt_PSRO...
+
+====================================================================================================
+🏆 ENHANCED GAUNTLET EVALUATION: StagHunt_PSRO
+====================================================================================================
+
+🎯 ROBUSTNESS METRICS:
+  Overall Win Rate:     0.482
+  Minimum Win Rate:     0.000
+  Win Rate Std:         0.418
+  Average Reward:       1.468
+  Worst Case Reward:    0.527
+  Exploitability:       0.007
+  Regret:              0.007
+  🏅 ROBUSTNESS SCORE:  0.591
+
+📊 DETAILED CHALLENGER RESULTS:
+
+  Environment: StagHunt
+    StagHunt_AlwaysHare : WR=0.000, AR/step=0.527, STD=3.433
+    StagHunt_AlwaysStag : WR=1.000, AR/step=2.478, STD=3.521
+    StagHunt_BiasedStag : WR=0.990, AR/step=1.891, STD=8.074
+    StagHunt_ForgivingTFT: WR=0.000, AR/step=0.954, STD=13.155
+    StagHunt_TitForTat  : WR=0.285, AR/step=1.444, STD=7.422
+    StagHunt_Uniform    : WR=0.615, AR/step=1.513, STD=7.923
+Report saved to results/StagHunt/PSRO/report.json
+✅ StagHunt_PSRO evaluation completed.
+Evaluating StagHunt_SelfPlay...
+
+====================================================================================================
+🏆 ENHANCED GAUNTLET EVALUATION: StagHunt_SelfPlay
+====================================================================================================
+
+🎯 ROBUSTNESS METRICS:
+  Overall Win Rate:     0.627
+  Minimum Win Rate:     0.000
+  Win Rate Std:         0.396
+  Average Reward:       1.371
+  Worst Case Reward:    0.976
+  Exploitability:       0.061
+  Regret:              0.061
+  🏅 ROBUSTNESS SCORE:  0.460
+
+📊 DETAILED CHALLENGER RESULTS:
+
+  Environment: StagHunt
+    StagHunt_AlwaysHare : WR=0.000, AR/step=0.976, STD=1.106
+    StagHunt_AlwaysStag : WR=1.000, AR/step=2.025, STD=1.201
+    StagHunt_BiasedStag : WR=1.000, AR/step=1.711, STD=3.380
+    StagHunt_ForgivingTFT: WR=0.310, AR/step=1.000, STD=1.039
+    StagHunt_TitForTat  : WR=0.450, AR/step=1.011, STD=0.761
+    StagHunt_Uniform    : WR=1.000, AR/step=1.501, STD=3.753
+Report saved to results/StagHunt/SelfPlay/report.json
+✅ StagHunt_SelfPlay evaluation completed.
+Evaluating StagHunt_PRPO...
+
+====================================================================================================
+🏆 ENHANCED GAUNTLET EVALUATION: StagHunt_PRPO
+====================================================================================================
+
+🎯 ROBUSTNESS METRICS:
+  Overall Win Rate:     0.467
+  Minimum Win Rate:     0.000
+  Win Rate Std:         0.418
+  Average Reward:       1.468
+  Worst Case Reward:    0.537
+  Exploitability:       0.007
+  Regret:              0.007
+  🏅 ROBUSTNESS SCORE:  0.590
+
+📊 DETAILED CHALLENGER RESULTS:
+
+  Environment: StagHunt
+    StagHunt_AlwaysHare : WR=0.000, AR/step=0.537, STD=3.390
+    StagHunt_AlwaysStag : WR=1.000, AR/step=2.474, STD=3.559
+    StagHunt_BiasedStag : WR=0.995, AR/step=1.911, STD=6.971
+    StagHunt_ForgivingTFT: WR=0.005, AR/step=0.955, STD=13.679
+    StagHunt_TitForTat  : WR=0.250, AR/step=1.441, STD=6.853
+    StagHunt_Uniform    : WR=0.550, AR/step=1.492, STD=7.715
+Report saved to results/StagHunt/PRPO/report.json
+✅ StagHunt_PRPO evaluation completed.
+
+--- Computing seed-wise scores, 95% CI, and paired t-test (Stag Hunt PRPO vs PPO) ---
+PPO mean=119.614, 95% CI=[111.951, 127.277], n=10
+PRPO mean=127.812, 95% CI=[126.432, 129.192], n=10
+Paired t-test (PRPO vs PPO): p-value=0.0327

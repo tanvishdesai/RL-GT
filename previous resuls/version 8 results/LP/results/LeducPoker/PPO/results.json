@@ -1,0 +1,125 @@
+{
+  "summary": {
+    "policy_name": "Leduc_PPO",
+    "evaluation_timestamp": 1754937631.9833002,
+    "robustness_score": 0.5291383333333334,
+    "key_strengths": [
+      "Consistent performance across challengers",
+      "Low exploitability",
+      "Stable performance"
+    ],
+    "key_weaknesses": [],
+    "overall_grade": "C+"
+  },
+  "detailed_analysis": {
+    "performance_trends": {
+      "trend": "Improving",
+      "details": "Trend calculated over 3 evaluations with a slope of 0.0835."
+    },
+    "challenger_analysis": {
+      "easiest_challenger": "Leduc_AlwaysFold (Win Rate: 0.585)",
+      "hardest_challenger": "Leduc_AlwaysCall (Win Rate: 0.442)"
+    },
+    "weakness_patterns": [
+      "No significant weakness patterns identified. The policy is well-rounded."
+    ],
+    "improvement_suggestions": [
+      "The policy appears robust. Continue monitoring for any emerging weaknesses."
+    ]
+  },
+  "visualizations": {
+    "challenger_performance": {
+      "plot_path": "Leduc_PPO_challenger_performance.png",
+      "data": {
+        "names": [
+          "Leduc_Uniform",
+          "Leduc_AlwaysCall",
+          "Leduc_AlwaysFold"
+        ],
+        "win_rates": [
+          0.4476,
+          0.4417,
+          0.5853
+        ],
+        "avg_rewards": [
+          0.254,
+          0.0782,
+          1.2132
+        ]
+      }
+    },
+    "robustness_radar": {
+      "plot_path": "Leduc_PPO_robustness_radar.png",
+      "data": {
+        "categories": [
+          "Overall Win Rate",
+          "Min Win Rate",
+          "Low Exploitability",
+          "Low Regret",
+          "Forward Transfer",
+          "Population Diversity",
+          "Low Forgetting"
+        ],
+        "values": [
+          0.4915333333333334,
+          0.4417,
+          1.0,
+          1.0,
+          0.0,
+          1.0,
+          1.0,
+          0.4915333333333334
+        ]
+      }
+    },
+    "performance_heatmap": {
+      "plot_path": "Leduc_PPO_performance_heatmap.png",
+      "data": {
+        "matrix": [
+          [
+            0.4904,
+            0.7926500000000001,
+            0.5373
+          ]
+        ],
+        "envs": [
+          "LeducPoker"
+        ],
+        "challengers": [
+          "Leduc_AlwaysCall",
+          "Leduc_AlwaysFold",
+          "Leduc_Uniform"
+        ]
+      }
+    },
+    "metrics_comparison": {
+      "plot_path": "Leduc_PPO_metrics_comparison.png",
+      "data": {
+        "names": [
+          "Overall Win Rate",
+          "Min Win Rate",
+          "Avg Reward",
+          "Low Exploitability",
+          "Low Regret",
+          "Forward Transfer",
+          "Population Diversity"
+        ],
+        "values": [
+          0.4915333333333334,
+          0.4417,
+          0.5910083333333334,
+          1.0,
+          1.0,
+          0.0,
+          1.0
+        ]
+      }
+    }
+  },
+  "recommendations": [],
+  "composites": {
+    "zero_sum_composite": 0.5291383333333334,
+    "general_sum_composite": null,
+    "ipd_exploitability_proxy": 0.0
+  }
+}

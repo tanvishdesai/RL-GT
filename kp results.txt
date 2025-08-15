@@ -1,0 +1,176 @@
+Added custom challenger: Kuhn_Threshold
+
+========================================
+EVALUATING: Kuhn_DQN
+========================================
+
+====================================================================================================
+🏆 ENHANCED GAUNTLET EVALUATION: Kuhn_DQN
+====================================================================================================
+
+🎯 ROBUSTNESS METRICS:
+  Overall Win Rate:     0.500
+  Minimum Win Rate:     0.250
+  Win Rate Std:         0.179
+  Average Reward:       0.019
+  Worst Case Reward:    -0.575
+  Exploitability:       0.287
+  Regret:              0.000
+  🏅 ROBUSTNESS SCORE:  0.451
+
+📊 DETAILED CHALLENGER RESULTS:
+
+  Environment: KuhnPoker
+    Kuhn_AlwaysBet      : WR=0.250, AR/step=-0.575, STD=1.547
+    Kuhn_AlwaysPass     : WR=0.740, AR/step=0.480, STD=0.877
+    Kuhn_BetOnHigh      : WR=0.250, AR/step=-0.490, STD=1.493
+    Kuhn_Bluffer        : WR=0.480, AR/step=-0.235, STD=1.319
+    Kuhn_CheckOnLow     : WR=0.770, AR/step=0.540, STD=0.842
+    Kuhn_Conservative   : WR=0.615, AR/step=0.415, STD=1.176
+    Kuhn_NeuralAdversary: WR=0.375, AR/step=-0.165, STD=1.509
+    Kuhn_Threshold      : WR=0.550, AR/step=0.285, STD=1.262
+    Kuhn_Uniform        : WR=0.470, AR/step=-0.085, STD=1.291
+
+Report saved to results/KuhnPoker/DQN/report.json
+Saved report to results/KuhnPoker/DQN/report.json
+
+========================================
+EVALUATING: Kuhn_PPO
+========================================
+
+====================================================================================================
+🏆 ENHANCED GAUNTLET EVALUATION: Kuhn_PPO
+====================================================================================================
+
+🎯 ROBUSTNESS METRICS:
+  Overall Win Rate:     0.762
+  Minimum Win Rate:     0.490
+  Win Rate Std:         0.218
+  Average Reward:       0.572
+  Worst Case Reward:    -0.175
+  Exploitability:       0.087
+  Regret:              0.000
+  🏅 ROBUSTNESS SCORE:  0.593
+
+📊 DETAILED CHALLENGER RESULTS:
+
+  Environment: KuhnPoker
+    Kuhn_AlwaysBet      : WR=0.490, AR/step=-0.040, STD=2.000
+    Kuhn_AlwaysPass     : WR=1.000, AR/step=1.000, STD=0.000
+    Kuhn_BetOnHigh      : WR=0.540, AR/step=0.160, STD=1.994
+    Kuhn_Bluffer        : WR=0.580, AR/step=-0.175, STD=1.557
+    Kuhn_CheckOnLow     : WR=1.000, AR/step=1.000, STD=0.000
+    Kuhn_Conservative   : WR=1.000, AR/step=1.315, STD=0.465
+    Kuhn_NeuralAdversary: WR=0.510, AR/step=0.040, STD=2.000
+    Kuhn_Threshold      : WR=0.960, AR/step=1.255, STD=0.819
+    Kuhn_Uniform        : WR=0.775, AR/step=0.595, STD=1.460
+
+Report saved to results/KuhnPoker/PPO/report.json
+Saved report to results/KuhnPoker/PPO/report.json
+
+========================================
+EVALUATING: Kuhn_PSRO
+========================================
+
+====================================================================================================
+🏆 ENHANCED GAUNTLET EVALUATION: Kuhn_PSRO
+====================================================================================================
+
+🎯 ROBUSTNESS METRICS:
+  Overall Win Rate:     0.504
+  Minimum Win Rate:     0.225
+  Win Rate Std:         0.197
+  Average Reward:       0.037
+  Worst Case Reward:    -0.525
+  Exploitability:       0.263
+  Regret:              0.000
+  🏅 ROBUSTNESS SCORE:  0.451
+
+📊 DETAILED CHALLENGER RESULTS:
+
+  Environment: KuhnPoker
+    Kuhn_AlwaysBet      : WR=0.225, AR/step=-0.525, STD=1.414
+    Kuhn_AlwaysPass     : WR=0.770, AR/step=0.540, STD=0.842
+    Kuhn_BetOnHigh      : WR=0.290, AR/step=-0.350, STD=1.552
+    Kuhn_Bluffer        : WR=0.540, AR/step=-0.070, STD=1.321
+    Kuhn_CheckOnLow     : WR=0.775, AR/step=0.550, STD=0.835
+    Kuhn_Conservative   : WR=0.615, AR/step=0.395, STD=1.157
+    Kuhn_NeuralAdversary: WR=0.250, AR/step=-0.495, STD=1.497
+    Kuhn_Threshold      : WR=0.505, AR/step=0.170, STD=1.229
+    Kuhn_Uniform        : WR=0.565, AR/step=0.115, STD=1.312
+
+Report saved to results/KuhnPoker/PSRO/report.json
+Saved report to results/KuhnPoker/PSRO/report.json
+
+========================================
+EVALUATING: Kuhn_SelfPlay
+========================================
+
+====================================================================================================
+🏆 ENHANCED GAUNTLET EVALUATION: Kuhn_SelfPlay
+====================================================================================================
+
+🎯 ROBUSTNESS METRICS:
+  Overall Win Rate:     0.711
+  Minimum Win Rate:     0.505
+  Win Rate Std:         0.190
+  Average Reward:       0.487
+  Worst Case Reward:    -0.285
+  Exploitability:       0.142
+  Regret:              0.000
+  🏅 ROBUSTNESS SCORE:  0.576
+
+📊 DETAILED CHALLENGER RESULTS:
+
+  Environment: KuhnPoker
+    Kuhn_AlwaysBet      : WR=0.520, AR/step=0.150, STD=1.941
+    Kuhn_AlwaysPass     : WR=0.950, AR/step=0.900, STD=0.436
+    Kuhn_BetOnHigh      : WR=0.505, AR/step=0.145, STD=1.898
+    Kuhn_Bluffer        : WR=0.530, AR/step=-0.285, STD=1.491
+    Kuhn_CheckOnLow     : WR=0.915, AR/step=0.830, STD=0.558
+    Kuhn_Conservative   : WR=0.915, AR/step=1.140, STD=0.794
+    Kuhn_NeuralAdversary: WR=0.505, AR/step=0.070, STD=1.961
+    Kuhn_Threshold      : WR=0.880, AR/step=1.085, STD=1.004
+    Kuhn_Uniform        : WR=0.680, AR/step=0.345, STD=1.558
+
+Report saved to results/KuhnPoker/SelfPlay/report.json
+Saved report to results/KuhnPoker/SelfPlay/report.json
+
+========================================
+EVALUATING: Kuhn_PRPO
+========================================
+
+====================================================================================================
+🏆 ENHANCED GAUNTLET EVALUATION: Kuhn_PRPO
+====================================================================================================
+
+🎯 ROBUSTNESS METRICS:
+  Overall Win Rate:     0.739
+  Minimum Win Rate:     0.485
+  Win Rate Std:         0.196
+  Average Reward:       0.543
+  Worst Case Reward:    -0.165
+  Exploitability:       0.083
+  Regret:              0.000
+  🏅 ROBUSTNESS SCORE:  0.588
+
+📊 DETAILED CHALLENGER RESULTS:
+
+  Environment: KuhnPoker
+    Kuhn_AlwaysBet      : WR=0.515, AR/step=0.090, STD=1.975
+    Kuhn_AlwaysPass     : WR=0.940, AR/step=0.880, STD=0.475
+    Kuhn_BetOnHigh      : WR=0.565, AR/step=0.275, STD=1.970
+    Kuhn_Bluffer        : WR=0.570, AR/step=-0.165, STD=1.519
+    Kuhn_CheckOnLow     : WR=0.970, AR/step=0.940, STD=0.341
+    Kuhn_Conservative   : WR=0.950, AR/step=1.190, STD=0.674
+    Kuhn_NeuralAdversary: WR=0.485, AR/step=-0.030, STD=1.977
+    Kuhn_Threshold      : WR=0.920, AR/step=1.200, STD=0.970
+    Kuhn_Uniform        : WR=0.740, AR/step=0.505, STD=1.463
+
+Report saved to results/KuhnPoker/PRPO/report.json
+Saved report to results/KuhnPoker/PRPO/report.json
+
+--- Computing seed-wise scores, 95% CI, and paired t-test (Kuhn PRPO vs PPO) ---
+PPO mean=1.207, 95% CI=[1.149, 1.265], n=10
+PRPO mean=0.592, 95% CI=[0.311, 0.872], n=10
+Paired t-test (PRPO vs PPO): p-value=0.0011

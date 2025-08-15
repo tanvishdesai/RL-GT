@@ -1,0 +1,159 @@
+{
+  "summary": {
+    "policy_name": "IPD_PSRO",
+    "evaluation_timestamp": 1754852140.9589367,
+    "robustness_score": 0.6371976911086352,
+    "key_strengths": [
+      "Low exploitability"
+    ],
+    "key_weaknesses": [
+      "Vulnerable to specific challengers",
+      "Inconsistent performance"
+    ],
+    "overall_grade": "B"
+  },
+  "detailed_analysis": {
+    "performance_trends": {
+      "trend": "Stable",
+      "details": "Trend calculated over 19 evaluations with a slope of 0.0151."
+    },
+    "challenger_analysis": {
+      "easiest_challenger": "IPD_AlwaysCooperate (Win Rate: 1.000)",
+      "hardest_challenger": "IPD_AlwaysDefect (Win Rate: 0.000)"
+    },
+    "weakness_patterns": [
+      "Struggles against 'pattern_based' opponents (Avg Win Rate: 0.370)",
+      "Shows high performance variance (Std Dev: 0.314), indicating inconsistency."
+    ],
+    "improvement_suggestions": [
+      "Inconsistent Performance: To stabilize performance, try using regularization techniques (e.g., entropy regularization) or policy ensemble methods.",
+      "Weak against Pattern-Based Agents: The policy is predictable. Introduce mechanisms to detect and break patterns, such as adding memory (LSTMs) or increasing stochasticity in its actions."
+    ]
+  },
+  "visualizations": {
+    "challenger_performance": {
+      "plot_path": "IPD_PSRO_challenger_performance.png",
+      "data": {
+        "names": [
+          "IPD_AlwaysCooperate",
+          "IPD_AlwaysDefect",
+          "IPD_Uniform",
+          "IPD_TitForTat",
+          "IPD_Copycat",
+          "IPD_Grudger",
+          "IPD_AlwaysAlternate",
+          "IPD_Pavlov",
+          "IPD_FictitiousPlay"
+        ],
+        "win_rates": [
+          1.0,
+          0.0,
+          0.4625,
+          0.4995,
+          0.24,
+          0.0,
+          0.4375,
+          0.5615,
+          0.0
+        ],
+        "avg_rewards": [
+          200.086,
+          25.095,
+          112.188,
+          114.081,
+          112.18,
+          31.973,
+          112.4155,
+          115.9155,
+          26.9
+        ]
+      }
+    },
+    "robustness_radar": {
+      "plot_path": "IPD_PSRO_robustness_radar.png",
+      "data": {
+        "categories": [
+          "Overall Win Rate",
+          "Min Win Rate",
+          "Low Exploitability",
+          "Low Regret",
+          "Forward Transfer",
+          "Population Diversity",
+          "Low Forgetting"
+        ],
+        "values": [
+          0.35566666666666663,
+          0.0,
+          1.0,
+          1.0,
+          0.0,
+          1.0,
+          1.0,
+          0.35566666666666663
+        ]
+      }
+    },
+    "performance_heatmap": {
+      "plot_path": "IPD_PSRO_performance_heatmap.png",
+      "data": {
+        "matrix": [
+          [
+            0.71875,
+            1.0,
+            0.5,
+            0.62,
+            0.5,
+            0.5,
+            0.78075,
+            0.74975,
+            0.73125
+          ]
+        ],
+        "envs": [
+          "IPD"
+        ],
+        "challengers": [
+          "IPD_AlwaysAlternate",
+          "IPD_AlwaysCooperate",
+          "IPD_AlwaysDefect",
+          "IPD_Copycat",
+          "IPD_FictitiousPlay",
+          "IPD_Grudger",
+          "IPD_Pavlov",
+          "IPD_TitForTat",
+          "IPD_Uniform"
+        ]
+      }
+    },
+    "metrics_comparison": {
+      "plot_path": "IPD_PSRO_metrics_comparison.png",
+      "data": {
+        "names": [
+          "Avg Reward",
+          "Social Welfare",
+          "Cooperation Rate",
+          "Low Exploitability",
+          "Low Regret",
+          "Population Diversity"
+        ],
+        "values": [
+          1.0,
+          1.0,
+          0.4991366666666667,
+          1.0,
+          1.0,
+          1.0
+        ]
+      }
+    }
+  },
+  "recommendations": [
+    "Consider regularization to improve worst-case performance",
+    "Add ensemble methods to improve consistency"
+  ],
+  "composites": {
+    "zero_sum_composite": null,
+    "general_sum_composite": 0.6371976911086352,
+    "ipd_exploitability_proxy": 0.5993093333333334
+  }
+}

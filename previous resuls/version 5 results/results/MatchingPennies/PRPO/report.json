@@ -1,0 +1,149 @@
+{
+  "summary": {
+    "policy_name": "Pennies_PRPO",
+    "evaluation_timestamp": 1754759588.2955418,
+    "robustness_score": 0.30662554994468094,
+    "key_strengths": [
+      "Consistent performance across challengers",
+      "Stable performance"
+    ],
+    "key_weaknesses": [
+      "Highly exploitable",
+      "High regret compared to optimal"
+    ],
+    "overall_grade": "F"
+  },
+  "detailed_analysis": {
+    "performance_trends": {
+      "trend": "Stable",
+      "details": "Trend calculated over 5 evaluations with a slope of 0.0083."
+    },
+    "challenger_analysis": {
+      "easiest_challenger": "Pennies_AlwaysHeads (Win Rate: 0.529)",
+      "hardest_challenger": "Pennies_AlwaysTails (Win Rate: 0.481)"
+    },
+    "weakness_patterns": [
+      "Could not categorize challengers to identify weakness patterns."
+    ],
+    "improvement_suggestions": [
+      "High Exploitability: Consider adversarial training or add more diverse, adaptive agents (like NeuralAdversary) to the training opponents.",
+      "High Regret: The policy is far from optimal. This could indicate a need for a more complex model architecture, longer training, or hyperparameter tuning."
+    ]
+  },
+  "visualizations": {
+    "challenger_performance": {
+      "plot_path": "Pennies_PRPO_challenger_performance.png",
+      "data": {
+        "names": [
+          "Pennies_AlwaysHeads",
+          "Pennies_AlwaysTails",
+          "Pennies_Uniform",
+          "Pennies_Copycat",
+          "Pennies_BiasedHeads",
+          "Pennies_BiasedTails",
+          "Pennies_FrequencyCounter"
+        ],
+        "win_rates": [
+          0.529,
+          0.481,
+          0.495,
+          0.505,
+          0.519,
+          0.508,
+          0.498
+        ],
+        "avg_rewards": [
+          0.058,
+          -0.038,
+          -0.01,
+          0.01,
+          0.038,
+          0.016,
+          -0.004
+        ]
+      }
+    },
+    "robustness_radar": {
+      "plot_path": "Pennies_PRPO_robustness_radar.png",
+      "data": {
+        "categories": [
+          "Overall Win Rate",
+          "Min Win Rate",
+          "Low Exploitability",
+          "Low Regret",
+          "Nash Convergence",
+          "Forward Transfer",
+          "Population Diversity",
+          "Low Forgetting"
+        ],
+        "values": [
+          0.505,
+          0.481,
+          0.4622857142857143,
+          0.0050000000000000044,
+          0.7474504999015045,
+          0.0,
+          0.04302528460790531,
+          1.0,
+          0.505
+        ]
+      }
+    },
+    "performance_heatmap": {
+      "plot_path": "Pennies_PRPO_performance_heatmap.png",
+      "data": {
+        "matrix": [
+          [
+            0.529,
+            0.481,
+            0.519,
+            0.508,
+            0.505,
+            0.498,
+            0.495
+          ]
+        ],
+        "envs": [
+          "MatchingPennies"
+        ],
+        "challengers": [
+          "Pennies_AlwaysHeads",
+          "Pennies_AlwaysTails",
+          "Pennies_BiasedHeads",
+          "Pennies_BiasedTails",
+          "Pennies_Copycat",
+          "Pennies_FrequencyCounter",
+          "Pennies_Uniform"
+        ]
+      }
+    },
+    "metrics_comparison": {
+      "plot_path": "Pennies_PRPO_metrics_comparison.png",
+      "data": {
+        "names": [
+          "Overall Win Rate",
+          "Min Win Rate",
+          "Avg Reward",
+          "Low Exploitability",
+          "Low Regret",
+          "Forward Transfer",
+          "Population Diversity",
+          "Nash Convergence"
+        ],
+        "values": [
+          0.505,
+          0.481,
+          0.505,
+          0.4622857142857143,
+          0.0050000000000000044,
+          0.0,
+          0.04302528460790531,
+          0.7474504999015045
+        ]
+      }
+    }
+  },
+  "recommendations": [
+    "Implement adversarial training to reduce exploitability"
+  ]
+}

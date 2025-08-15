@@ -1,0 +1,144 @@
+{
+  "summary": {
+    "policy_name": "Kuhn_PRPO",
+    "evaluation_timestamp": 1754936946.086106,
+    "robustness_score": 0.5956066666666667,
+    "key_strengths": [
+      "High overall win rate",
+      "Consistent performance across challengers",
+      "Low exploitability"
+    ],
+    "key_weaknesses": [
+      "Inconsistent performance"
+    ],
+    "overall_grade": "C+"
+  },
+  "detailed_analysis": {
+    "performance_trends": {
+      "trend": "Stable",
+      "details": "Trend calculated over 6 evaluations with a slope of 0.0321."
+    },
+    "challenger_analysis": {
+      "easiest_challenger": "Kuhn_CheckOnLow (Win Rate: 0.977)",
+      "hardest_challenger": "Kuhn_AlwaysBet (Win Rate: 0.472)"
+    },
+    "weakness_patterns": [
+      "Shows high performance variance (Std Dev: 0.217), indicating inconsistency."
+    ],
+    "improvement_suggestions": [
+      "Inconsistent Performance: To stabilize performance, try using regularization techniques (e.g., entropy regularization) or policy ensemble methods."
+    ]
+  },
+  "visualizations": {
+    "challenger_performance": {
+      "plot_path": "Kuhn_PRPO_challenger_performance.png",
+      "data": {
+        "names": [
+          "Kuhn_AlwaysPass",
+          "Kuhn_AlwaysBet",
+          "Kuhn_Uniform",
+          "Kuhn_BetOnHigh",
+          "Kuhn_CheckOnLow",
+          "Kuhn_Threshold"
+        ],
+        "win_rates": [
+          0.9764,
+          0.4719,
+          0.7269,
+          0.4722,
+          0.9774,
+          0.9038
+        ],
+        "avg_rewards": [
+          0.9528,
+          -0.0645,
+          0.4478,
+          -0.0603,
+          0.9548,
+          1.1254
+        ]
+      }
+    },
+    "robustness_radar": {
+      "plot_path": "Kuhn_PRPO_robustness_radar.png",
+      "data": {
+        "categories": [
+          "Overall Win Rate",
+          "Min Win Rate",
+          "Low Exploitability",
+          "Low Regret",
+          "Forward Transfer",
+          "Population Diversity",
+          "Low Forgetting"
+        ],
+        "values": [
+          0.7547666666666668,
+          0.4719,
+          0.96775,
+          1.0,
+          0.0,
+          1.0,
+          1.0,
+          0.7547666666666668
+        ]
+      }
+    },
+    "performance_heatmap": {
+      "plot_path": "Kuhn_PRPO_performance_heatmap.png",
+      "data": {
+        "matrix": [
+          [
+            0.469825,
+            0.9763999999999999,
+            0.471025,
+            0.9774,
+            0.9519,
+            0.7254
+          ]
+        ],
+        "envs": [
+          "KuhnPoker"
+        ],
+        "challengers": [
+          "Kuhn_AlwaysBet",
+          "Kuhn_AlwaysPass",
+          "Kuhn_BetOnHigh",
+          "Kuhn_CheckOnLow",
+          "Kuhn_Threshold",
+          "Kuhn_Uniform"
+        ]
+      }
+    },
+    "metrics_comparison": {
+      "plot_path": "Kuhn_PRPO_metrics_comparison.png",
+      "data": {
+        "names": [
+          "Overall Win Rate",
+          "Min Win Rate",
+          "Avg Reward",
+          "Low Exploitability",
+          "Low Regret",
+          "Forward Transfer",
+          "Population Diversity"
+        ],
+        "values": [
+          0.7547666666666668,
+          0.4719,
+          0.7796666666666667,
+          0.96775,
+          1.0,
+          0.0,
+          1.0
+        ]
+      }
+    }
+  },
+  "recommendations": [
+    "Add ensemble methods to improve consistency"
+  ],
+  "composites": {
+    "zero_sum_composite": 0.5956066666666667,
+    "general_sum_composite": null,
+    "ipd_exploitability_proxy": 0.0
+  }
+}
