@@ -1,0 +1,204 @@
+kuhn poker results:
+DQN (gauntlet robustness): mean=0.586, 95% CI=[0.581, 0.590], variance=0.000, n=32
+PPO (gauntlet robustness): mean=0.441, 95% CI=[0.437, 0.446], variance=0.000, n=32
+PRPO (gauntlet robustness): mean=0.442, 95% CI=[0.438, 0.446], variance=0.000, n=32
+SELFPLAY (gauntlet robustness): mean=0.412, 95% CI=[0.361, 0.463], variance=0.020, n=32
+PSRO (gauntlet robustness): mean=0.412, 95% CI=[0.362, 0.463], variance=0.020, n=32
+
+Pairwise tests (gauntlet):
+  DQN vs PPO (paired t-test): p=0.0000 **
+  DQN vs PRPO (paired t-test): p=0.0000 **
+  DQN vs SELFPLAY (paired t-test): p=0.0000 **
+  DQN vs PSRO (paired t-test): p=0.0000 **
+  PPO vs PRPO (paired t-test): p=0.7519 
+  PPO vs SELFPLAY (paired t-test): p=0.2270 
+  PPO vs PSRO (paired t-test): p=0.2561 
+  PRPO vs SELFPLAY (paired t-test): p=0.2391 
+  PRPO vs PSRO (paired t-test): p=0.2437 
+  SELFPLAY vs PSRO (paired t-test): p=0.9991 
+Statistical analysis saved to results/mp_1000s/kuhn_statistical_analysis.json
+
+==================================================
+GENERATING SUMMARY REPORT
+==================================================
+Summary report saved to results/mp_1000s/evaluation_summary.json
+
+==============================
+EVALUATION SUMMARY
+==============================
+Game: kuhn
+Seeds: 32
+Algorithms: 5
+
+Algorithm Rankings (by mean score):
+  1. DQN (gauntlet): 0.586 ± 0.012 (95% CI: [0.581, 0.590])
+  2. PRPO (gauntlet): 0.442 ± 0.011 (95% CI: [0.438, 0.446])
+  3. PPO (gauntlet): 0.441 ± 0.013 (95% CI: [0.437, 0.446])
+  4. PSRO (gauntlet): 0.412 ± 0.141 (95% CI: [0.362, 0.463])
+  5. SELFPLAY (gauntlet): 0.412 ± 0.142 (95% CI: [0.361, 0.463])
+
+leduc poker results:
+DQN (gauntlet robustness): mean=0.436, 95% CI=[0.433, 0.439], variance=0.000, n=32
+PPO (gauntlet robustness): mean=0.470, 95% CI=[0.461, 0.478], variance=0.001, n=32
+PRPO (gauntlet robustness): mean=0.477, 95% CI=[0.474, 0.480], variance=0.000, n=32
+SELFPLAY (gauntlet robustness): mean=0.436, 95% CI=[0.433, 0.440], variance=0.000, n=32
+PSRO (gauntlet robustness): mean=0.440, 95% CI=[0.437, 0.443], variance=0.000, n=32
+
+Pairwise tests (gauntlet):
+  DQN vs PPO (paired t-test): p=0.0000 **
+  DQN vs PRPO (paired t-test): p=0.0000 **
+  DQN vs SELFPLAY (paired t-test): p=0.8319 
+  DQN vs PSRO (paired t-test): p=0.0323 *
+  PPO vs PRPO (paired t-test): p=0.0977 
+  PPO vs SELFPLAY (paired t-test): p=0.0000 **
+  PPO vs PSRO (paired t-test): p=0.0000 **
+  PRPO vs SELFPLAY (paired t-test): p=0.0000 **
+  PRPO vs PSRO (paired t-test): p=0.0000 **
+  SELFPLAY vs PSRO (paired t-test): p=0.1105 
+Statistical analysis saved to results/leduc_60s/leduc_statistical_analysis.json
+
+==================================================
+GENERATING SUMMARY REPORT
+==================================================
+Summary report saved to results/leduc_60s/evaluation_summary.json
+
+==============================
+EVALUATION SUMMARY
+==============================
+Game: leduc
+Seeds: 32
+Algorithms: 5
+
+Algorithm Rankings (by mean score):
+  1. PRPO (gauntlet): 0.477 ± 0.008 (95% CI: [0.474, 0.480])
+  2. PPO (gauntlet): 0.470 ± 0.023 (95% CI: [0.461, 0.478])
+  3. PSRO (gauntlet): 0.440 ± 0.008 (95% CI: [0.437, 0.443])
+  4. SELFPLAY (gauntlet): 0.436 ± 0.010 (95% CI: [0.433, 0.440])
+  5. DQN (gauntlet): 0.436 ± 0.008 (95% CI: [0.433, 0.439])
+
+stag hunt results:
+DQN (gauntlet robustness): mean=0.589, 95% CI=[0.523, 0.656], variance=0.034, n=32
+PPO (gauntlet robustness): mean=0.600, 95% CI=[0.596, 0.604], variance=0.000, n=32
+PRPO (gauntlet robustness): mean=0.638, 95% CI=[0.637, 0.638], variance=0.000, n=32
+SELFPLAY (gauntlet robustness): mean=0.634, 95% CI=[0.564, 0.704], variance=0.038, n=32
+PSRO (gauntlet robustness): mean=0.622, 95% CI=[0.553, 0.692], variance=0.037, n=32
+
+Pairwise tests (gauntlet):
+  DQN vs PPO (paired t-test): p=0.7456 
+  DQN vs PRPO (paired t-test): p=0.1478 
+  DQN vs SELFPLAY (paired t-test): p=0.3160 
+  DQN vs PSRO (paired t-test): p=0.4563 
+  PPO vs PRPO (paired t-test): p=0.0000 **
+  PPO vs SELFPLAY (paired t-test): p=0.3314 
+  PPO vs PSRO (paired t-test): p=0.5230 
+  PRPO vs SELFPLAY (paired t-test): p=0.9257 
+  PRPO vs PSRO (paired t-test): p=0.6554 
+  SELFPLAY vs PSRO (paired t-test): p=0.8111 
+Statistical analysis saved to results/stag_hunt_evaluation/stag_hunt_statistical_analysis.json
+
+==================================================
+GENERATING SUMMARY REPORT
+==================================================
+Summary report saved to results/stag_hunt_evaluation/evaluation_summary.json
+
+==============================
+EVALUATION SUMMARY
+==============================
+Game: stag_hunt
+Seeds: 32
+Algorithms: 5
+
+Algorithm Rankings (by mean score):
+  1. PRPO (gauntlet): 0.638 ± 0.002 (95% CI: [0.637, 0.638])
+  2. SELFPLAY (gauntlet): 0.634 ± 0.195 (95% CI: [0.564, 0.704])
+  3. PSRO (gauntlet): 0.622 ± 0.193 (95% CI: [0.553, 0.692])
+  4. PPO (gauntlet): 0.600 ± 0.011 (95% CI: [0.596, 0.604])
+  5. DQN (gauntlet): 0.589 ± 0.184 (95% CI: [0.523, 0.656])
+
+rps results:
+DQN (gauntlet robustness): mean=0.299, 95% CI=[0.288, 0.310], variance=0.001, n=32
+PPO (gauntlet robustness): mean=0.396, 95% CI=[0.391, 0.402], variance=0.000, n=32
+PRPO (gauntlet robustness): mean=0.406, 95% CI=[0.403, 0.408], variance=0.000, n=32
+SELFPLAY (gauntlet robustness): mean=0.312, 95% CI=[0.300, 0.324], variance=0.001, n=32
+PSRO (gauntlet robustness): mean=0.317, 95% CI=[0.304, 0.329], variance=0.001, n=32
+
+Pairwise tests (gauntlet):
+  DQN vs PPO (paired t-test): p=0.0000 **
+  DQN vs PRPO (paired t-test): p=0.0000 **
+  DQN vs SELFPLAY (paired t-test): p=0.0996 
+  DQN vs PSRO (paired t-test): p=0.0190 *
+  PPO vs PRPO (paired t-test): p=0.0056 **
+  PPO vs SELFPLAY (paired t-test): p=0.0000 **
+  PPO vs PSRO (paired t-test): p=0.0000 **
+  PRPO vs SELFPLAY (paired t-test): p=0.0000 **
+  PRPO vs PSRO (paired t-test): p=0.0000 **
+  SELFPLAY vs PSRO (paired t-test): p=0.5799 
+Statistical analysis saved to results/rps_1000s/rps_statistical_analysis.json
+
+==================================================
+GENERATING SUMMARY REPORT
+==================================================
+Summary report saved to results/rps_1000s/evaluation_summary.json
+
+==============================
+EVALUATION SUMMARY
+==============================
+Game: rps
+Seeds: 32
+Algorithms: 5
+
+Algorithm Rankings (by mean score):
+  1. PRPO (gauntlet): 0.406 ± 0.007 (95% CI: [0.403, 0.408])
+  2. PPO (gauntlet): 0.396 ± 0.016 (95% CI: [0.391, 0.402])
+  3. PSRO (gauntlet): 0.317 ± 0.035 (95% CI: [0.304, 0.329])
+  4. SELFPLAY (gauntlet): 0.312 ± 0.034 (95% CI: [0.300, 0.324])
+  5. DQN (gauntlet): 0.299 ± 0.030 (95% CI: [0.288, 0.310])
+
+mp results:
+DQN (gauntlet robustness): mean=0.344, 95% CI=[0.343, 0.346], variance=0.000, n=32
+PPO (gauntlet robustness): mean=0.422, 95% CI=[0.419, 0.424], variance=0.000, n=32
+PRPO (gauntlet robustness): mean=0.424, 95% CI=[0.421, 0.428], variance=0.000, n=32
+SELFPLAY (gauntlet robustness): mean=0.344, 95% CI=[0.343, 0.346], variance=0.000, n=32
+PSRO (gauntlet robustness): mean=0.343, 95% CI=[0.341, 0.345], variance=0.000, n=32
+
+Pairwise tests (gauntlet):
+  DQN vs PPO (paired t-test): p=0.0000 **
+  DQN vs PRPO (paired t-test): p=0.0000 **
+  DQN vs SELFPLAY (paired t-test): p=0.9693 
+  DQN vs PSRO (paired t-test): p=0.2713 
+  PPO vs PRPO (paired t-test): p=0.2946 
+  PPO vs SELFPLAY (paired t-test): p=0.0000 **
+  PPO vs PSRO (paired t-test): p=0.0000 **
+  PRPO vs SELFPLAY (paired t-test): p=0.0000 **
+  PRPO vs PSRO (paired t-test): p=0.0000 **
+  SELFPLAY vs PSRO (paired t-test): p=0.2442 
+Statistical analysis saved to results/mp_1000s/matchingpennies_statistical_analysis.json
+
+==================================================
+GENERATING SUMMARY REPORT
+==================================================
+Summary report saved to results/mp_1000s/evaluation_summary.json
+
+==============================
+EVALUATION SUMMARY
+==============================
+Game: matchingpennies
+Seeds: 32
+Algorithms: 5
+
+Algorithm Rankings (by mean score):
+  1. PRPO (gauntlet): 0.424 ± 0.009 (95% CI: [0.421, 0.428])
+  2. PPO (gauntlet): 0.422 ± 0.007 (95% CI: [0.419, 0.424])
+  3. DQN (gauntlet): 0.344 ± 0.004 (95% CI: [0.343, 0.346])
+  4. SELFPLAY (gauntlet): 0.344 ± 0.005 (95% CI: [0.343, 0.346])
+  5. PSRO (gauntlet): 0.343 ± 0.004 (95% CI: [0.341, 0.345])
+
+
+i am writing a research paper for AAMAS, i have ran multiple experiments for many games, many algorithms are evaluated in each game, i have their CI and p values results, from i want you to draft a conclusion section from it and this describe table
+ **[ ] Table 1: Main Results - Composite Scores.** The master table. For each of the 5 games, it must show:
+    *   Algorithms: DQN, PPO, Self-Play, PSRO, PRPO (Ours).
+    *   Metrics: **Robustness Score**, **Average Win-Rate vs. Gauntlet**, **Exploitability/NashConv**.
+    *   Format: **Mean ± 95% CI** across all 32 seeds. 
+    *   Statistical Significance: P-values for PRPO vs. each baseline on the key metrics.
+
+think hard
