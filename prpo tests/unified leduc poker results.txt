@@ -10,3 +10,17 @@
 ================================================================================
 🔬 PRPO: Exploitability: 4093.78 ± 0.00 mbb/h
 🔬 PRPO (Implicit Only): Exploitability: 4081.10 ± 0.00 mbb/h
+
+================================================================================
+📊 HYPERPARAMETER SENSITIVITY RESULTS
+================================================================================
+
+🔧 Lambda Exploit Base Sensitivity:
+  λ_exploit_base=0.0: Exploit: 3921.95±102.78 mbb/h
+  λ_exploit_base=0.1: Exploit: 3920.19±101.03 mbb/h
+  λ_exploit_base=0.3: Exploit: 3913.28±106.41 mbb/h
+  λ_exploit_base=0.5: Exploit: 3919.43±100.26 mbb/h
+  λ_exploit_base=0.7: Exploit: 3913.28±106.41 mbb/h
+  λ_exploit_base=1.0: Exploit: 3920.19±101.03 mbb/h
+  λ_exploit_base=1.5: Exploit: 3919.43±100.26 mbb/h
+  λ_exploit_base=2.0: Exploit: 3920.19±101.03 mbb/h

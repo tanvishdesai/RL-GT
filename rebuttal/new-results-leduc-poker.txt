@@ -1,0 +1,7 @@
+================================================================================
+📊 MAIN RESULTS SUMMARY (Exploitability)
+================================================================================
+🔬 Standard PPO: Exploitability: 7031.96 ± 742.34 mbb/h
+🔬 Self-Play: Exploitability: 4217.42 ± 924.20 mbb/h
+🔬 PSRO: Exploitability: 5504.06 ± 556.25 mbb/h
+🔬 PRPO: Exploitability: 3903.66 ± 40.59 mbb/h
