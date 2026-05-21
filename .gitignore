@@ -1,1 +1,66 @@
 pip library
+
+# Added during repository sync cleanup
+node_modules/
+.next/
+dist/
+build/
+out/
+coverage/
+.cache/
+.pytest_cache/
+.mypy_cache/
+__pycache__/
+*.pyc
+venv/
+.venv/
+env/
+site-packages/
+.DS_Store
+Thumbs.db
+
+# Local secrets and credentials
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+credentials.json
+token.json
+credentials/
+*.jks
+
+# Local databases and generated/runtime files
+*.sqlite
+*.sqlite3
+*.db
+*.log
+
+# Datasets, model weights, generated media, and archives
+dataset/
+datasets/
+data/raw/
+models/
+model/
+checkpoints/
+checkpoint/
+*.pth
+*.pt
+*.onnx
+*.h5
+*.keras
+*.pkl
+*.joblib
+*.npy
+*.npz
+*.zip
+*.tar
+*.tar.gz
+*.rar
+*.7z
+*.mp4
+*.mov
+*.avi
+*.mkv
+*.wav
+*.mp3
